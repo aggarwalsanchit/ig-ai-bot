@@ -1,0 +1,38 @@
+name: Check approval and publish
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"   # checks every 20 minutes
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check approval + publish if approved
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python scripts/check_approval_and_publish.py
+
+      - name: Commit state changes
+        run: |
+          git config user.name "ig-ai-bot"
+          git config user.email "actions@github.com"
+          git add draft.json state.json
+          git commit -m "Update state" || echo "Nothing to commit"
+          git push
