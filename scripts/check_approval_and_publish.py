@@ -20,6 +20,14 @@ IG_ACCESS_TOKEN = os.environ.get("IG_ACCESS_TOKEN")
 FB_PAGE_ID = os.environ.get("FB_PAGE_ID")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
 
+# Debug - check if Facebook variables are loaded
+print(f"FB_PAGE_ID present: {'Yes' if FB_PAGE_ID else 'No'}")
+print(f"FB_PAGE_ACCESS_TOKEN present: {'Yes' if FB_PAGE_ACCESS_TOKEN else 'No'}")
+if FB_PAGE_ID:
+    print(f"FB_PAGE_ID length: {len(FB_PAGE_ID)}")
+if FB_PAGE_ACCESS_TOKEN:
+    print(f"FB_PAGE_ACCESS_TOKEN starts with: {FB_PAGE_ACCESS_TOKEN[:10]}...")
+
 STATE_FILE = "state.json"
 DRAFTS_FILE = "drafts.json"
 
@@ -244,13 +252,29 @@ def publish_to_instagram(image_url, caption, hashtags):
 def publish_to_facebook(image_url, caption, hashtags):
     """Post the same image + caption to the linked Facebook Page."""
     if not FB_PAGE_ID or not FB_PAGE_ACCESS_TOKEN:
-        print("Facebook not configured - skipping")
+        print("⚠️ Facebook not configured - missing credentials")
         return None
 
+    print(f"📘 Attempting to publish to Facebook Page: {FB_PAGE_ID}")
+    print(f"   Token starts with: {FB_PAGE_ACCESS_TOKEN[:15]}...")
+    
     full_caption = f"{caption}\n\n{hashtags}"
-    print(f"📘 Publishing to Facebook Page: {FB_PAGE_ID}")
     
     try:
+        # First, try to get page info to verify token works
+        verify_url = f"https://graph.facebook.com/v19.0/{FB_PAGE_ID}?access_token={FB_PAGE_ACCESS_TOKEN}"
+        verify_resp = requests.get(verify_url, timeout=10)
+        if verify_resp.ok:
+            page_data = verify_resp.json()
+            print(f"✅ Facebook Page verified: {page_data.get('name', 'Unknown')}")
+        else:
+            print(f"⚠️ Could not verify Facebook Page: {verify_resp.status_code}")
+            print(f"Response: {verify_resp.text[:200]}")
+            if "access_token" in verify_resp.text.lower():
+                print("❌ Facebook access token is invalid or expired!")
+                return None
+        
+        # Now publish the photo
         resp = requests.post(
             f"https://graph.facebook.com/v19.0/{FB_PAGE_ID}/photos",
             data={
@@ -262,15 +286,33 @@ def publish_to_facebook(image_url, caption, hashtags):
         )
         
         if resp.ok:
-            print("✅ Published to Facebook successfully!")
-            return resp.json()
+            result = resp.json()
+            print(f"✅ Published to Facebook successfully! Post ID: {result.get('id', 'unknown')}")
+            return result
         else:
-            print(f"❌ Facebook publish failed: {resp.status_code}")
-            print(f"Response: {resp.text[:200]}")
+            error_msg = "Unknown error"
+            error_code = "N/A"
+            try:
+                error_data = resp.json()
+                error_msg = error_data.get("error", {}).get("message", "Unknown error")
+                error_code = error_data.get("error", {}).get("code", "N/A")
+            except:
+                pass
             
-            error_data = resp.json() if resp.text else {}
-            error_msg = error_data.get("error", {}).get("message", "Unknown error")
-            print(f"Error: {error_msg}")
+            print(f"❌ Facebook publish failed:")
+            print(f"   Status: {resp.status_code}")
+            print(f"   Error Code: {error_code}")
+            print(f"   Error Message: {error_msg}")
+            print(f"   Full Response: {resp.text[:300]}")
+            
+            # Common Facebook errors
+            if resp.status_code == 403:
+                print("   💡 Permission denied. Make sure your token has 'pages_manage_posts' scope")
+            elif resp.status_code == 400:
+                if "image_url" in resp.text.lower():
+                    print("   💡 The image URL might not be accessible to Facebook")
+                elif "caption" in resp.text.lower():
+                    print("   💡 The caption might be too long or contain invalid characters")
             return None
             
     except requests.exceptions.RequestException as e:
@@ -307,6 +349,12 @@ def main():
         "IG_USER_ID": IG_USER_ID,
         "IG_ACCESS_TOKEN": IG_ACCESS_TOKEN,
     }
+    
+    # Check optional Facebook
+    if FB_PAGE_ID and FB_PAGE_ACCESS_TOKEN:
+        print("✅ Facebook publishing is configured")
+    else:
+        print("ℹ️ Facebook publishing is not configured (skipping)")
     
     missing_vars = [name for name, value in required_vars.items() if not value]
     if missing_vars:
@@ -387,6 +435,10 @@ def main():
             msg = f"✅ Published to Instagram! Media ID: {ig_result.get('id', 'unknown')}"
             
             # Try Facebook publishing
+            print("\n" + "="*50)
+            print("ATTEMPTING FACEBOOK PUBLISH")
+            print("="*50)
+            
             try:
                 fb_result = publish_to_facebook(
                     oldest["image_url"], 
@@ -396,8 +448,9 @@ def main():
                 if fb_result:
                     msg += f"\n✅ Published to Facebook! Post ID: {fb_result.get('id', 'unknown')}"
                 else:
-                    msg += "\n⚠️ Facebook publish skipped or failed (Instagram still succeeded)"
+                    msg += "\n⚠️ Facebook publish failed (Instagram still succeeded)"
             except Exception as e:
+                print(f"Exception during Facebook publish: {e}")
                 msg += f"\n⚠️ Facebook publish error (Instagram still succeeded): {e}"
         else:
             oldest["status"] = "publish_failed"
