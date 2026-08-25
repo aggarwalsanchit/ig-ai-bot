@@ -64,7 +64,7 @@ Respond ONLY with valid JSON, no markdown, no backticks, in this exact shape:
   "hashtags": "12-18 relevant hashtags separated by spaces, include #AItools and similar"
 }}"""
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={GEMINI_API_KEY}"
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}},
