@@ -34,14 +34,20 @@ def load_state():
                 return {"category_index": 0, "telegram_offset": 0}
     return {"category_index": 0, "telegram_offset": 0}
 
+def save_json_atomic(data, filename):
+    """Save JSON data atomically to prevent corruption."""
+    temp_file = f"{filename}.tmp"
+    with open(temp_file, "w") as f:
+        json.dump(data, f, indent=2)
+    os.replace(temp_file, filename)
+
 
 def save_state(state):
-    with open(STATE_FILE, "w") as f:
-        json.dump(state, f, indent=2)
+    save_json_atomic(state, STATE_FILE)
 
 
 def load_drafts():
-    """Load drafts with validation to prevent corruption issues."""
+    """Load drafts with support for both list and single-object formats."""
     if not os.path.exists(DRAFTS_FILE):
         return []
     
@@ -49,21 +55,22 @@ def load_drafts():
         with open(DRAFTS_FILE) as f:
             data = json.load(f)
         
-        # Validate data structure
-        if not isinstance(data, list):
-            print(f"Error: {DRAFTS_FILE} is not a list. Resetting.")
-            backup_corrupted_file()
-            return []
+        # Handle single object format (backward compatibility)
+        if isinstance(data, dict):
+            print("Info: Converting single draft object to list format")
+            return [data]
         
-        # Check if all items are dictionaries
-        valid_drafts = []
-        for i, item in enumerate(data):
-            if isinstance(item, dict):
-                valid_drafts.append(item)
-            else:
-                print(f"Warning: Draft at index {i} is not a dictionary. Skipping.")
+        # Handle list format
+        if isinstance(data, list):
+            # Filter out non-dict items
+            valid_drafts = [item for item in data if isinstance(item, dict)]
+            if len(valid_drafts) != len(data):
+                print(f"Warning: Removed {len(data) - len(valid_drafts)} invalid items from drafts")
+            return valid_drafts
         
-        return valid_drafts
+        print(f"Error: {DRAFTS_FILE} contains invalid data type: {type(data)}. Resetting.")
+        backup_corrupted_file()
+        return []
     
     except json.JSONDecodeError as e:
         print(f"Error: {DRAFTS_FILE} is corrupted ({e}). Resetting.")
@@ -73,13 +80,12 @@ def load_drafts():
         print(f"Unexpected error loading drafts: {e}")
         return []
 
-
-def backup_corrupted_file():
+def backup_corrupted_file(filename=DRAFTS_FILE):
     """Create a backup of corrupted file before resetting."""
-    if os.path.exists(DRAFTS_FILE):
-        backup_name = f"{DRAFTS_FILE}.corrupted_{int(time.time())}.bak"
+    if os.path.exists(filename):
+        backup_name = f"{filename}.corrupted_{int(time.time())}.bak"
         try:
-            os.rename(DRAFTS_FILE, backup_name)
+            os.rename(filename, backup_name)
             print(f"Backed up corrupted file to {backup_name}")
         except Exception as e:
             print(f"Could not backup corrupted file: {e}")
@@ -93,9 +99,7 @@ def save_drafts(drafts):
     
     # Ensure all items are dictionaries
     valid_drafts = [d for d in drafts if isinstance(d, dict)]
-    
-    with open(DRAFTS_FILE, "w") as f:
-        json.dump(valid_drafts, f, indent=2)
+    save_json_atomic(valid_drafts, DRAFTS_FILE)
 
 
 def get_telegram_replies(offset):

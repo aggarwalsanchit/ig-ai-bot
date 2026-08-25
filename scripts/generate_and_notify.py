@@ -36,6 +36,13 @@ CATEGORIES = [
     "data entry & spreadsheets",
 ]
 
+def save_json_atomic(data, filename):
+    """Save JSON data atomically to prevent corruption."""
+    temp_file = f"{filename}.tmp"
+    with open(temp_file, "w") as f:
+        json.dump(data, f, indent=2)
+    os.replace(temp_file, filename)
+
 
 def load_state():
     if os.path.exists(STATE_FILE):
@@ -341,14 +348,35 @@ def main():
         "created_at": datetime.now(timezone.utc).isoformat(),
         "status": "pending",
     }
-    with open(DRAFTS_FILE, "w") as f:
-        json.dump(draft, f, indent=2)
+
+    # --- FIX STARTS HERE ---
+    # Load existing drafts or create new list
+    if os.path.exists(DRAFTS_FILE):
+        try:
+            with open(DRAFTS_FILE, "r") as f:
+                existing_drafts = json.load(f)
+                # Handle both list and single-object formats
+                if isinstance(existing_drafts, dict):
+                    # Convert old single-object format to list
+                    existing_drafts = [existing_drafts]
+                elif not isinstance(existing_drafts, list):
+                    existing_drafts = []
+        except (json.JSONDecodeError, FileNotFoundError):
+            existing_drafts = []
+    else:
+        existing_drafts = []
+
+    # Append new draft
+    existing_drafts.append(draft)
+    
+    # Save as list with atomic write
+    save_json_atomic(existing_drafts, DRAFTS_FILE)
+    # --- FIX ENDS HERE ---
 
     send_telegram_preview(image_path, idea["caption"], idea["hashtags"])
 
     state["category_index"] = (state["category_index"] + 1) % len(CATEGORIES)
     save_state(state)
-
 
 if __name__ == "__main__":
     main()

@@ -1,10 +1,12 @@
-{
-  "category": "design & visuals",
-  "tool_name": "Canva Magic Design",
-  "caption": "Tired of spending hours on social media posts?  There's a better way.\n\nCanva's Magic Design uses AI to do the heavy lifting. Just give it a prompt, or upload a few pictures, and watch it go. It will suggest a bunch of different designs for you to choose from.\n\nThis frees you up to focus on what really matters. Get your content out there faster and looking great.",
-  "hashtags": "#AItools #graphicdesign #socialmediatips #designhacks #Canva #contentcreation #marketingtools #digitalart #creativity #productivity #AIforbusiness #smallbusiness #entrepreneur #designinspiration #visualcontent #AIpowered",
-  "image_path": "posts/post_1787647841.png",
-  "image_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/post_1787647841.png",
-  "created_at": "2026-08-25T08:50:41.580998+00:00",
-  "status": "pending"
-}
+[
+  {
+    "category": "design & visuals",
+    "tool_name": "Canva Magic Design",
+    "caption": "Tired of spending hours on social media posts?  There's a better way.\n\nCanva's Magic Design uses AI to do the heavy lifting. Just give it a prompt, or upload a few pictures, and watch it go. It will suggest a bunch of different designs for you to choose from.\n\nThis frees you up to focus on what really matters. Get your content out there faster and looking great.",
+    "hashtags": "#AItools #graphicdesign #socialmediatips #designhacks #Canva #contentcreation #marketingtools #digitalart #creativity #productivity #AIforbusiness #smallbusiness #entrepreneur #designinspiration #visualcontent #AIpowered",
+    "image_path": "posts/post_1787647841.png",
+    "image_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/post_1787647841.png",
+    "created_at": "2026-08-25T08:50:41.580998+00:00",
+    "status": "pending"
+  }
+]
