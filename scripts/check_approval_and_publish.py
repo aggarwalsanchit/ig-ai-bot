@@ -61,6 +61,8 @@ def publish_to_instagram(image_url, caption, hashtags):
         },
         timeout=30,
     )
+    if not create_resp.ok:
+        print(f"Instagram media creation failed: {create_resp.status_code} {create_resp.text}")
     create_resp.raise_for_status()
     creation_id = create_resp.json()["id"]
 
