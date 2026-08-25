@@ -114,7 +114,7 @@ def save_state(state):
     save_json_atomic(state, STATE_FILE)
 
 def get_next_content_type():
-    """Determine what type of content to generate based on time of day."""
+    """Determine what type of content to generate based on IST time."""
     state = load_state()
     
     # Reset daily counters if it's a new day
@@ -125,19 +125,23 @@ def get_next_content_type():
         state["content_type_counter"] = 0
         save_state(state)
     
-    current_hour = datetime.now().hour
+    # Use IST time (UTC + 5:30)
+    from datetime import timedelta
+    ist_time = datetime.now() + timedelta(hours=5, minutes=30)
+    current_hour = ist_time.hour
     
-    # Morning (6 AM - 12 PM): Single Image
+    # Morning (6 AM - 12 PM IST): Single Image
     if 6 <= current_hour < 12:
         if state["posts_today"]["single_image"] < 1:
             return "single_image"
+        # If already posted, fall through to next available
     
-    # Afternoon (12 PM - 6 PM): Carousel
+    # Afternoon (12 PM - 6 PM IST): Carousel
     elif 12 <= current_hour < 18:
         if state["posts_today"]["carousel"] < 1:
             return "carousel"
     
-    # Evening (6 PM - 11 PM): Reel
+    # Evening (6 PM - 11 PM IST): Reel
     elif 18 <= current_hour <= 23:
         if state["posts_today"]["reel"] < 1:
             return "reel"
@@ -536,6 +540,58 @@ def make_carousel_images(idea, out_prefix="carousel"):
     
     return image_paths
 
+def create_reel_video(image_paths, output_path="reel_video.mp4"):
+    """
+    Stitch images together into a video using ffmpeg.
+    Each image becomes a scene in the reel.
+    """
+    try:
+        import subprocess
+        
+        # Check if ffmpeg is available
+        result = subprocess.run(["ffmpeg", "-version"], capture_output=True)
+        if result.returncode != 0:
+            print("❌ ffmpeg not installed. Reels will be published as images.")
+            return None
+        
+        # Create a temporary file list for ffmpeg
+        list_file = "reel_scenes.txt"
+        with open(list_file, "w") as f:
+            for img_path in image_paths:
+                f.write(f"file '{img_path}'\n")
+                f.write(f"duration 3\n")  # 3 seconds per scene
+        
+        # Use ffmpeg to create video
+        cmd = [
+            "ffmpeg",
+            "-y",  # Overwrite output
+            "-f", "concat",
+            "-safe", "0",
+            "-i", list_file,
+            "-c:v", "libx264",
+            "-pix_fmt", "yuv420p",
+            "-r", "24",
+            output_path
+        ]
+        
+        print(f"🎬 Creating video with ffmpeg...")
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        
+        # Cleanup
+        if os.path.exists(list_file):
+            os.remove(list_file)
+        
+        if result.returncode == 0 and os.path.exists(output_path):
+            print(f"✅ Reel video created: {output_path}")
+            return output_path
+        else:
+            print(f"❌ ffmpeg error: {result.stderr}")
+            return None
+            
+    except Exception as e:
+        print(f"❌ Failed to create reel video: {e}")
+        return None
+
 def make_reel_images(reel_idea, out_prefix="reel_scene"):
     """
     Generate colorful, visual reel scenes with minimal text.
@@ -787,11 +843,27 @@ def main():
         # Reel generation - create images for video
         print("🎬 Creating reel scenes...")
         image_paths = make_reel_images(idea)
+        
+        # Create actual video from images
+        video_path = create_reel_video(image_paths, "reel_video.mp4")
+        
         saved_paths, image_urls = [], []
         for img_path in image_paths:
-            saved_path, image_url = save_for_github_hosting(img_path)
+            saved_path, image_url = save_for_github_hosting(img_path, "reel")
             saved_paths.append(saved_path)
             image_urls.append(image_url)
+        
+        # Save video to GitHub
+        if video_path and os.path.exists(video_path):
+            os.makedirs("posts/reel", exist_ok=True)
+            video_filename = f"reel_{int(time.time())}.mp4"
+            video_dest = os.path.join("posts/reel", video_filename)
+            with open(video_path, "rb") as src, open(video_dest, "wb") as dst:
+                dst.write(src.read())
+            video_url = f"https://raw.githubusercontent.com/{GITHUB_REPOSITORY}/{GITHUB_REF_NAME}/{video_dest}"
+        else:
+            video_path = None
+            video_url = None
         
         draft = {
             "category": category,
@@ -800,6 +872,8 @@ def main():
             "hashtags": idea["hashtags"],
             "image_paths": saved_paths,
             "image_urls": image_urls,
+            "video_path": video_dest if video_path else None,
+            "video_url": video_url,
             "text_overlays": idea.get("text_overlays", []),
             "is_carousel": False,
             "is_reel": True,

@@ -2,12 +2,12 @@ name: Generate Posts
 
 on:
   schedule:
-    # Morning post at 9:00 AM
-    - cron: '0 9 * * *'
-    # Afternoon post at 2:00 PM  
-    - cron: '0 14 * * *'
-    # Evening post at 7:00 PM
-    - cron: '0 19 * * *'
+    # 9:00 AM IST = 3:30 AM UTC
+    - cron: '30 3 * * *'
+    # 2:00 PM IST = 8:30 AM UTC
+    - cron: '30 8 * * *'
+    # 7:00 PM IST = 1:30 PM UTC
+    - cron: '30 13 * * *'
   workflow_dispatch:
 
 jobs:

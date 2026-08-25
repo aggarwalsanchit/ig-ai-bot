@@ -206,6 +206,86 @@ def notify(text):
     except requests.exceptions.RequestException as e:
         print(f"Error sending Telegram notification: {e}")
 
+def publish_instagram_reel(video_path, caption, hashtags, cover_image_url=None):
+    """
+    Publish a real Instagram Reel using the Graph API.
+    """
+    if not IG_USER_ID or not IG_ACCESS_TOKEN:
+        print("Error: Instagram credentials not set")
+        return None
+    
+    full_caption = f"{caption}\n\n{hashtags}"
+    
+    print(f"🎬 Publishing Reel to Instagram...")
+    print(f"Video: {video_path}")
+    
+    if not os.path.exists(video_path):
+        print(f"❌ Video file not found: {video_path}")
+        return None
+    
+    # Get video duration (optional, for logging)
+    try:
+        import subprocess
+        duration_cmd = f"ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 {video_path}"
+        duration = subprocess.check_output(duration_cmd, shell=True).decode().strip()
+        print(f"📊 Video duration: {float(duration):.1f} seconds")
+    except:
+        pass
+    
+    try:
+        # Step 1: Upload video to Instagram
+        with open(video_path, "rb") as video_file:
+            url = f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media"
+            
+            files = {
+                "video": video_file,
+                "access_token": (None, IG_ACCESS_TOKEN),
+                "media_type": (None, "REELS"),
+                "caption": (None, full_caption),
+            }
+            
+            if cover_image_url:
+                files["cover_url"] = (None, cover_image_url)
+            
+            print("📤 Uploading video to Instagram...")
+            upload_resp = requests.post(url, files=files, timeout=120)
+            
+            if not upload_resp.ok:
+                print(f"❌ Video upload failed: {upload_resp.text}")
+                return None
+            
+            upload_data = upload_resp.json()
+            container_id = upload_data.get("id")
+            print(f"✅ Video uploaded! Container ID: {container_id}")
+        
+        # Wait for video processing
+        print("⏳ Waiting 30 seconds for video to process...")
+        time.sleep(30)
+        
+        # Step 2: Publish the Reel
+        print("📢 Publishing Reel...")
+        publish_resp = requests.post(
+            f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media_publish",
+            data={
+                "creation_id": container_id,
+                "access_token": IG_ACCESS_TOKEN,
+            },
+            timeout=30,
+        )
+        
+        if publish_resp.ok:
+            result = publish_resp.json()
+            print(f"✅ Reel published! ID: {result.get('id')}")
+            return result
+        else:
+            print(f"❌ Reel publish failed: {publish_resp.text}")
+            return None
+            
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Reel publish error: {e}")
+        if hasattr(e, 'response') and e.response:
+            print(f"Response: {e.response.text[:500]}")
+        return None
 
 def publish_to_instagram(image_url, caption, hashtags):
     if not IG_USER_ID or not IG_ACCESS_TOKEN:
@@ -600,9 +680,29 @@ def main():
             image_urls = [oldest["image_url"]]
         
         is_carousel = oldest.get("is_carousel", False)
+        is_reel = oldest.get("is_reel", False)
         
         # Publish to Instagram
-        if is_carousel and len(image_urls) > 1:
+        if is_reel:
+            # Publish as Reel (video)
+            video_path = oldest.get("video_path")
+            if video_path and os.path.exists(video_path):
+                print(f"🎬 Publishing Reel from: {video_path}")
+                ig_result = publish_instagram_reel(
+                    video_path,
+                    oldest["caption"],
+                    oldest["hashtags"],
+                    image_urls[0] if image_urls else None
+                )
+            else:
+                print(f"❌ Reel video not found at: {video_path}")
+                print("📸 Falling back to image publish...")
+                ig_result = publish_to_instagram(
+                    image_urls[0] if image_urls else oldest.get("image_url", ""),
+                    oldest["caption"], 
+                    oldest["hashtags"]
+                )
+        elif is_carousel and len(image_urls) > 1:
             ig_result = publish_instagram_carousel(image_urls, f"{oldest['caption']}\n\n{oldest['hashtags']}")
         else:
             ig_result = publish_to_instagram(
