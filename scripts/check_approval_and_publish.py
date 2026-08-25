@@ -66,14 +66,24 @@ def publish_to_instagram(image_url, caption, hashtags):
     create_resp.raise_for_status()
     creation_id = create_resp.json()["id"]
 
-    # Step 2: publish the container
-    publish_resp = requests.post(
-        f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media_publish",
-        data={"creation_id": creation_id, "access_token": IG_ACCESS_TOKEN},
-        timeout=30,
-    )
-    if not publish_resp.ok:
-        print(f"Instagram publish failed: {publish_resp.status_code} {publish_resp.text}")
+    # Step 2: publish the container (Instagram needs a moment to process the
+    # media container after creation, so we retry with short waits if needed)
+    for attempt in range(6):
+        publish_resp = requests.post(
+            f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media_publish",
+            data={"creation_id": creation_id, "access_token": IG_ACCESS_TOKEN},
+            timeout=30,
+        )
+        if publish_resp.ok:
+            return publish_resp.json()
+
+        print(f"Instagram publish failed (attempt {attempt + 1}/6): "
+              f"{publish_resp.status_code} {publish_resp.text}")
+        if "not ready" in publish_resp.text.lower() or "media id is not available" in publish_resp.text.lower():
+            time.sleep(10)
+            continue
+        break  # different kind of error, no point retrying
+
     publish_resp.raise_for_status()
     return publish_resp.json()
 
