@@ -34,6 +34,7 @@ def load_state():
                 return {"category_index": 0, "telegram_offset": 0}
     return {"category_index": 0, "telegram_offset": 0}
 
+
 def save_json_atomic(data, filename):
     """Save JSON data atomically to prevent corruption."""
     temp_file = f"{filename}.tmp"
@@ -79,6 +80,7 @@ def load_drafts():
     except Exception as e:
         print(f"Unexpected error loading drafts: {e}")
         return []
+
 
 def backup_corrupted_file(filename=DRAFTS_FILE):
     """Create a backup of corrupted file before resetting."""
@@ -135,17 +137,21 @@ def notify(text):
         print(f"Error sending Telegram notification: {e}")
 
 
-ef publish_to_instagram(image_url, caption, hashtags):
+def publish_to_instagram(image_url, caption, hashtags):
     if not IG_USER_ID or not IG_ACCESS_TOKEN:
         print("Error: Instagram credentials not set")
         return None
     
     full_caption = f"{caption}\n\n{hashtags}"
-
+    
+    print(f"📸 Publishing to Instagram...")
+    print(f"Image URL: {image_url[:80]}...")
+    print(f"Caption length: {len(full_caption)} chars")
+    
     # First, create the media container
     try:
         create_resp = requests.post(
-            f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media",
+            f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media",
             data={
                 "image_url": image_url,
                 "caption": full_caption,
@@ -153,41 +159,77 @@ ef publish_to_instagram(image_url, caption, hashtags):
             },
             timeout=30,
         )
+        
+        # Log the response for debugging
+        print(f"Create media response status: {create_resp.status_code}")
+        print(f"Create media response: {create_resp.text[:200]}")
+        
+        if not create_resp.ok:
+            error_data = create_resp.json() if create_resp.text else {}
+            error_msg = error_data.get("error", {}).get("message", "Unknown error")
+            error_code = error_data.get("error", {}).get("code", "N/A")
+            
+            print(f"❌ Instagram media creation failed:")
+            print(f"  - Error Code: {error_code}")
+            print(f"  - Error Message: {error_msg}")
+            
+            # Check for common errors
+            if "access_token" in error_msg.lower():
+                print("  💡 Your Instagram access token may be expired or invalid!")
+                print("  💡 Generate a new token from the Facebook Developer Console")
+            elif "image_url" in error_msg.lower():
+                print("  💡 The image URL is not accessible or invalid!")
+                print(f"  💡 URL: {image_url}")
+            elif "permission" in error_msg.lower():
+                print("  💡 Missing required permissions!")
+                print("  💡 Need: instagram_basic, instagram_content_publish")
+            
+            return None
+        
         create_resp.raise_for_status()
         creation_id = create_resp.json()["id"]
-        print(f"Media container created with ID: {creation_id}")
+        print(f"✅ Media container created with ID: {creation_id}")
+        
     except requests.exceptions.RequestException as e:
-        print(f"Instagram media creation failed: {e}")
+        print(f"❌ Instagram media creation request failed: {e}")
+        if hasattr(e, 'response') and e.response:
+            print(f"Response: {e.response.text[:500]}")
         return None
 
-    # Wait longer for media to process
-    print("Waiting 15 seconds for media to process...")
+    # Wait for media to process
+    print("⏳ Waiting 15 seconds for media to process...")
     time.sleep(15)
 
     # Retry logic for media publishing with longer waits
-    for attempt in range(10):  # Increased from 6 to 10 attempts
+    for attempt in range(10):
         try:
             publish_resp = requests.post(
-                f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media_publish",
-                data={"creation_id": creation_id, "access_token": IG_ACCESS_TOKEN},
+                f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media_publish",
+                data={
+                    "creation_id": creation_id,
+                    "access_token": IG_ACCESS_TOKEN,
+                },
                 timeout=30,
             )
+            
             if publish_resp.ok:
-                print("Successfully published to Instagram!")
+                print("✅ Successfully published to Instagram!")
                 return publish_resp.json()
 
             error_text = publish_resp.text.lower()
-            print(f"Instagram publish failed (attempt {attempt + 1}/10): {publish_resp.text}")
+            print(f"Instagram publish failed (attempt {attempt + 1}/10)")
+            print(f"Status: {publish_resp.status_code}")
+            print(f"Response: {publish_resp.text[:200]}")
             
             # If media isn't ready, wait longer and retry
             if "not ready" in error_text or "media id is not available" in error_text:
                 wait_time = 15 + (attempt * 5)  # 15, 20, 25, 30, 35... seconds
-                print(f"Media not ready yet. Waiting {wait_time} seconds...")
+                print(f"⏳ Media not ready yet. Waiting {wait_time} seconds...")
                 time.sleep(wait_time)
                 continue
             else:
                 # Other error, break out of retry loop
-                print(f"Permanent error occurred: {publish_resp.text}")
+                print(f"❌ Permanent error occurred: {publish_resp.text}")
                 break
                 
         except requests.exceptions.RequestException as e:
@@ -195,19 +237,22 @@ ef publish_to_instagram(image_url, caption, hashtags):
             time.sleep(10)
             continue
 
-    print("Failed to publish after all attempts")
+    print("❌ Failed to publish after all attempts")
     return None
 
 
 def publish_to_facebook(image_url, caption, hashtags):
     """Post the same image + caption to the linked Facebook Page."""
     if not FB_PAGE_ID or not FB_PAGE_ACCESS_TOKEN:
+        print("Facebook not configured - skipping")
         return None
 
     full_caption = f"{caption}\n\n{hashtags}"
+    print(f"📘 Publishing to Facebook Page: {FB_PAGE_ID}")
+    
     try:
         resp = requests.post(
-            f"https://graph.facebook.com/v20.0/{FB_PAGE_ID}/photos",
+            f"https://graph.facebook.com/v19.0/{FB_PAGE_ID}/photos",
             data={
                 "url": image_url,
                 "caption": full_caption,
@@ -215,10 +260,21 @@ def publish_to_facebook(image_url, caption, hashtags):
             },
             timeout=30,
         )
-        resp.raise_for_status()
-        return resp.json()
+        
+        if resp.ok:
+            print("✅ Published to Facebook successfully!")
+            return resp.json()
+        else:
+            print(f"❌ Facebook publish failed: {resp.status_code}")
+            print(f"Response: {resp.text[:200]}")
+            
+            error_data = resp.json() if resp.text else {}
+            error_msg = error_data.get("error", {}).get("message", "Unknown error")
+            print(f"Error: {error_msg}")
+            return None
+            
     except requests.exceptions.RequestException as e:
-        print(f"Facebook publish failed: {e}")
+        print(f"❌ Facebook publish error: {e}")
         return None
 
 
@@ -228,6 +284,7 @@ def cleanup_draft_image(draft):
     if path and os.path.exists(path):
         try:
             os.remove(path)
+            print(f"Cleaned up image: {path}")
         except Exception as e:
             print(f"Could not remove image file {path}: {e}")
 
@@ -317,7 +374,7 @@ def main():
         return
 
     if decision == "approve":
-        print(f"Approving draft: {oldest.get('tool_name', 'Unknown')}")
+        print(f"✅ Approving draft: {oldest.get('tool_name', 'Unknown')}")
         
         ig_result = publish_to_instagram(
             oldest["image_url"], 
@@ -344,20 +401,20 @@ def main():
                 msg += f"\n⚠️ Facebook publish error (Instagram still succeeded): {e}"
         else:
             oldest["status"] = "publish_failed"
-            msg = "❌ Instagram publish failed. Please check logs."
+            msg = "❌ Instagram publish failed. Please check logs above."
         
         notify(msg)
         cleanup_draft_image(oldest)
         
     elif decision == "skip":
-        print("Skipping draft")
+        print("🗑️ Skipping draft")
         oldest["status"] = "skipped"
         notify("🗑️ Draft skipped.")
         cleanup_draft_image(oldest)
 
     # Save updated drafts
     save_drafts(drafts)
-    print("Completed processing")
+    print("✅ Completed processing")
 
 
 if __name__ == "__main__":
