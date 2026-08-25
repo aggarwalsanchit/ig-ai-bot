@@ -135,13 +135,14 @@ def notify(text):
         print(f"Error sending Telegram notification: {e}")
 
 
-def publish_to_instagram(image_url, caption, hashtags):
+ef publish_to_instagram(image_url, caption, hashtags):
     if not IG_USER_ID or not IG_ACCESS_TOKEN:
         print("Error: Instagram credentials not set")
         return None
     
     full_caption = f"{caption}\n\n{hashtags}"
 
+    # First, create the media container
     try:
         create_resp = requests.post(
             f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media",
@@ -154,12 +155,17 @@ def publish_to_instagram(image_url, caption, hashtags):
         )
         create_resp.raise_for_status()
         creation_id = create_resp.json()["id"]
+        print(f"Media container created with ID: {creation_id}")
     except requests.exceptions.RequestException as e:
         print(f"Instagram media creation failed: {e}")
         return None
 
-    # Retry logic for media publishing
-    for attempt in range(6):
+    # Wait longer for media to process
+    print("Waiting 15 seconds for media to process...")
+    time.sleep(15)
+
+    # Retry logic for media publishing with longer waits
+    for attempt in range(10):  # Increased from 6 to 10 attempts
         try:
             publish_resp = requests.post(
                 f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media_publish",
@@ -167,19 +173,29 @@ def publish_to_instagram(image_url, caption, hashtags):
                 timeout=30,
             )
             if publish_resp.ok:
+                print("Successfully published to Instagram!")
                 return publish_resp.json()
 
-            print(f"Instagram publish failed (attempt {attempt + 1}/6): {publish_resp.text}")
-            if "not ready" in publish_resp.text.lower() or "media id is not available" in publish_resp.text.lower():
-                time.sleep(10)
+            error_text = publish_resp.text.lower()
+            print(f"Instagram publish failed (attempt {attempt + 1}/10): {publish_resp.text}")
+            
+            # If media isn't ready, wait longer and retry
+            if "not ready" in error_text or "media id is not available" in error_text:
+                wait_time = 15 + (attempt * 5)  # 15, 20, 25, 30, 35... seconds
+                print(f"Media not ready yet. Waiting {wait_time} seconds...")
+                time.sleep(wait_time)
                 continue
             else:
+                # Other error, break out of retry loop
+                print(f"Permanent error occurred: {publish_resp.text}")
                 break
+                
         except requests.exceptions.RequestException as e:
             print(f"Instagram publish attempt {attempt + 1} failed: {e}")
-            time.sleep(5)
+            time.sleep(10)
             continue
 
+    print("Failed to publish after all attempts")
     return None
 
 
