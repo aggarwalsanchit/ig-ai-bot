@@ -1,4 +1,9 @@
 {
   "category_index": 1,
-  "telegram_offset": 717136448
+  "telegram_offset": 717136449,
+  "failed_attempts": 0,
+  "last_skip_time": null,
+  "total_generated": 0,
+  "total_published": 1,
+  "total_skipped": 0
 }
