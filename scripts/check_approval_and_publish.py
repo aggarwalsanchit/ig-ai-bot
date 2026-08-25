@@ -11,6 +11,7 @@ import os
 import json
 import time
 import requests
+import subprocess
 from datetime import datetime
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -36,11 +37,37 @@ def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE) as f:
             try:
-                return json.load(f)
+                state = json.load(f)
+                # Add missing fields if needed
+                if "failed_attempts" not in state:
+                    state["failed_attempts"] = 0
+                if "last_skip_time" not in state:
+                    state["last_skip_time"] = None
+                if "total_generated" not in state:
+                    state["total_generated"] = 0
+                if "total_published" not in state:
+                    state["total_published"] = 0
+                if "total_skipped" not in state:
+                    state["total_skipped"] = 0
+                return state
             except json.JSONDecodeError:
                 print(f"Warning: {STATE_FILE} is corrupted. Resetting.")
-                return {"category_index": 0, "telegram_offset": 0}
-    return {"category_index": 0, "telegram_offset": 0}
+                return {
+                    "category_index": 0, 
+                    "telegram_offset": 0,
+                    "failed_attempts": 0,
+                    "total_generated": 0,
+                    "total_published": 0,
+                    "total_skipped": 0
+                }
+    return {
+        "category_index": 0, 
+        "telegram_offset": 0,
+        "failed_attempts": 0,
+        "total_generated": 0,
+        "total_published": 0,
+        "total_skipped": 0
+    }
 
 
 def save_json_atomic(data, filename):
@@ -110,6 +137,41 @@ def save_drafts(drafts):
     # Ensure all items are dictionaries
     valid_drafts = [d for d in drafts if isinstance(d, dict)]
     save_json_atomic(valid_drafts, DRAFTS_FILE)
+
+def generate_new_draft(content_type=None):
+    """Trigger the generation script to create a new draft."""
+    print("🔄 Generating a new draft to replace the skipped one...")
+    
+    try:
+        # Run the generation script
+        result = subprocess.run(
+            ["python", "scripts/generate_and_notify.py"],
+            capture_output=True,
+            text=True,
+            timeout=120
+        )
+        
+        if result.returncode == 0:
+            print("✅ New draft generated successfully!")
+            # Print first 500 chars of output for debugging
+            if result.stdout:
+                print(f"Output: {result.stdout[:500]}")
+            return True
+        else:
+            print(f"❌ Generation failed with error code: {result.returncode}")
+            if result.stderr:
+                print(f"Error: {result.stderr[:500]}")
+            return False
+            
+    except subprocess.TimeoutExpired:
+        print("❌ Generation timed out after 120 seconds")
+        return False
+    except FileNotFoundError:
+        print("❌ Could not find generate_and_notify.py script")
+        return False
+    except Exception as e:
+        print(f"❌ Failed to run generation script: {e}")
+        return False
 
 
 def get_telegram_replies(offset):
@@ -248,6 +310,93 @@ def publish_to_instagram(image_url, caption, hashtags):
     print("❌ Failed to publish after all attempts")
     return None
 
+def publish_instagram_carousel(image_urls, caption):
+    """Publish a carousel post with multiple images."""
+    if len(image_urls) < 2:
+        print("Carousel needs at least 2 images")
+        return None
+    
+    print(f"📸 Creating carousel with {len(image_urls)} images...")
+    
+    # Step 1: Create media containers for each image
+    media_ids = []
+    for i, image_url in enumerate(image_urls):
+        try:
+            print(f"Creating container {i+1}/{len(image_urls)}...")
+            create_resp = requests.post(
+                f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media",
+                data={
+                    "image_url": image_url,
+                    "access_token": IG_ACCESS_TOKEN,
+                    "is_carousel_item": True,
+                },
+                timeout=30,
+            )
+            
+            if not create_resp.ok:
+                print(f"❌ Failed to create media {i+1}: {create_resp.text}")
+                return None
+                
+            media_id = create_resp.json()["id"]
+            media_ids.append(media_id)
+            print(f"✅ Container {i+1} created: {media_id}")
+            
+            if i < len(image_urls) - 1:
+                time.sleep(2)
+                
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Error creating media {i+1}: {e}")
+            return None
+
+    print(f"✅ All {len(media_ids)} containers created")
+    print("⏳ Waiting 15 seconds for media to process...")
+    time.sleep(15)
+
+    # Step 2: Create carousel container
+    try:
+        carousel_data = {
+            "media_type": "CAROUSEL",
+            "children": ",".join(media_ids),
+            "caption": caption,
+            "access_token": IG_ACCESS_TOKEN,
+        }
+        
+        print("Creating carousel container...")
+        carousel_resp = requests.post(
+            f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media",
+            data=carousel_data,
+            timeout=30,
+        )
+        
+        if not carousel_resp.ok:
+            print(f"❌ Carousel creation failed: {carousel_resp.text}")
+            return None
+            
+        carousel_id = carousel_resp.json()["id"]
+        print(f"✅ Carousel container created: {carousel_id}")
+        
+        # Step 3: Publish the carousel
+        print("Publishing carousel...")
+        publish_resp = requests.post(
+            f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media_publish",
+            data={
+                "creation_id": carousel_id,
+                "access_token": IG_ACCESS_TOKEN,
+            },
+            timeout=30,
+        )
+        
+        if publish_resp.ok:
+            print("✅ Carousel published to Instagram!")
+            return publish_resp.json()
+        else:
+            print(f"❌ Carousel publish failed: {publish_resp.text}")
+            return None
+            
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Carousel publish error: {e}")
+        return None
+
 
 def publish_to_facebook(image_url, caption, hashtags):
     """Post the same image + caption to the linked Facebook Page."""
@@ -321,23 +470,43 @@ def publish_to_facebook(image_url, caption, hashtags):
 
 
 def cleanup_draft_image(draft):
-    """Remove the local image file after publishing/skipping."""
-    path = draft.get("image_path", "")
-    if path and os.path.exists(path):
-        try:
-            os.remove(path)
-            print(f"Cleaned up image: {path}")
-        except Exception as e:
-            print(f"Could not remove image file {path}: {e}")
+    """Remove all local image files after publishing/skipping."""
+    paths = draft.get("image_paths", [])
+    if not paths and "image_path" in draft:
+        paths = [draft["image_path"]]
+    
+    for path in paths:
+        if path and os.path.exists(path):
+            try:
+                os.remove(path)
+                print(f"Cleaned up image: {path}")
+            except Exception as e:
+                print(f"Could not remove image file {path}: {e}")
 
 
 def validate_and_fix_draft(draft):
     """Ensure a draft has all required fields."""
-    required_fields = ["image_url", "caption", "hashtags", "status"]
-    for field in required_fields:
-        if field not in draft:
-            print(f"Warning: Draft missing '{field}' field")
-            return False
+    # Handle both old and new format
+    if "image_url" not in draft and "image_urls" not in draft:
+        print(f"Warning: Draft missing image_url or image_urls")
+        return False
+    
+    if "caption" not in draft or "hashtags" not in draft or "status" not in draft:
+        print(f"Warning: Draft missing required fields")
+        return False
+    
+    # Handle old format (single image)
+    if "image_url" in draft and "image_urls" not in draft:
+        draft["image_urls"] = [draft["image_url"]]
+        draft["image_paths"] = [draft.get("image_path", "")]
+    
+    if "is_carousel" not in draft:
+        draft["is_carousel"] = False
+    if "is_reel" not in draft:
+        draft["is_reel"] = False
+    if "content_type" not in draft:
+        draft["content_type"] = "single_image"
+    
     return True
 
 
@@ -423,25 +592,39 @@ def main():
 
     if decision == "approve":
         print(f"✅ Approving draft: {oldest.get('tool_name', 'Unknown')}")
+        print(f"📊 Content type: {oldest.get('content_type', 'unknown')}")
         
-        ig_result = publish_to_instagram(
-            oldest["image_url"], 
-            oldest["caption"], 
-            oldest["hashtags"]
-        )
+        # Get image URLs (support both old and new format)
+        image_urls = oldest.get("image_urls", [])
+        if not image_urls and "image_url" in oldest:
+            image_urls = [oldest["image_url"]]
+        
+        is_carousel = oldest.get("is_carousel", False)
+        
+        # Publish to Instagram
+        if is_carousel and len(image_urls) > 1:
+            ig_result = publish_instagram_carousel(image_urls, f"{oldest['caption']}\n\n{oldest['hashtags']}")
+        else:
+            ig_result = publish_to_instagram(
+                image_urls[0] if image_urls else oldest.get("image_url", ""),
+                oldest["caption"], 
+                oldest["hashtags"]
+            )
         
         if ig_result:
             oldest["status"] = "published"
+            state["total_published"] = state.get("total_published", 0) + 1
+            save_state(state)
             msg = f"✅ Published to Instagram! Media ID: {ig_result.get('id', 'unknown')}"
             
-            # Try Facebook publishing
+            # Try Facebook publishing (uses first image)
             print("\n" + "="*50)
             print("ATTEMPTING FACEBOOK PUBLISH")
             print("="*50)
             
             try:
                 fb_result = publish_to_facebook(
-                    oldest["image_url"], 
+                    image_urls[0] if image_urls else oldest.get("image_url", ""),
                     oldest["caption"], 
                     oldest["hashtags"]
                 )
@@ -452,6 +635,9 @@ def main():
             except Exception as e:
                 print(f"Exception during Facebook publish: {e}")
                 msg += f"\n⚠️ Facebook publish error (Instagram still succeeded): {e}"
+                
+            # Note: Threads would go here if configured
+                
         else:
             oldest["status"] = "publish_failed"
             msg = "❌ Instagram publish failed. Please check logs above."
@@ -460,10 +646,36 @@ def main():
         cleanup_draft_image(oldest)
         
     elif decision == "skip":
-        print("🗑️ Skipping draft")
+        print(f"🗑️ Skipping draft: {oldest.get('tool_name', 'Unknown')}")
+        print(f"📊 Content type: {oldest.get('content_type', 'unknown')}")
+        
+        # Mark as skipped
         oldest["status"] = "skipped"
-        notify("🗑️ Draft skipped.")
+        state["total_skipped"] = state.get("total_skipped", 0) + 1
+        save_state(state)
+        tool_name = oldest.get('tool_name', 'Unknown')
+        notify(f"🗑️ Draft skipped: {tool_name}")
         cleanup_draft_image(oldest)
+        
+        # Remove the skipped draft from the list
+        drafts = [d for d in drafts if d.get("status") != "skipped" or d is not oldest]
+        
+        # Generate a new draft to replace the skipped one
+        notify("🔄 Generating a new post to replace the skipped one...")
+        
+        # Call the generation script
+        generation_success = generate_new_draft()
+        
+        if generation_success:
+            # Reload drafts to get the new one
+            reloaded_drafts = load_drafts()
+            if reloaded_drafts:
+                drafts = reloaded_drafts
+                notify("✅ New draft generated! Check your Telegram for approval.")
+            else:
+                notify("⚠️ New draft was generated but couldn't be loaded. Please check logs.")
+        else:
+            notify("⚠️ Failed to generate new draft. Please check logs.")
 
     # Save updated drafts
     save_drafts(drafts)

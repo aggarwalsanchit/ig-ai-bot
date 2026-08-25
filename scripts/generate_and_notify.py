@@ -36,6 +36,44 @@ CATEGORIES = [
     "data entry & spreadsheets",
 ]
 
+#Content scheduling configuration
+SCHEDULE_CONFIG = {
+    "morning": {
+        "time": "09:00",
+        "type": "single_image",
+        "label": "🖼️ Single Image Post"
+    },
+    "afternoon": {
+        "time": "14:00", 
+        "type": "carousel",
+        "label": "📚 Carousel (Swipeable)"
+    },
+    "evening": {
+        "time": "19:00",
+        "type": "reel",
+        "label": "🎬 Reel (Video)"
+    }
+}
+
+# Prompt styles for each content type
+PROMPT_STYLES = {
+    "single_image": {
+        "headline_max_words": 6,
+        "caption_style": "concise, punchy, gets to the point quickly",
+        "hashtags_count": "12-15"
+    },
+    "carousel": {
+        "headline_max_words": 8,
+        "caption_style": "short, engaging, colorful description",
+        "hashtags_count": "15-20"
+    },
+    "reel": {
+        "headline_max_words": 4,
+        "caption_style": "super short, exciting, call to action focused",
+        "hashtags_count": "10-14"
+    }
+}
+
 def save_json_atomic(data, filename):
     """Save JSON data atomically to prevent corruption."""
     temp_file = f"{filename}.tmp"
@@ -47,17 +85,83 @@ def save_json_atomic(data, filename):
 def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE) as f:
-            return json.load(f)
-    return {"category_index": 0, "telegram_offset": 0}
+            state = json.load(f)
+            # Add default scheduling fields if missing
+            if "last_post_time" not in state:
+                state["last_post_time"] = ""
+            if "posts_today" not in state:
+                state["posts_today"] = {
+                    "single_image": 0,
+                    "carousel": 0,
+                    "reel": 0
+                }
+            if "date" not in state:
+                state["date"] = datetime.now().date().isoformat()
+            if "content_type_counter" not in state:
+                state["content_type_counter"] = 0
+            return state
+    return {
+        "category_index": 0, 
+        "telegram_offset": 0,
+        "last_post_time": "",
+        "posts_today": {"single_image": 0, "carousel": 0, "reel": 0},
+        "date": datetime.now().date().isoformat(),
+        "content_type_counter": 0
+    }
 
 
 def save_state(state):
-    with open(STATE_FILE, "w") as f:
-        json.dump(state, f, indent=2)
+    save_json_atomic(state, STATE_FILE)
+
+def get_next_content_type():
+    """Determine what type of content to generate based on time of day."""
+    state = load_state()
+    
+    # Reset daily counters if it's a new day
+    today = datetime.now().date().isoformat()
+    if state.get("date") != today:
+        state["date"] = today
+        state["posts_today"] = {"single_image": 0, "carousel": 0, "reel": 0}
+        state["content_type_counter"] = 0
+        save_state(state)
+    
+    current_hour = datetime.now().hour
+    
+    # Morning (6 AM - 12 PM): Single Image
+    if 6 <= current_hour < 12:
+        if state["posts_today"]["single_image"] < 1:
+            return "single_image"
+    
+    # Afternoon (12 PM - 6 PM): Carousel
+    elif 12 <= current_hour < 18:
+        if state["posts_today"]["carousel"] < 1:
+            return "carousel"
+    
+    # Evening (6 PM - 11 PM): Reel
+    elif 18 <= current_hour <= 23:
+        if state["posts_today"]["reel"] < 1:
+            return "reel"
+    
+    # If already posted this type today, cycle to next available
+    content_types = ["single_image", "carousel", "reel"]
+    for ct in content_types:
+        if state["posts_today"].get(ct, 0) < 1:
+            return ct
+    
+    # All posted today - return single_image (will be skipped by workflow)
+    return "single_image"
 
 
-def call_gemini(category):
-    prompt = f"""You help run an Instagram account about AI tools that solve real work problems
+def call_gemini(category, content_type="single_image"):
+    """
+    Generate content based on the content type.
+    content_type: "single_image", "carousel", or "reel"
+    """
+    style = PROMPT_STYLES.get(content_type, PROMPT_STYLES["single_image"])
+    
+    # Different prompts for different content types
+    prompts = {
+        "single_image": f"""You help run an Instagram account about AI tools that solve real work problems
 and save people time. Give me ONE post idea for the category: "{category}".
 
 Pick a real, currently well-known AI tool (do not invent fake tools or fake features).
@@ -79,8 +183,66 @@ Respond ONLY with valid JSON, no markdown, no backticks, in this exact shape:
   "headline": "short punchy headline for the image, max 6 words",
   "caption": "engaging instagram caption, 2-4 short paragraphs, simple English, no hashtags in this field",
   "hashtags": "12-18 relevant hashtags separated by spaces, include #AItools and similar"
-}}"""
+}}""",
 
+        "carousel": f"""You help run an Instagram account about AI tools.
+Create a COLORFUL, VISUAL CAROUSEL (swipeable slides) about: "{category}".
+
+Each slide should be a short, punchy visual statement with minimal text.
+Think of it like a vibrant infographic or visual story.
+
+IMPORTANT RULES:
+- Each slide MUST have a short title (2-4 words) - think of it as a bold header
+- Each slide MUST have very short content (8-12 words max) - like a subtitle or quick fact
+- Make it engaging, colorful, and easy to digest visually
+- Use action words and make it exciting
+
+Respond ONLY with valid JSON:
+{{
+  "tool_name": "short tool name (2-3 words)",
+  "slides": [
+    {{"title": "BOLD HEADER 1", "content": "Quick fact or benefit (8-12 words)"}},
+    {{"title": "BOLD HEADER 2", "content": "Quick fact or benefit (8-12 words)"}},
+    {{"title": "BOLD HEADER 3", "content": "Quick fact or benefit (8-12 words)"}},
+    {{"title": "BOLD HEADER 4", "content": "Quick fact or benefit (8-12 words)"}},
+    {{"title": "BOLD HEADER 5", "content": "Quick fact or benefit (8-12 words)"}}
+  ],
+  "caption": "engaging caption for the carousel, 2-3 short paragraphs, simple English, no hashtags",
+  "hashtags": "15-20 relevant hashtags separated by spaces, include #AItools and similar"
+}}""",
+
+        "reel": f"""You help run an Instagram account about AI tools.
+Create an ENGAGING, VISUAL REEL script about: "{category}".
+
+Reels are fast-paced, colorful, and visually exciting with minimal text.
+Think of this like a short animated video with bold text overlays.
+
+IMPORTANT RULES:
+- Hook: Very short (3-6 words) - like a bold title card
+- Each scene: One BIG idea with very few words (5-8 words max per scene)
+- Use emoji and visual language
+- Keep it fast-paced and energetic
+
+Respond ONLY with valid JSON:
+{{
+  "tool_name": "short tool name (2-3 words)",
+  "hook": "Super short hook (3-6 words)",
+  "problem": "One short sentence (5-8 words)",
+  "solution": "One short sentence (5-8 words)", 
+  "benefit": "One short sentence (5-8 words)",
+  "call_to_action": "Short CTA (3-5 words)",
+  "text_overlays": [
+    "Scene 1 text: 3-5 words",
+    "Scene 2 text: 3-5 words",
+    "Scene 3 text: 3-5 words",
+    "Scene 4 text: 3-5 words"
+  ],
+  "caption": "short engaging caption for the reel, 2-3 short paragraphs, no hashtags",
+  "hashtags": "12-16 relevant hashtags separated by spaces, include #AItools and similar"
+}}"""
+    }
+    
+    prompt = prompts.get(content_type, prompts["single_image"])
     model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
     last_error = None
@@ -289,17 +451,233 @@ def make_image(idea, out_path="post_image.png"):
     img.save(out_path)
     return out_path
 
+def make_carousel_images(idea, out_prefix="carousel"):
+    """Generate colorful, visual carousel slides with minimal text."""
+    image_paths = []
+    
+    # Color palette for each slide - vibrant and engaging
+    color_palettes = [
+        # (bg_top, bg_bottom, accent_color, text_color)
+        ((255, 107, 107), (200, 50, 50), (255, 255, 255), (255, 255, 255)),   # Red
+        ((78, 205, 196), (40, 150, 140), (255, 255, 255), (255, 255, 255)),   # Teal
+        ((255, 159, 67), (230, 100, 20), (255, 255, 255), (255, 255, 255)),   # Orange
+        ((108, 92, 231), (70, 50, 180), (255, 255, 255), (255, 255, 255)),    # Purple
+        ((253, 121, 168), (220, 80, 130), (255, 255, 255), (255, 255, 255)),  # Pink
+    ]
+    
+    slides = idea.get("slides", [
+        {"title": "✨ AI POWER", "content": "Transform your workflow with AI"},
+        {"title": "⚡ SAVE TIME", "content": "Focus on what really matters"},
+        {"title": "🚀 BOOST OUTPUT", "content": "Work faster and smarter"},
+        {"title": "💡 SMART TOOLS", "content": "Let AI handle the heavy lifting"},
+        {"title": "🎯 GET STARTED", "content": "Try it today and see the difference"}
+    ])
+    
+    for i, slide in enumerate(slides[:5]):
+        out_path = f"{out_prefix}_slide_{i+1}.png"
+        
+        W, H = 1080, 1080
+        colors = color_palettes[i % len(color_palettes)]
+        bg_top, bg_bottom, accent, text_color = colors
+        
+        # Create gradient background
+        img = Image.new("RGB", (W, H), bg_top)
+        draw = ImageDraw.Draw(img)
+        _vertical_gradient(draw, W, H, bg_top, bg_bottom)
+        
+        try:
+            f_title = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 80)
+            f_content = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 44)
+            f_slide = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
+            f_tool = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 28)
+        except:
+            f_title = f_content = f_slide = f_tool = ImageFont.load_default()
+        
+        margin = 70
+        y = 80
+        
+        # Tool name pill with accent color
+        tool_name = idea.get("tool_name", "AI Tool")
+        _rounded_pill(draw, (margin, margin), tool_name, f_tool, (255, 255, 255), (0, 0, 0, 80))
+        
+        # Slide indicator with accent color
+        slide_text = f"{i+1}/{len(slides[:5])}"
+        _rounded_pill(draw, (W - margin - 120, margin), slide_text, f_slide, (255, 255, 255), (0, 0, 0, 80))
+        
+        # Big bold title - centered
+        title_text = slide.get("title", f"Slide {i+1}")
+        y = 350
+        for line in _wrap_limited(draw, title_text, f_title, W - margin * 2, 2):
+            # Center align
+            bbox = draw.textbbox((0, 0), line, font=f_title)
+            text_width = bbox[2] - bbox[0]
+            x = (W - text_width) // 2
+            draw.text((x, y), line, font=f_title, fill=text_color)
+            y += 100
+        
+        y += 40
+        
+        # Content text - smaller, bold, with accent color
+        content_text = slide.get("content", "")
+        for line in _wrap_limited(draw, content_text, f_content, W - margin * 2, 2):
+            bbox = draw.textbbox((0, 0), line, font=f_content)
+            text_width = bbox[2] - bbox[0]
+            x = (W - text_width) // 2
+            draw.text((x, y), line, font=f_content, fill=accent)
+            y += 60
+        
+        # Decorative bottom line
+        y = H - 100
+        draw.line([(W//2 - 100, y), (W//2 + 100, y)], fill=accent, width=4)
+        
+        img.save(out_path)
+        image_paths.append(out_path)
+        print(f"✅ Carousel slide {i+1} created: {out_path}")
+    
+    return image_paths
 
-def save_for_github_hosting(image_path):
+def make_reel_images(reel_idea, out_prefix="reel_scene"):
     """
-    Instead of uploading to a third-party image host, we commit the image
-    into the repo (in /posts/) and use GitHub's raw content URL, which is
-    publicly accessible for public repos. The workflow's git-commit step
-    pushes this file right after this script runs.
+    Generate colorful, visual reel scenes with minimal text.
+    Each scene looks like an animated card.
     """
-    os.makedirs("posts", exist_ok=True)
+    image_paths = []
+    
+    # Vibrant color schemes for each scene
+    color_schemes = [
+        # (bg_top, bg_bottom, accent_color, glow_color)
+        ((255, 71, 87), (180, 20, 40), (255, 255, 255), (255, 200, 200)),     # Red glow
+        ((54, 201, 201), (20, 150, 150), (255, 255, 255), (200, 255, 255)),   # Teal glow
+        ((255, 159, 67), (230, 100, 20), (255, 255, 255), (255, 220, 200)),   # Orange glow
+        ((108, 92, 231), (70, 50, 180), (255, 255, 255), (200, 200, 255)),    # Purple glow
+    ]
+    
+    # Default scenes if not provided
+    default_scenes = [
+        {"text": "AI TOOL TIP", "subtext": "Your productivity booster"},
+        {"text": "THE PROBLEM", "subtext": "Too much manual work"},
+        {"text": "THE SOLUTION", "subtext": "Let AI do the heavy lifting"},
+        {"text": "START NOW", "subtext": "Try it today 💪"}
+    ]
+    
+    text_overlays = reel_idea.get("text_overlays", [])
+    scenes = []
+    
+    # Build scenes from available data
+    if text_overlays:
+        for i, text in enumerate(text_overlays[:4]):
+            scenes.append({"text": text, "subtext": ""})
+    else:
+        scenes = default_scenes
+    
+    # Override with specific reel data if available
+    if "hook" in reel_idea and len(scenes) > 0:
+        scenes[0]["text"] = reel_idea["hook"]
+        scenes[0]["subtext"] = "🔥 Start here"
+    
+    if "problem" in reel_idea and len(scenes) > 1:
+        scenes[1]["text"] = reel_idea["problem"]
+        scenes[1]["subtext"] = "⚠️ Common issue"
+    
+    if "solution" in reel_idea and len(scenes) > 2:
+        scenes[2]["text"] = reel_idea["solution"]
+        scenes[2]["subtext"] = "✅ Game changer"
+    
+    if "benefit" in reel_idea and len(scenes) > 3:
+        scenes[3]["text"] = reel_idea["benefit"]
+        scenes[3]["subtext"] = "💡 Key benefit"
+    
+    for i, scene in enumerate(scenes[:4]):
+        out_path = f"{out_prefix}_{i+1}.png"
+        
+        W, H = 1080, 1920  # 9:16 for Reels
+        colors = color_schemes[i % len(color_schemes)]
+        bg_top, bg_bottom, accent, glow = colors
+        
+        # Create gradient background
+        img = Image.new("RGB", (W, H), bg_top)
+        draw = ImageDraw.Draw(img)
+        _vertical_gradient(draw, W, H, bg_top, bg_bottom)
+        
+        # Add a subtle glow effect (rounded rectangle in background)
+        glow_margin = 60
+        glow_rect = [glow_margin, 200, W - glow_margin, H - 200]
+        draw.rounded_rectangle(
+            glow_rect, 
+            radius=40, 
+            fill=(*bg_bottom, 120)  # Semi-transparent
+        )
+        
+        try:
+            f_main = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 100)
+            f_sub = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 50)
+            f_tool = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 35)
+            f_label = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 28)
+        except:
+            f_main = f_sub = f_tool = f_label = ImageFont.load_default()
+        
+        margin = 80
+        
+        # Tool name at top
+        tool_name = reel_idea.get("tool_name", "AI Tool")
+        _rounded_pill(draw, (margin, 80), f"⚡ {tool_name}", f_tool, (255, 255, 255), (0, 0, 0, 80))
+        
+        # Scene indicator
+        scene_text = f"{i+1}/{len(scenes[:4])}"
+        _rounded_pill(draw, (W - margin - 120, 80), scene_text, f_label, (255, 255, 255), (0, 0, 0, 60))
+        
+        # Main text - big and bold
+        main_text = scene.get("text", "")
+        y = 550
+        for line in _wrap_limited(draw, main_text, f_main, W - margin * 2, 3):
+            # Center align
+            bbox = draw.textbbox((0, 0), line, font=f_main)
+            text_width = bbox[2] - bbox[0]
+            x = (W - text_width) // 2
+            draw.text((x, y), line, font=f_main, fill=accent)
+            y += 120
+        
+        y += 60
+        
+        # Subtext - smaller, with glow color
+        sub_text = scene.get("subtext", "")
+        if sub_text:
+            for line in _wrap_limited(draw, sub_text, f_sub, W - margin * 2, 2):
+                bbox = draw.textbbox((0, 0), line, font=f_sub)
+                text_width = bbox[2] - bbox[0]
+                x = (W - text_width) // 2
+                draw.text((x, y), line, font=f_sub, fill=glow)
+                y += 70
+        
+        # Call to action on last slide
+        if i == len(scenes[:4]) - 1 and "call_to_action" in reel_idea:
+            y = H - 300
+            cta_text = reel_idea["call_to_action"]
+            bbox = draw.textbbox((0, 0), cta_text, font=f_sub)
+            text_width = bbox[2] - bbox[0]
+            x = (W - text_width) // 2
+            _rounded_pill(draw, (x - 40, y - 20), cta_text, f_sub, (255, 255, 255), (0, 0, 0, 80))
+        
+        # Bottom tag
+        draw.text((margin, H - 100), "✨ Follow for daily AI tips", font=f_label, fill=(255, 255, 255))
+        
+        img.save(out_path)
+        image_paths.append(out_path)
+        print(f"✅ Reel scene {i+1} created: {out_path}")
+    
+    return image_paths
+
+def save_for_github_hosting(image_path, content_type="single_image"):
+    """
+    Save images with content type subfolders.
+    Organizes posts by type for better management.
+    """
+    # Create content type subfolder
+    subfolder = content_type if content_type in ["carousel", "reel"] else "single"
+    os.makedirs(f"posts/{subfolder}", exist_ok=True)
+    
     filename = f"post_{int(time.time())}.png"
-    dest_path = os.path.join("posts", filename)
+    dest_path = os.path.join("posts", subfolder, filename)
     with open(image_path, "rb") as src, open(dest_path, "wb") as dst:
         dst.write(src.read())
 
@@ -310,19 +688,30 @@ def save_for_github_hosting(image_path):
     return dest_path, raw_url
 
 
-def send_telegram_preview(local_image_path, caption, hashtags):
+def send_telegram_preview(local_image_path, caption, hashtags, content_type="single_image", slide_count=0):
+    """Send preview with content type indicator."""
     full_caption = f"{caption}\n\n{hashtags}"
+    
+    # Emoji and label for each content type
+    type_labels = {
+        "single_image": ("🖼️", "Single Image Post"),
+        "carousel": ("📚", f"Carousel ({slide_count} slides)"),
+        "reel": ("🎬", "Reel (Video)")
+    }
+    
+    emoji, label = type_labels.get(content_type, ("🖼️", "Post"))
+    
     text = (
-        "📋 *New post ready for review*\n\n"
+        f"{emoji} *{label} Ready for Review*\n\n"
         f"{full_caption}\n\n"
-        "Reply *APPROVE* to publish this to Instagram, or *SKIP* to discard it."
+        "Reply *APPROVE* to publish, or *SKIP* to discard."
     )
     with open(local_image_path, "rb") as f:
         requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto",
             data={
                 "chat_id": TELEGRAM_CHAT_ID,
-                "caption": text[:1024],  # Telegram caption limit
+                "caption": text[:1024],
                 "parse_mode": "Markdown",
             },
             files={"photo": f},
@@ -332,32 +721,100 @@ def send_telegram_preview(local_image_path, caption, hashtags):
 
 def main():
     state = load_state()
-    category = CATEGORIES[state["category_index"] % len(CATEGORIES)]
-
-    idea = call_gemini(category)
-    image_path = make_image(idea)
-    saved_path, image_url = save_for_github_hosting(image_path)
-
-    draft = {
-        "category": category,
-        "tool_name": idea["tool_name"],
-        "caption": idea["caption"],
-        "hashtags": idea["hashtags"],
-        "image_path": saved_path,
-        "image_url": image_url,
-        "created_at": datetime.now(timezone.utc).isoformat(),
-        "status": "pending",
-    }
-
-    # --- FIX STARTS HERE ---
+    
+    # Determine what to generate based on time of day
+    content_type = get_next_content_type()
+    
+    # Get category (rotate through categories)
+    category_index = state.get("category_index", 0)
+    category = CATEGORIES[category_index % len(CATEGORIES)]
+    
+    print(f"🎯 Generating {content_type} post for category: {category}")
+    print(f"📅 Date: {state.get('date', 'unknown')}")
+    print(f"📊 Posts today: {state.get('posts_today', {})}")
+    
+    # Generate content based on type
+    idea = call_gemini(category, content_type)
+    
+    if content_type == "single_image":
+        # Single image generation
+        print("🖼️ Creating single image...")
+        image_path = make_image(idea)
+        saved_path, image_url = save_for_github_hosting(image_path)
+        
+        draft = {
+            "category": category,
+            "tool_name": idea["tool_name"],
+            "caption": idea["caption"],
+            "hashtags": idea["hashtags"],
+            "image_paths": [saved_path],
+            "image_urls": [image_url],
+            "is_carousel": False,
+            "is_reel": False,
+            "content_type": "single_image",
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "status": "pending",
+        }
+        send_telegram_preview(image_path, idea["caption"], idea["hashtags"], "single_image")
+        
+    elif content_type == "carousel":
+        # Carousel generation
+        print("📚 Creating carousel images...")
+        image_paths = make_carousel_images(idea)
+        saved_paths, image_urls = [], []
+        for img_path in image_paths:
+            saved_path, image_url = save_for_github_hosting(img_path)
+            saved_paths.append(saved_path)
+            image_urls.append(image_url)
+        
+        draft = {
+            "category": category,
+            "tool_name": idea["tool_name"],
+            "caption": idea["caption"],
+            "hashtags": idea["hashtags"],
+            "image_paths": saved_paths,
+            "image_urls": image_urls,
+            "is_carousel": True,
+            "is_reel": False,
+            "content_type": "carousel",
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "status": "pending",
+        }
+        # Send first image as preview
+        send_telegram_preview(image_paths[0], idea["caption"], idea["hashtags"], "carousel", len(image_paths))
+        
+    elif content_type == "reel":
+        # Reel generation - create images for video
+        print("🎬 Creating reel scenes...")
+        image_paths = make_reel_images(idea)
+        saved_paths, image_urls = [], []
+        for img_path in image_paths:
+            saved_path, image_url = save_for_github_hosting(img_path)
+            saved_paths.append(saved_path)
+            image_urls.append(image_url)
+        
+        draft = {
+            "category": category,
+            "tool_name": idea["tool_name"],
+            "caption": idea["caption"],
+            "hashtags": idea["hashtags"],
+            "image_paths": saved_paths,
+            "image_urls": image_urls,
+            "text_overlays": idea.get("text_overlays", []),
+            "is_carousel": False,
+            "is_reel": True,
+            "content_type": "reel",
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "status": "pending",
+        }
+        send_telegram_preview(image_paths[0], idea["caption"], idea["hashtags"], "reel")
+    
     # Load existing drafts or create new list
     if os.path.exists(DRAFTS_FILE):
         try:
             with open(DRAFTS_FILE, "r") as f:
                 existing_drafts = json.load(f)
-                # Handle both list and single-object formats
                 if isinstance(existing_drafts, dict):
-                    # Convert old single-object format to list
                     existing_drafts = [existing_drafts]
                 elif not isinstance(existing_drafts, list):
                     existing_drafts = []
@@ -371,12 +828,17 @@ def main():
     
     # Save as list with atomic write
     save_json_atomic(existing_drafts, DRAFTS_FILE)
-    # --- FIX ENDS HERE ---
-
-    send_telegram_preview(image_path, idea["caption"], idea["hashtags"])
-
-    state["category_index"] = (state["category_index"] + 1) % len(CATEGORIES)
+    
+    # Update state
+    state["category_index"] = (category_index + 1) % len(CATEGORIES)
+    state["posts_today"][content_type] = state["posts_today"].get(content_type, 0) + 1
+    state["last_post_time"] = datetime.now().isoformat()
+    state["content_type_counter"] = state.get("content_type_counter", 0) + 1
+    state["total_generated"] = state.get("total_generated", 0) + 1
     save_state(state)
+    
+    print(f"✅ {content_type} draft created and sent for review!")
+    print(f"📊 Updated state: {state}")
 
 if __name__ == "__main__":
     main()

@@ -2,7 +2,7 @@ name: Publish Draft
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '*/15 * * * *'  # Every 15 minutes for faster response
   workflow_dispatch:
 
 jobs:
@@ -28,4 +28,14 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
-        run: python scripts/check_approval_and_publish.py
+        run: |
+          echo "🔄 Checking for approvals at $(date)"
+          python scripts/check_approval_and_publish.py
+          
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto-update: processed draft $(date +'%Y-%m-%d %H:%M')"
+          git push
