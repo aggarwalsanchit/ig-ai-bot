@@ -25,7 +25,7 @@ GITHUB_REF_NAME = os.environ.get("GITHUB_REF_NAME", "main")
 genai.configure(api_key=GEMINI_API_KEY)
 
 STATE_FILE = "state.json"
-DRAFT_FILE = "draft.json"
+DRAFTS_FILE = "drafts.json"
 
 CATEGORIES = [
     "writing & content creation",
@@ -341,7 +341,7 @@ def main():
         "created_at": datetime.now(timezone.utc).isoformat(),
         "status": "pending",
     }
-    with open(DRAFT_FILE, "w") as f:
+    with open(DRAFTS_FILE, "w") as f:
         json.dump(draft, f, indent=2)
 
     send_telegram_preview(image_path, idea["caption"], idea["hashtags"])
