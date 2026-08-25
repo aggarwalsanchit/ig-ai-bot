@@ -64,8 +64,11 @@ Respond ONLY with valid JSON, no markdown, no backticks, in this exact shape:
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={GEMINI_API_KEY}"
     resp = requests.post(
         url,
-        json={"contents": [{"parts": [{"text": prompt}]}]},
-        timeout=60,
+        json={
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}},
+        },
+        timeout=120,
     )
     resp.raise_for_status()
     text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
