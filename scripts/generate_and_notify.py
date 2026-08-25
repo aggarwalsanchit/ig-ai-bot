@@ -1,6 +1,6 @@
 """
 Generates one "AI tool solves a real problem" post idea using Gemini,
-renders a simple image card, uploads it to Imgur (free, anonymous),
+renders a polished image card, commits it to the repo for public hosting,
 saves a draft.json, and sends a Telegram preview with Approve/Skip instructions.
 
 Run by: .github/workflows/generate.yml (once a day on a schedule)
@@ -8,7 +8,6 @@ Run by: .github/workflows/generate.yml (once a day on a schedule)
 import os
 import json
 import time
-import textwrap
 import requests
 import google.generativeai as genai
 from datetime import datetime, timezone
@@ -85,36 +84,113 @@ Respond ONLY with valid JSON, no markdown, no backticks, in this exact shape:
     raise RuntimeError(f"Gemini API failed after 5 attempts. Last error: {last_error}")
 
 
-def make_image(headline, tool_name, out_path="post_image.png"):
+def _wrap_by_pixels(draw, text, font, max_width):
+    """Wrap text so each line fits within max_width pixels for the given font."""
+    words = text.split()
+    lines, current = [], ""
+    for word in words:
+        trial = f"{current} {word}".strip()
+        if draw.textlength(trial, font=font) <= max_width:
+            current = trial
+        else:
+            if current:
+                lines.append(current)
+            current = word
+    if current:
+        lines.append(current)
+    return lines
+
+
+def _vertical_gradient(draw, W, H, top_color, bottom_color):
+    for y in range(H):
+        ratio = y / H
+        r = int(top_color[0] + (bottom_color[0] - top_color[0]) * ratio)
+        g = int(top_color[1] + (bottom_color[1] - top_color[1]) * ratio)
+        b = int(top_color[2] + (bottom_color[2] - top_color[2]) * ratio)
+        draw.line([(0, y), (W, y)], fill=(r, g, b))
+
+
+def _rounded_pill(draw, xy, text, font, fg, bg, pad_x=22, pad_y=12):
+    x, y = xy
+    w = draw.textlength(text, font=font)
+    ascent, descent = font.getmetrics()
+    h = ascent + descent
+    box = [x, y, x + w + pad_x * 2, y + h + pad_y * 2]
+    draw.rounded_rectangle(box, radius=(h + pad_y * 2) // 2, fill=bg)
+    draw.text((x + pad_x, y + pad_y), text, font=font, fill=fg)
+    return box
+
+
+def make_image(idea, out_path="post_image.png"):
     W, H = 1080, 1080
-    bg = (17, 17, 24)
-    accent = (120, 170, 255)
-    img = Image.new("RGB", (W, H), bg)
+    bg_top = (18, 18, 28)
+    bg_bottom = (10, 12, 20)
+    accent = (99, 155, 255)
+    accent_soft = (40, 50, 75)
+    white = (245, 246, 250)
+    muted = (170, 176, 195)
+    green = (110, 220, 160)
+
+    img = Image.new("RGB", (W, H), bg_top)
     draw = ImageDraw.Draw(img)
+    _vertical_gradient(draw, W, H, bg_top, bg_bottom)
 
-    try:
-        font_headline = ImageFont.truetype(
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 72
-        )
-        font_tool = ImageFont.truetype(
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 44
-        )
-        font_tag = ImageFont.truetype(
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 34
-        )
-    except OSError:
-        font_headline = font_tool = font_tag = ImageFont.load_default()
+    draw.ellipse([W - 420, -220, W + 180, 380], fill=(28, 34, 52))
+    draw.ellipse([W - 320, -160, W + 60, 260], fill=(24, 28, 44))
 
-    draw.text((70, 70), "AI TOOL TIP", font=font_tag, fill=accent)
+    def font(path, size):
+        try:
+            return ImageFont.truetype(path, size)
+        except OSError:
+            return ImageFont.load_default()
 
-    wrapped = textwrap.wrap(headline, width=18)
-    y = 220
-    for line in wrapped:
-        draw.text((70, y), line, font=font_headline, fill="white")
-        y += 90
+    f_badge = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 28)
+    f_headline = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 66)
+    f_label = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
+    f_body = font("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 34)
+    f_tool = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 36)
+    f_footer = font("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 26)
 
-    draw.rectangle([70, y + 20, 300, y + 26], fill=accent)
-    draw.text((70, y + 60), f"Tool: {tool_name}", font=font_tool, fill=accent)
+    margin = 72
+    y = 80
+
+    _rounded_pill(draw, (margin, y), "AI TOOL TIP", f_badge, (12, 14, 22), accent)
+    y += 100
+
+    for line in _wrap_by_pixels(draw, idea["headline"], f_headline, W - margin * 2):
+        draw.text((margin, y), line, font=f_headline, fill=white)
+        y += 78
+    y += 10
+
+    draw.rounded_rectangle([margin, y, margin + 180, y + 6], radius=3, fill=accent)
+    y += 50
+
+    _rounded_pill(draw, (margin, y), f"🔧  {idea['tool_name']}", f_tool, (12, 14, 22), accent_soft)
+    y += 100
+
+    draw.text((margin, y), "THE PROBLEM", font=f_label, fill=muted)
+    y += 44
+    for line in _wrap_by_pixels(draw, idea["problem"], f_body, W - margin * 2):
+        draw.text((margin, y), line, font=f_body, fill=white)
+        y += 46
+    y += 30
+
+    draw.text((margin, y), "THE FIX", font=f_label, fill=green)
+    y += 44
+    for line in _wrap_by_pixels(draw, idea["solution"], f_body, W - margin * 2):
+        draw.text((margin, y), line, font=f_body, fill=white)
+        y += 46
+    y += 40
+
+    card_top = H - 220
+    draw.rounded_rectangle(
+        [margin, card_top, W - margin, card_top + 110],
+        radius=20, outline=accent, width=3, fill=(22, 26, 40)
+    )
+    draw.text((margin + 30, card_top + 30), f"⏱  {idea['time_saved']}", font=f_tool, fill=accent)
+
+    draw.text((margin, H - 70), "Follow for daily AI tool tips → save this post 📌",
+              font=f_footer, fill=muted)
 
     img.save(out_path)
     return out_path
@@ -165,7 +241,7 @@ def main():
     category = CATEGORIES[state["category_index"] % len(CATEGORIES)]
 
     idea = call_gemini(category)
-    image_path = make_image(idea["headline"], idea["tool_name"])
+    image_path = make_image(idea)
     saved_path, image_url = save_for_github_hosting(image_path)
 
     draft = {
