@@ -10,6 +10,7 @@ import json
 import time
 import textwrap
 import requests
+import google.generativeai as genai
 from datetime import datetime, timezone
 from PIL import Image, ImageDraw, ImageFont
 
@@ -20,6 +21,8 @@ TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 # GitHub repo info, used to build a public raw URL for the generated image
 GITHUB_REPOSITORY = os.environ["GITHUB_REPOSITORY"]  # e.g. "yourname/ig-ai-bot", auto-provided by Actions
 GITHUB_REF_NAME = os.environ.get("GITHUB_REF_NAME", "main")
+
+genai.configure(api_key=GEMINI_API_KEY)
 
 STATE_FILE = "state.json"
 DRAFT_FILE = "draft.json"
@@ -64,24 +67,16 @@ Respond ONLY with valid JSON, no markdown, no backticks, in this exact shape:
   "hashtags": "12-18 relevant hashtags separated by spaces, include #AItools and similar"
 }}"""
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={GEMINI_API_KEY}"
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"thinkingConfig": {"thinkingBudget": 0}},
-    }
+    model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
     last_error = None
     for attempt in range(5):
         try:
-            resp = requests.post(url, json=payload, timeout=120)
-            if resp.status_code in (429, 500, 502, 503, 504):
-                last_error = f"HTTP {resp.status_code}: {resp.text[:200]}"
-                raise requests.exceptions.HTTPError(last_error)
-            resp.raise_for_status()
-            text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-            text = text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+            resp = model.generate_content(prompt)
+            text = resp.text.strip()
+            text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
             return json.loads(text)
-        except (requests.exceptions.RequestException, KeyError, json.JSONDecodeError) as e:
+        except Exception as e:
             last_error = str(e)
             wait = 10 * (attempt + 1)
             print(f"Gemini call failed (attempt {attempt + 1}/5): {last_error}. Retrying in {wait}s...")
