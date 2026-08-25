@@ -37,5 +37,36 @@
     "is_carousel": false,
     "is_reel": false,
     "content_type": "single_image"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder Buddy",
+    "caption": "Tired of wrestling with code bugs? \ud83d\ude29 We get it. The endless search for that one misplaced semicolon can be brutal. But what if you had a secret weapon?\n\nIntroducing AI-powered coding assistants that can spot errors, suggest fixes, and even help you write cleaner code. Imagine less frustration and more time for creativity!",
+    "hashtags": "#AItools #CodingLife #Developer #Programming #BugFix #CodeHelp #AIinTech #FutureOfCoding #TechTools #SoftwareDevelopment #LearnToCode #AIforDevelopers #Productivity #TechHacks #Innovation",
+    "image_paths": [
+      "posts/reel/post_1787667197.png",
+      "posts/reel/post_1787667197.png",
+      "posts/reel/post_1787667197.png",
+      "posts/reel/post_1787667197.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/post_1787667197.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/post_1787667197.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/post_1787667197.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/post_1787667197.png"
+    ],
+    "video_path": null,
+    "video_url": null,
+    "text_overlays": [
+      "Code Like a Pro",
+      "Bugs? No Thanks!",
+      "AI Fixes It!",
+      "Ship Faster!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-08-25T14:13:17.708574+00:00",
+    "status": "pending"
   }
 ]
