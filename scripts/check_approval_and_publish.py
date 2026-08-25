@@ -1,8 +1,10 @@
 """
-Polls Telegram for your APPROVE / SKIP reply on the pending draft.
-If approved, publishes the post to Instagram via the Graph API.
+Polls Telegram for your APPROVE / SKIP reply. Each reply acts on the
+OLDEST pending draft in the queue (so twice-daily generation doesn't
+overwrite anything — drafts just queue up until you respond).
+If approved, publishes that post to Instagram via the Graph API.
 
-Run by: .github/workflows/publish.yml (every 15-30 minutes)
+Run by: .github/workflows/publish.yml (every ~20 minutes)
 """
 import os
 import json
@@ -15,7 +17,7 @@ IG_USER_ID = os.environ["IG_USER_ID"]
 IG_ACCESS_TOKEN = os.environ["IG_ACCESS_TOKEN"]
 
 STATE_FILE = "state.json"
-DRAFT_FILE = "draft.json"
+DRAFTS_FILE = "drafts.json"
 
 
 def load_state():
@@ -28,6 +30,18 @@ def load_state():
 def save_state(state):
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=2)
+
+
+def load_drafts():
+    if os.path.exists(DRAFTS_FILE):
+        with open(DRAFTS_FILE) as f:
+            return json.load(f)
+    return []
+
+
+def save_drafts(drafts):
+    with open(DRAFTS_FILE, "w") as f:
+        json.dump(drafts, f, indent=2)
 
 
 def get_telegram_replies(offset):
@@ -51,7 +65,6 @@ def notify(text):
 def publish_to_instagram(image_url, caption, hashtags):
     full_caption = f"{caption}\n\n{hashtags}"
 
-    # Step 1: create media container
     create_resp = requests.post(
         f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media",
         data={
@@ -66,8 +79,6 @@ def publish_to_instagram(image_url, caption, hashtags):
     create_resp.raise_for_status()
     creation_id = create_resp.json()["id"]
 
-    # Step 2: publish the container (Instagram needs a moment to process the
-    # media container after creation, so we retry with short waits if needed)
     for attempt in range(6):
         publish_resp = requests.post(
             f"https://graph.facebook.com/v20.0/{IG_USER_ID}/media_publish",
@@ -82,21 +93,23 @@ def publish_to_instagram(image_url, caption, hashtags):
         if "not ready" in publish_resp.text.lower() or "media id is not available" in publish_resp.text.lower():
             time.sleep(10)
             continue
-        break  # different kind of error, no point retrying
+        break
 
     publish_resp.raise_for_status()
     return publish_resp.json()
 
 
+def cleanup_draft_image(draft):
+    path = draft.get("image_path", "")
+    if path and os.path.exists(path):
+        os.remove(path)
+
+
 def main():
-    if not os.path.exists(DRAFT_FILE):
-        return  # nothing pending
-
-    with open(DRAFT_FILE) as f:
-        draft = json.load(f)
-
-    if draft.get("status") != "pending":
-        return
+    drafts = load_drafts()
+    pending = [d for d in drafts if d.get("status") == "pending"]
+    if not pending:
+        return  # nothing to do
 
     state = load_state()
     updates = get_telegram_replies(state.get("telegram_offset", 0))
@@ -118,17 +131,23 @@ def main():
     state["telegram_offset"] = max_update_id
     save_state(state)
 
+    if decision is None:
+        return  # no new reply yet, leave everything pending
+
+    # act on the oldest pending draft
+    oldest = pending[0]
+
     if decision == "approve":
-        result = publish_to_instagram(
-            draft["image_url"], draft["caption"], draft["hashtags"]
-        )
-        draft["status"] = "published"
+        result = publish_to_instagram(oldest["image_url"], oldest["caption"], oldest["hashtags"])
+        oldest["status"] = "published"
         notify(f"✅ Published to Instagram! Media ID: {result.get('id')}")
-        os.remove(DRAFT_FILE)
+        cleanup_draft_image(oldest)
     elif decision == "skip":
+        oldest["status"] = "skipped"
         notify("🗑️ Draft skipped.")
-        os.remove(DRAFT_FILE)
-    # else: no decision yet, leave draft.json pending for next run
+        cleanup_draft_image(oldest)
+
+    save_drafts(drafts)
 
 
 if __name__ == "__main__":
