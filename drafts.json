@@ -85,5 +85,30 @@
     "content_type": "single_image",
     "created_at": "2026-08-26T04:10:49.975177+00:00",
     "status": "published"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Tired of scheduling chaos? AI tools are here to save your day!\n\nImagine a world where meetings book themselves and you're always prepared. These powerful AI assistants streamline your calendar, automate follow-ups, and even help you prep. \n\nReady to reclaim your productivity and focus on what truly matters? Swipe to discover how AI is revolutionizing scheduling and meetings!",
+    "hashtags": "#AItools #AIScheduling #MeetingAI #ProductivityHacks #TimeManagement #SmartCalendar #AIassistant #Automation #FutureOfWork #BusinessTools #WorkSmart #DigitalTools #TechSolutions #Innovation #OfficeLife #AIforBusiness #MeetingManagement #GetOrganized #AIRevolution #Efficiency",
+    "image_paths": [
+      "posts/single/post_1787735348.png",
+      "posts/single/post_1787735348.png",
+      "posts/single/post_1787735348.png",
+      "posts/single/post_1787735348.png",
+      "posts/single/post_1787735348.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/post_1787735348.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/post_1787735348.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/post_1787735348.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/post_1787735348.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/post_1787735348.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-08-26T09:09:08.215479+00:00",
+    "status": "pending"
   }
 ]
