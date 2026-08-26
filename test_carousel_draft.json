@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "tool_name": "AI Image Mixer",
+  "caption": "Ever wished you could blend the impossible? Our latest AI tool lets you do just that. Imagine combining a nebula with a cityscape, or a cat with a spaceship. This tool makes it a reality, opening up a universe of creative potential.\n\nStop settling for the ordinary. If you're a content creator, designer, or just someone who loves to experiment, this is your chance to break free from visual limitations. Get ready to see your wildest ideas come to life in stunning, original images.",
+  "hashtags": "#AItools #AIart #ImageGeneration #CreativeAI #Visuals #DesignTools #ContentCreation #AIforDesign #ArtificialIntelligence #DigitalArt #Innovation #AICommunity #GraphicDesign #MarketingTools #ArtTech #NewAI #AIInspiration #TechTrends #FutureofArt #AIpowered",
+  "image_paths": [
+    "posts/carousel/1787743739_test_carousel_slide_1.png",
+    "posts/carousel/1787743739_test_carousel_slide_2.png",
+    "posts/carousel/1787743739_test_carousel_slide_3.png",
+    "posts/carousel/1787743739_test_carousel_slide_4.png",
+    "posts/carousel/1787743739_test_carousel_slide_5.png"
+  ],
+  "image_urls": [
+    "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/carousel/1787743739_test_carousel_slide_1.png",
+    "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/carousel/1787743739_test_carousel_slide_2.png",
+    "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/carousel/1787743739_test_carousel_slide_3.png",
+    "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/carousel/1787743739_test_carousel_slide_4.png",
+    "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/carousel/1787743739_test_carousel_slide_5.png"
+  ],
+  "is_carousel": true,
+  "is_reel": false,
+  "content_type": "carousel",
+  "created_at": "2026-08-26T12:00:00+00:00",
+  "status": "pending"
+}
