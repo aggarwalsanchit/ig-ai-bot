@@ -4,6 +4,7 @@ Run: python test_all.py
 """
 import subprocess
 import sys
+import os
 
 def run_test(test_name, script_name):
     print("\n" + "="*60)
@@ -22,23 +23,28 @@ def run_test(test_name, script_name):
             # Print only the last few lines for brevity
             lines = result.stdout.split('\n')
             for line in lines[-5:]:
-                print(f"   {line}")
+                if line.strip():
+                    print(f"   {line}")
     else:
         print(f"❌ {test_name} FAILED")
         if result.stderr:
-            print(f"   Error: {result.stderr[:200]}")
+            print(f"   Error: {result.stderr[:500]}")
     
     return result.returncode
 
 if __name__ == "__main__":
     print("🚀 RUNNING ALL TESTS")
-    print("Make sure you've set your API keys in each test file!")
+    print("="*60)
+    print("📱 You will receive Telegram notifications for each test!")
+    print("="*60)
     
-    # Run tests
+    # Check if test scripts exist in current directory or scripts folder
+    script_dir = "scripts"
+    
     tests = [
-        ("Single Image", "test_single_image.py"),
-        ("Carousel", "test_carousel.py"),
-        ("Reel", "test_reel.py"),
+        ("Single Image", f"{script_dir}/test_single_image.py"),
+        ("Carousel", f"{script_dir}/test_carousel.py"),
+        ("Reel", f"{script_dir}/test_reel.py"),
     ]
     
     results = []
