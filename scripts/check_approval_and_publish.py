@@ -550,18 +550,22 @@ def publish_to_facebook(image_url, caption, hashtags):
 
 
 def cleanup_draft_image(draft):
-    """Remove all local image files after publishing/skipping."""
+    """Remove all local image (and video) files after publishing/skipping."""
     paths = draft.get("image_paths", [])
     if not paths and "image_path" in draft:
         paths = [draft["image_path"]]
-    
+
+    video_path = draft.get("video_path")
+    if video_path:
+        paths = paths + [video_path]
+
     for path in paths:
         if path and os.path.exists(path):
             try:
                 os.remove(path)
-                print(f"Cleaned up image: {path}")
+                print(f"Cleaned up file: {path}")
             except Exception as e:
-                print(f"Could not remove image file {path}: {e}")
+                print(f"Could not remove file {path}: {e}")
 
 
 def validate_and_fix_draft(draft):

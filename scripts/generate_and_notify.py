@@ -190,26 +190,31 @@ Respond ONLY with valid JSON, no markdown, no backticks, in this exact shape:
 }}""",
 
         "carousel": f"""You help run an Instagram account about AI tools.
-Create a COLORFUL, VISUAL CAROUSEL (swipeable slides) about: "{category}".
+Create a CAROUSEL post with 5 DIFFERENT slides about: "{category}".
 
-Each slide should be a short, punchy visual statement with minimal text.
-Think of it like a vibrant infographic or visual story.
+IMPORTANT: Each slide MUST be DIFFERENT and UNIQUE. Do NOT repeat content.
 
-IMPORTANT RULES:
-- Each slide MUST have a short title (2-4 words) - think of it as a bold header
-- Each slide MUST have very short content (8-12 words max) - like a subtitle or quick fact
-- Make it engaging, colorful, and easy to digest visually
-- Use action words and make it exciting
+Slide 1: The Hook - Catch attention with a bold statement
+Slide 2: The Problem - What pain point does this solve?
+Slide 3: The Solution - How does this AI tool help?
+Slide 4: The Benefit - What's the result or outcome?
+Slide 5: Call to Action - What should the viewer do?
+
+Each slide:
+- Title: 2-4 words, bold and punchy
+- Content: 8-12 words, clear benefit
+
+Make each slide visually distinct with different concepts.
 
 Respond ONLY with valid JSON:
 {{
   "tool_name": "short tool name (2-3 words)",
   "slides": [
-    {{"title": "BOLD HEADER 1", "content": "Quick fact or benefit (8-12 words)"}},
-    {{"title": "BOLD HEADER 2", "content": "Quick fact or benefit (8-12 words)"}},
-    {{"title": "BOLD HEADER 3", "content": "Quick fact or benefit (8-12 words)"}},
-    {{"title": "BOLD HEADER 4", "content": "Quick fact or benefit (8-12 words)"}},
-    {{"title": "BOLD HEADER 5", "content": "Quick fact or benefit (8-12 words)"}}
+    {{"title": "Hook title", "content": "Hook content (8-12 words)"}},
+    {{"title": "Problem title", "content": "Problem content (8-12 words)"}},
+    {{"title": "Solution title", "content": "Solution content (8-12 words)"}},
+    {{"title": "Benefit title", "content": "Benefit content (8-12 words)"}},
+    {{"title": "CTA title", "content": "CTA content (8-12 words)"}}
   ],
   "caption": "engaging caption for the carousel, 2-3 short paragraphs, simple English, no hashtags",
   "hashtags": "15-20 relevant hashtags separated by spaces, include #AItools and similar"
@@ -461,7 +466,6 @@ def make_carousel_images(idea, out_prefix="carousel"):
     
     # Color palette for each slide - vibrant and engaging
     color_palettes = [
-        # (bg_top, bg_bottom, accent_color, text_color)
         ((255, 107, 107), (200, 50, 50), (255, 255, 255), (255, 255, 255)),   # Red
         ((78, 205, 196), (40, 150, 140), (255, 255, 255), (255, 255, 255)),   # Teal
         ((255, 159, 67), (230, 100, 20), (255, 255, 255), (255, 255, 255)),   # Orange
@@ -469,15 +473,28 @@ def make_carousel_images(idea, out_prefix="carousel"):
         ((253, 121, 168), (220, 80, 130), (255, 255, 255), (255, 255, 255)),  # Pink
     ]
     
-    slides = idea.get("slides", [
-        {"title": "✨ AI POWER", "content": "Transform your workflow with AI"},
-        {"title": "⚡ SAVE TIME", "content": "Focus on what really matters"},
-        {"title": "🚀 BOOST OUTPUT", "content": "Work faster and smarter"},
-        {"title": "💡 SMART TOOLS", "content": "Let AI handle the heavy lifting"},
-        {"title": "🎯 GET STARTED", "content": "Try it today and see the difference"}
-    ])
+    # Get slides from idea, or create fallback with different content
+    slides = idea.get("slides", [])
     
-    for i, slide in enumerate(slides[:5]):
+    # If slides are missing or all the same, generate fallback slides
+    if not slides or len(slides) < 5:
+        tool_name = idea.get("tool_name", "AI Tool")
+        slides = [
+            {"title": f"✨ {tool_name}", "content": "Transform your workflow with AI"},
+            {"title": "⚡ SAVE TIME", "content": "Focus on what really matters"},
+            {"title": "🚀 BOOST OUTPUT", "content": "Work faster and smarter"},
+            {"title": "💡 SMART TOOLS", "content": "Let AI handle the heavy lifting"},
+            {"title": "🎯 GET STARTED", "content": "Try it today and see the difference"}
+        ]
+    
+    # Ensure we have exactly 5 slides
+    while len(slides) < 5:
+        slides.append({"title": f"Slide {len(slides)+1}", "content": "Learn more about this AI tool"})
+    
+    # Use first 5 slides
+    slides = slides[:5]
+    
+    for i, slide in enumerate(slides):
         out_path = f"{out_prefix}_slide_{i+1}.png"
         
         W, H = 1080, 1080
@@ -504,15 +521,14 @@ def make_carousel_images(idea, out_prefix="carousel"):
         tool_name = idea.get("tool_name", "AI Tool")
         _rounded_pill(draw, (margin, margin), tool_name, f_tool, (255, 255, 255), (0, 0, 0, 80))
         
-        # Slide indicator with accent color
-        slide_text = f"{i+1}/{len(slides[:5])}"
+        # Slide indicator with accent color - SHOW DIFFERENT NUMBERS
+        slide_text = f"{i+1}/5"
         _rounded_pill(draw, (W - margin - 120, margin), slide_text, f_slide, (255, 255, 255), (0, 0, 0, 80))
         
         # Big bold title - centered
         title_text = slide.get("title", f"Slide {i+1}")
         y = 350
         for line in _wrap_limited(draw, title_text, f_title, W - margin * 2, 2):
-            # Center align
             bbox = draw.textbbox((0, 0), line, font=f_title)
             text_width = bbox[2] - bbox[0]
             x = (W - text_width) // 2
@@ -536,7 +552,7 @@ def make_carousel_images(idea, out_prefix="carousel"):
         
         img.save(out_path)
         image_paths.append(out_path)
-        print(f"✅ Carousel slide {i+1} created: {out_path}")
+        print(f"✅ Carousel slide {i+1}/5 created: {out_path}")
     
     return image_paths
 
@@ -549,17 +565,19 @@ def create_reel_video(image_paths, output_path="reel_video.mp4"):
         import subprocess
         
         # Check if ffmpeg is available
-        result = subprocess.run(["ffmpeg", "-version"], capture_output=True)
+        result = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True)
         if result.returncode != 0:
-            print("❌ ffmpeg not installed. Reels will be published as images.")
+            print("❌ ffmpeg not installed. Reels will use first image only.")
+            print("💡 Please install ffmpeg: sudo apt-get install ffmpeg")
             return None
         
         # Create a temporary file list for ffmpeg
         list_file = "reel_scenes.txt"
         with open(list_file, "w") as f:
-            for img_path in image_paths:
-                f.write(f"file '{img_path}'\n")
-                f.write(f"duration 3\n")  # 3 seconds per scene
+            for i, img_path in enumerate(image_paths):
+                if os.path.exists(img_path):
+                    f.write(f"file '{os.path.abspath(img_path)}'\n")
+                    f.write(f"duration 3\n")  # 3 seconds per scene
         
         # Use ffmpeg to create video
         cmd = [
@@ -571,6 +589,7 @@ def create_reel_video(image_paths, output_path="reel_video.mp4"):
             "-c:v", "libx264",
             "-pix_fmt", "yuv420p",
             "-r", "24",
+            "-vf", "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2",  # Ensure 9:16
             output_path
         ]
         
@@ -582,7 +601,8 @@ def create_reel_video(image_paths, output_path="reel_video.mp4"):
             os.remove(list_file)
         
         if result.returncode == 0 and os.path.exists(output_path):
-            print(f"✅ Reel video created: {output_path}")
+            file_size = os.path.getsize(output_path) / (1024 * 1024)
+            print(f"✅ Reel video created: {output_path} ({file_size:.1f} MB)")
             return output_path
         else:
             print(f"❌ ffmpeg error: {result.stderr}")
@@ -732,7 +752,8 @@ def save_for_github_hosting(image_path, content_type="single_image"):
     subfolder = content_type if content_type in ["carousel", "reel"] else "single"
     os.makedirs(f"posts/{subfolder}", exist_ok=True)
     
-    filename = f"post_{int(time.time())}.png"
+    base = os.path.basename(image_path)
+    filename = f"{int(time.time())}_{base}"
     dest_path = os.path.join("posts", subfolder, filename)
     with open(image_path, "rb") as src, open(dest_path, "wb") as dst:
         dst.write(src.read())
@@ -797,7 +818,7 @@ def main():
         print("🖼️ Creating single image...")
         image_path = make_image(idea)
         saved_path, image_url = save_for_github_hosting(image_path)
-        
+
         draft = {
             "category": category,
             "tool_name": idea["tool_name"],
@@ -812,7 +833,10 @@ def main():
             "status": "pending",
         }
         send_telegram_preview(image_path, idea["caption"], idea["hashtags"], "single_image")
-        
+        # Only remove the temp original AFTER it's been used above
+        if os.path.exists(image_path):
+            os.remove(image_path)
+
     elif content_type == "carousel":
         # Carousel generation
         print("📚 Creating carousel images...")
@@ -822,7 +846,7 @@ def main():
             saved_path, image_url = save_for_github_hosting(img_path)
             saved_paths.append(saved_path)
             image_urls.append(image_url)
-        
+
         draft = {
             "category": category,
             "tool_name": idea["tool_name"],
@@ -836,24 +860,28 @@ def main():
             "created_at": datetime.now(timezone.utc).isoformat(),
             "status": "pending",
         }
-        # Send first image as preview
+        # Send first image as preview BEFORE cleanup
         send_telegram_preview(image_paths[0], idea["caption"], idea["hashtags"], "carousel", len(image_paths))
-        
+        # Now it's safe to remove all temp originals
+        for img_path in image_paths:
+            if os.path.exists(img_path):
+                os.remove(img_path)
+
     elif content_type == "reel":
         # Reel generation - create images for video
         print("🎬 Creating reel scenes...")
         image_paths = make_reel_images(idea)
-        
-        # Create actual video from images
+
+        # Create actual video from images (uses the temp originals, still intact)
         video_path = create_reel_video(image_paths, "reel_video.mp4")
-        
+
         saved_paths, image_urls = [], []
         for img_path in image_paths:
             saved_path, image_url = save_for_github_hosting(img_path, "reel")
             saved_paths.append(saved_path)
             image_urls.append(image_url)
-        
-        # Save video to GitHub
+
+        # Save video to GitHub — copy FIRST, remove the temp original AFTER
         if video_path and os.path.exists(video_path):
             os.makedirs("posts/reel", exist_ok=True)
             video_filename = f"reel_{int(time.time())}.mp4"
@@ -861,10 +889,12 @@ def main():
             with open(video_path, "rb") as src, open(video_dest, "wb") as dst:
                 dst.write(src.read())
             video_url = f"https://raw.githubusercontent.com/{GITHUB_REPOSITORY}/{GITHUB_REF_NAME}/{video_dest}"
+            os.remove(video_path)  # safe now, already copied
         else:
             video_path = None
+            video_dest = None
             video_url = None
-        
+
         draft = {
             "category": category,
             "tool_name": idea["tool_name"],
@@ -882,6 +912,10 @@ def main():
             "status": "pending",
         }
         send_telegram_preview(image_paths[0], idea["caption"], idea["hashtags"], "reel")
+        # Now it's safe to remove all temp scene images
+        for img_path in image_paths:
+            if os.path.exists(img_path):
+                os.remove(img_path)
     
     # Load existing drafts or create new list
     if os.path.exists(DRAFTS_FILE):
