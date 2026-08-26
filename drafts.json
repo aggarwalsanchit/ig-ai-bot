@@ -68,5 +68,22 @@
     "content_type": "reel",
     "created_at": "2026-08-25T14:13:17.708574+00:00",
     "status": "published"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Perplexity AI",
+    "caption": "Drowning in tabs? We feel you. Digging for info can be a major time drain.  It's easy to get lost and never find what you need.\n\nPerplexity AI is your new research buddy.  Just ask it a question, and it gives you a clear answer, plus links to where it found the information. It's like having a super-smart assistant that reads everything for you. Perfect for students, writers, or anyone who needs facts fast.",
+    "hashtags": "#AItools #Research #Productivity #Information #Summarizing #AIassistant #WorkSmart #TimeSaver #StudyHacks #Knowledge #Learning #BusinessTools #Efficiency #AIforWork #PerplexityAI #FutureofWork",
+    "image_paths": [
+      "posts/single/post_1787717449.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/post_1787717449.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-08-26T04:10:49.975177+00:00",
+    "status": "pending"
   }
 ]
