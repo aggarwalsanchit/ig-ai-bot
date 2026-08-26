@@ -1,17 +1,17 @@
 {
-  "category_index": 5,
-  "telegram_offset": 717136452,
+  "category_index": 0,
+  "telegram_offset": 717136453,
   "failed_attempts": 0,
   "last_skip_time": null,
-  "total_generated": 4,
+  "total_generated": 5,
   "total_published": 4,
-  "total_skipped": 0,
-  "last_post_time": "2026-08-26T14:11:25.187351",
+  "total_skipped": 1,
+  "last_post_time": "2026-08-26T15:59:26.588339",
   "posts_today": {
     "single_image": 1,
     "carousel": 1,
-    "reel": 2
+    "reel": 3
   },
   "date": "2026-08-25",
-  "content_type_counter": 4
+  "content_type_counter": 5
 }
