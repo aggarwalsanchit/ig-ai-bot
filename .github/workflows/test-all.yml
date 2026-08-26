@@ -1,0 +1,83 @@
+name: 🧪 Test - All Content Types
+
+on:
+  workflow_dispatch:
+    inputs:
+      categories:
+        description: 'Test all categories?'
+        required: false
+        default: 'true'
+        type: boolean
+
+jobs:
+  test-all:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      
+      - name: Test Single Image
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: |
+          echo "🖼️ Testing Single Image..."
+          python scripts/test_single_image.py || echo "Single Image test failed"
+      
+      - name: Test Carousel
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: |
+          echo "📚 Testing Carousel..."
+          python scripts/test_carousel.py || echo "Carousel test failed"
+      
+      - name: Test Reel
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: |
+          echo "🎬 Testing Reel..."
+          python scripts/test_reel.py || echo "Reel test failed"
+      
+      - name: Upload all test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-all-output
+          path: |
+            posts/
+            *.png
+            *.mp4
+            *_draft.json
+          retention-days: 7
+      
+      - name: Commit and push changes
+        if: always()
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "🧪 Test: All content types $(date +'%Y-%m-%d %H:%M')"
+          git push || echo "No changes to push"

@@ -7,7 +7,7 @@ import json
 import sys
 
 # Add the scripts directory to path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
+sys.path.insert(0, os.path.dirname(__file__))
 
 # Import from generate_and_notify
 from generate_and_notify import (

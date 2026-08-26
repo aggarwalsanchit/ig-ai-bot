@@ -1,0 +1,71 @@
+name: 🧪 Test - Carousel
+
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Category (or leave empty for random)'
+        required: false
+        default: ''
+        type: string
+      slides:
+        description: 'Number of slides (3-5)'
+        required: false
+        default: '5'
+        type: choice
+        options:
+          - '3'
+          - '4'
+          - '5'
+
+jobs:
+  test-carousel:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Run Carousel Test
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          TEST_CATEGORY: ${{ inputs.category }}
+          TEST_SLIDES: ${{ inputs.slides }}
+        run: |
+          echo "📚 Testing Carousel Post..."
+          echo "📂 Category: ${TEST_CATEGORY:-Random}"
+          echo "📄 Slides: ${TEST_SLIDES:-5}"
+          python scripts/test_carousel.py
+      
+      - name: Upload test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-carousel-output
+          path: |
+            posts/carousel/*.png
+            test_carousel_draft.json
+            carousel_*.png
+          retention-days: 7
+      
+      - name: Commit and push changes
+        if: always()
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "🧪 Test: Carousel $(date +'%Y-%m-%d %H:%M')"
+          git push || echo "No changes to push"

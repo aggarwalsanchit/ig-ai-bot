@@ -1,0 +1,76 @@
+name: 🧪 Test - Reel
+
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Category (or leave empty for random)'
+        required: false
+        default: ''
+        type: string
+      duration:
+        description: 'Duration per scene (seconds)'
+        required: false
+        default: '3'
+        type: choice
+        options:
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+
+jobs:
+  test-reel:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      
+      - name: Run Reel Test
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          TEST_CATEGORY: ${{ inputs.category }}
+          TEST_DURATION: ${{ inputs.duration }}
+        run: |
+          echo "🎬 Testing Reel Video Post..."
+          echo "📂 Category: ${TEST_CATEGORY:-Random}"
+          echo "⏱️  Duration per scene: ${TEST_DURATION:-3}s"
+          python scripts/test_reel.py
+      
+      - name: Upload test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reel-output
+          path: |
+            posts/reel/*.png
+            posts/reel/*.mp4
+            test_reel_draft.json
+            reel_*.png
+            test_reel_video.mp4
+          retention-days: 7
+      
+      - name: Commit and push changes
+        if: always()
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "🧪 Test: Reel $(date +'%Y-%m-%d %H:%M')"
+          git push || echo "No changes to push"
