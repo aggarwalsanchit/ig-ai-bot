@@ -172,5 +172,36 @@
     "content_type": "reel",
     "created_at": "2026-08-26T15:59:25.041266+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Tired of the content creation grind? AI tools are here to revolutionize how you write and publish. Imagine instantly generating blog posts, social media captions, and even scripts, all with a few simple prompts.",
+    "hashtags": "#AItools #ContentCreation #WritingAssistant #AIwriting #DigitalMarketing #ContentMarketing #Productivity #Tech #Innovation #FutureOfWork #Blogging #SocialMediaMarketing #Copywriting #MarketingTech",
+    "image_paths": [
+      "posts/reel/1787841024_reel_scene_1.png",
+      "posts/reel/1787841024_reel_scene_2.png",
+      "posts/reel/1787841024_reel_scene_3.png",
+      "posts/reel/1787841024_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787841024_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787841024_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787841024_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787841024_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1787841024.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1787841024.mp4",
+    "text_overlays": [
+      "Writer's Block? \u270d\ufe0f",
+      "AI Generates Ideas! \ud83d\udca1",
+      "Draft in Seconds! \u26a1",
+      "Boost Your Content! \u2728"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-08-27T14:30:24.409944+00:00",
+    "status": "pending"
   }
 ]
