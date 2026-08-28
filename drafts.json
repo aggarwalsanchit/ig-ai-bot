@@ -268,5 +268,22 @@
     "content_type": "reel",
     "created_at": "2026-08-28T15:36:49.774734+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Struggling to find the perfect image for your project?  It\u2019s tough when you're not a designer.\n\nMidjourney lets you create totally new visuals just by typing what you want.  Think 'a fluffy cat astronaut on the moon' and get amazing pictures back fast. It\u2019s like having a magic art assistant.\n\nStop wasting time searching stock photos or waiting for designers. Get unique, eye-catching visuals in minutes and make your content pop.",
+    "hashtags": "#AItools #designAI #graphicdesign #visuals #AIart #Midjourney #contentcreation #designhacks #AIforbusiness #marketing #socialmediamarketing #productivity #AIgenerated #digitalart #innovation #creativity",
+    "image_paths": [
+      "posts/single/1787948230_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1787948230_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-08-28T20:17:10.560116+00:00",
+    "status": "pending"
   }
 ]
