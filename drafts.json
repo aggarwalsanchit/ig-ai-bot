@@ -285,5 +285,22 @@
     "content_type": "single_image",
     "created_at": "2026-08-28T20:17:10.560116+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "Microsoft Excel (with Copilot)",
+    "caption": "Tired of spending ages sorting and cleaning spreadsheets? Microsoft Excel's Copilot can be your secret weapon. Imagine just asking it to fix errors or find specific patterns in your data. It's like having a super-smart assistant right inside your spreadsheet. Get more done, faster, and with less stress. No more confusing formulas or endless scrolling!",
+    "hashtags": "#AItools #ExcelTips #SpreadsheetHacks #DataAnalysis #Productivity #WorkSmarter #Office365 #MicrosoftCopilot #AIforBusiness #TimeSaver #DataManagement #Automation #BusinessTools #TechTips #SpreadsheetWizard #AIinAction",
+    "image_paths": [
+      "posts/single/1787958521_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1787958521_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-08-28T23:08:41.708363+00:00",
+    "status": "pending"
   }
 ]
