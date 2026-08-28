@@ -237,5 +237,36 @@
     "content_type": "single_image",
     "created_at": "2026-08-27T23:01:28.103633+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Scheduler",
+    "caption": "Stop the endless email chains and calendar Tetris! \n\nImagine a world where your meetings just... happen. AI scheduling tools are making that a reality, effortlessly finding the perfect time for everyone. Say goodbye to the back-and-forth and hello to more productive days.\n\nReclaim your time and focus on what truly matters. This is the future of effortless collaboration.",
+    "hashtags": "#AItools #Scheduling #Meetings #Productivity #ArtificialIntelligence #SmartWork #TimeManagement #BusinessTools #FutureOfWork #Collaboration #AIRevolution #Efficiency #WorkSmarterNotHarder #DigitalTools",
+    "image_paths": [
+      "posts/reel/1787931409_reel_scene_1.png",
+      "posts/reel/1787931409_reel_scene_2.png",
+      "posts/reel/1787931409_reel_scene_3.png",
+      "posts/reel/1787931409_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787931409_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787931409_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787931409_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1787931409_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1787931409.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1787931409.mp4",
+    "text_overlays": [
+      "Tired of emails?",
+      "AI finds your slot!",
+      "Book instantly! \ud83d\uddd3\ufe0f",
+      "Focus on what matters."
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-08-28T15:36:49.774734+00:00",
+    "status": "pending"
   }
 ]
