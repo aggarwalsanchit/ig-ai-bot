@@ -171,7 +171,7 @@
     "is_reel": true,
     "content_type": "reel",
     "created_at": "2026-08-26T15:59:25.041266+00:00",
-    "status": "pending"
+    "status": "publish_failed"
   },
   {
     "category": "writing & content creation",
