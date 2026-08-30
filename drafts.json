@@ -389,5 +389,30 @@
     "content_type": "reel",
     "created_at": "2026-08-29T17:18:33.561341+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Are your meetings eating up your valuable time?  Endless email chains and calendar Tetris can drain your productivity.\n\nAI scheduling tools are here to revolutionize how you book appointments. Imagine having your calendar managed automatically, freeing you up to focus on your actual work. Stop the scheduling madness and start getting things done.",
+    "hashtags": "#AItools #SchedulingAI #MeetingProductivity #AIAutomation #ProductivityHacks #TimeManagement #SmartScheduling #FutureOfWork #AIforBusiness #CalendarManagement #Efficiency #WorkSmarter #DigitalTools #AIRevolution #TechTools #BusinessAutomation #GetMoreDone #AIinAction",
+    "image_paths": [
+      "posts/single/1788081957_carousel_slide_1.png",
+      "posts/single/1788081957_carousel_slide_2.png",
+      "posts/single/1788081957_carousel_slide_3.png",
+      "posts/single/1788081957_carousel_slide_4.png",
+      "posts/single/1788081957_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788081957_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788081957_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788081957_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788081957_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788081957_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-08-30T09:25:57.778793+00:00",
+    "status": "pending"
   }
 ]
