@@ -445,5 +445,36 @@
     "content_type": "reel",
     "created_at": "2026-08-30T13:53:49.339246+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Entry",
+    "caption": "Tired of endless data entry? Spreadsheets can be a major drag, but what if AI could revolutionize your workflow? Imagine ditching those repetitive tasks and reclaiming your valuable time for more strategic work.\n\nAI-powered tools are here to transform your data management. Say goodbye to manual input errors and hello to lightning-fast, accurate results. It's time to work smarter, not harder, and unlock your true potential.",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #Productivity #Tech #Innovation #BusinessTools #FutureOfWork #ArtificialIntelligence #SmartWork #Workflow #DigitalTransformation #Efficiency #AIforBusiness #DataManagement",
+    "image_paths": [
+      "posts/reel/1788111671_reel_scene_1.png",
+      "posts/reel/1788111671_reel_scene_2.png",
+      "posts/reel/1788111671_reel_scene_3.png",
+      "posts/reel/1788111671_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788111671_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788111671_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788111671_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788111671_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788111671.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788111671.mp4",
+    "text_overlays": [
+      "Drowning in data? \ud83d\udcca",
+      "AI automates everything! \u2728",
+      "Accuracy sky-high! \u2705",
+      "Focus on what matters! \ud83c\udf1f"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-08-30T17:41:11.447552+00:00",
+    "status": "pending"
   }
 ]
