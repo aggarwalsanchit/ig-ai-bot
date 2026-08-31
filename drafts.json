@@ -501,5 +501,36 @@
     "content_type": "carousel",
     "created_at": "2026-08-31T10:02:21.448840+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Tired of staring at red lines? \ud83d\ude2d Debugging can feel like a never-ending quest. But what if you had a super-powered assistant? \n\nIntroducing AI coding tools that can sniff out bugs, suggest fixes, and even write code for you! Spend less time troubleshooting and more time creating your next masterpiece. \n\nReady to supercharge your workflow? Give AI coding assistants a spin and watch your productivity soar!",
+    "hashtags": "#AItools #AICoding #Programming #Developer #SoftwareDevelopment #CodingLife #BugFix #ArtificialIntelligence #Tech #Innovation #Productivity #CodeHelper #FutureOfCode #MachineLearning #DevTools",
+    "image_paths": [
+      "posts/reel/1788193009_reel_scene_1.png",
+      "posts/reel/1788193009_reel_scene_2.png",
+      "posts/reel/1788193009_reel_scene_3.png",
+      "posts/reel/1788193009_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788193009_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788193009_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788193009_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788193009_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788193009.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788193009.mp4",
+    "text_overlays": [
+      "Writer's Block?",
+      "Bug Hunt \ud83d\udc1e",
+      "AI Debugger!",
+      "Code Like Pro! \u2728"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-08-31T16:16:49.057063+00:00",
+    "status": "pending"
   }
 ]
