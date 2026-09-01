@@ -605,5 +605,36 @@
     "content_type": "reel",
     "created_at": "2026-09-01T13:36:28.902419+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Helper",
+    "caption": "Tired of drowning in spreadsheets and endless data entry? Imagine reclaiming hours of your week!  AI tools are revolutionizing how we handle data, making tedious tasks a thing of the past.\n\nThis isn't about complex coding; it's about smart, accessible solutions that boost your productivity. Say goodbye to manual errors and hello to lightning-fast processing.  Ready to work smarter, not harder?",
+    "hashtags": "#AItools #DataAutomation #SpreadsheetHacks #ProductivityBoost #TechSolutions #AIforBusiness #FutureofWork #SmartData #Efficiency #BusinessTools #Automation #AIRevolution #DigitalTransformation #WorkSmarter #DataEntry",
+    "image_paths": [
+      "posts/reel/1788283387_reel_scene_1.png",
+      "posts/reel/1788283387_reel_scene_2.png",
+      "posts/reel/1788283387_reel_scene_3.png",
+      "posts/reel/1788283387_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788283387_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788283387_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788283387_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788283387_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788283387.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788283387.mp4",
+    "text_overlays": [
+      "Data Overload?",
+      "AI to the rescue!",
+      "Fast & Accurate!",
+      "Get your time back!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-01T17:23:07.848512+00:00",
+    "status": "pending"
   }
 ]
