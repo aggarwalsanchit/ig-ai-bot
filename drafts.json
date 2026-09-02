@@ -692,5 +692,36 @@
     "content_type": "reel",
     "created_at": "2026-09-02T12:51:47.610193+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizers",
+    "caption": "Feeling swamped by information? \ud83c\udf0a Drowning in articles and reports? \n\nAI summarizing tools are your secret weapon to cut through the noise. Turn lengthy documents into concise, actionable insights in seconds. Spend less time reading and more time doing!",
+    "hashtags": "#AItools #AISummarizer #ProductivityHacks #ResearchTools #ContentCreation #InformationOverload #StudyHacks #WorkSmarter #TechTools #AIforStudents #AISolutions #KnowledgeIsPower #Efficiency #FutureOfWork",
+    "image_paths": [
+      "posts/reel/1788369311_reel_scene_1.png",
+      "posts/reel/1788369311_reel_scene_2.png",
+      "posts/reel/1788369311_reel_scene_3.png",
+      "posts/reel/1788369311_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788369311_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788369311_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788369311_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788369311_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788369311.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788369311.mp4",
+    "text_overlays": [
+      "Massive Text \ud83d\udcda",
+      "AI Magic \u2728",
+      "Key Points \ud83d\udca1",
+      "Save Hours \u23f0"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-02T17:15:11.108922+00:00",
+    "status": "pending"
   }
 ]
