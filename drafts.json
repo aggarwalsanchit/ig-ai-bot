@@ -636,5 +636,30 @@
     "content_type": "reel",
     "created_at": "2026-09-01T17:23:07.848512+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Stuck staring at a blank screen?  We've all been there.  Creating fresh, engaging content consistently can feel like an uphill battle.\n\nBut what if you had a powerful assistant ready to brainstorm, draft, and refine your ideas in seconds?  AI writing tools are revolutionizing how we create, saving you time and sparking new inspiration. Imagine publishing high-quality content without the usual stress and delay.",
+    "hashtags": "#AItools #WritingAI #ContentCreation #AIWriter #MarketingAI #DigitalMarketing #SocialMediaMarketing #ContentMarketing #AIFreelancer #Copywriting #CreativeWriting #TechTools #Innovation #Productivity #SmallBusiness #OnlineBusiness #ContentStrategy #AIforBusiness #FutureOfWork #AIRevolution",
+    "image_paths": [
+      "posts/single/1788336395_carousel_slide_1.png",
+      "posts/single/1788336395_carousel_slide_2.png",
+      "posts/single/1788336395_carousel_slide_3.png",
+      "posts/single/1788336395_carousel_slide_4.png",
+      "posts/single/1788336395_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788336395_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788336395_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788336395_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788336395_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788336395_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-02T08:06:35.577143+00:00",
+    "status": "pending"
   }
 ]
