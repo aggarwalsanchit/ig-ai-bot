@@ -748,5 +748,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-03T08:15:03.729448+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney Magic",
+    "caption": "Tired of staring at a blank canvas?  Unlock a world of visual possibilities with the power of AI.\n\nTransform your ideas into breathtaking images in seconds. From concept art to social media graphics, there are no limits to what you can create.",
+    "hashtags": "#AIart #AIDesign #Midjourney #GenerativeArt #DigitalArt #CreativeTools #Visuals #ArtTech #DesignInspo #AICommunity #Innovation #GraphicDesign #ContentCreation #AIRevolution",
+    "image_paths": [
+      "posts/reel/1788440116_reel_scene_1.png",
+      "posts/reel/1788440116_reel_scene_2.png",
+      "posts/reel/1788440116_reel_scene_3.png",
+      "posts/reel/1788440116_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788440116_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788440116_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788440116_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788440116_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788440116.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788440116.mp4",
+    "text_overlays": [
+      "Concept to Image \u26a1\ufe0f",
+      "Endless Styles \u2728",
+      "Fast & Easy \ud83d\ude80",
+      "Wow Your Audience \ud83e\udd29"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-03T12:55:16.970385+00:00",
+    "status": "pending"
   }
 ]
