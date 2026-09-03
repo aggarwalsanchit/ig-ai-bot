@@ -723,5 +723,30 @@
     "content_type": "reel",
     "created_at": "2026-09-02T17:15:11.108922+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Tired of the endless back-and-forth to schedule meetings? AI is here to revolutionize your calendar management.\n\nImagine never having to juggle availability again. AI tools can find the perfect meeting times for everyone, send out invites, and even reschedule if needed. It's like having a personal assistant dedicated to your calendar.\n\nReady to free up your time and boost your productivity? Explore the power of AI scheduling and say goodbye to meeting mayhem forever.",
+    "hashtags": "#AItools #AIScheduling #MeetingProductivity #TimeManagement #ArtificialIntelligence #FutureOfWork #ProductivityHacks #WorkSmart #SmartTools #BusinessTools #CalendarManagement #Automation #TechTools #DigitalTools #AIforBusiness #ProductivityTips #MeetingScheduler #Efficiency",
+    "image_paths": [
+      "posts/single/1788423303_carousel_slide_1.png",
+      "posts/single/1788423303_carousel_slide_2.png",
+      "posts/single/1788423303_carousel_slide_3.png",
+      "posts/single/1788423303_carousel_slide_4.png",
+      "posts/single/1788423303_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788423303_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788423303_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788423303_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788423303_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788423303_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-03T08:15:03.729448+00:00",
+    "status": "pending"
   }
 ]
