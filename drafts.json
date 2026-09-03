@@ -779,5 +779,36 @@
     "content_type": "reel",
     "created_at": "2026-09-03T12:55:16.970385+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Entry",
+    "caption": "Tired of endless hours spent on manual data entry and complex spreadsheets? We've all been there! It's time to ditch the drudgery and embrace the future of data management.",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #Productivity #AIforBusiness #TechTips #FutureOfWork #Efficiency #DataManagement #BusinessTools #Innovation #SmartTech #ArtificialIntelligence #AI",
+    "image_paths": [
+      "posts/reel/1788455237_reel_scene_1.png",
+      "posts/reel/1788455237_reel_scene_2.png",
+      "posts/reel/1788455237_reel_scene_3.png",
+      "posts/reel/1788455237_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788455237_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788455237_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788455237_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788455237_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788455237.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788455237.mp4",
+    "text_overlays": [
+      "Manual Data Entry \ud83d\ude29",
+      "Errors & Delays \u274c\u23f3",
+      "AI Magic Happening! \ud83e\ude84",
+      "Data Done, Fast! \ud83d\udca8"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-03T17:07:17.031900+00:00",
+    "status": "pending"
   }
 ]
