@@ -866,5 +866,36 @@
     "content_type": "reel",
     "created_at": "2026-09-04T12:50:12.605822+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling swamped by information?  Drowning in articles, reports, and endless research?  We get it.  But what if you could instantly cut through the noise and get to the core of any topic?\n\nAI-powered summarization tools are your new secret weapon.  Transform dense text into digestible insights in seconds.  Unlock your productivity and make smarter decisions with less effort.",
+    "hashtags": "#AItools #AISummarizer #ProductivityHacks #ResearchTools #InformationOverload #LearnFaster #AIforStudents #AIforProfessionals #TechTips #FutureOfWork #SmartLearning #KnowledgeIsPower #Innovation #DigitalTools",
+    "image_paths": [
+      "posts/reel/1788541042_reel_scene_1.png",
+      "posts/reel/1788541042_reel_scene_2.png",
+      "posts/reel/1788541042_reel_scene_3.png",
+      "posts/reel/1788541042_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788541042_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788541042_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788541042_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788541042_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788541042.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788541042.mp4",
+    "text_overlays": [
+      "Endless articles...",
+      "AI magic \u2728",
+      "Key points only",
+      "Smart summaries! \ud83d\udca1"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-04T16:57:22.314130+00:00",
+    "status": "pending"
   }
 ]
