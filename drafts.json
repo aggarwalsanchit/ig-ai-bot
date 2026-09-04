@@ -810,5 +810,30 @@
     "content_type": "reel",
     "created_at": "2026-09-03T17:07:17.031900+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Struggling to keep up with content demands? We've all been there. Writer's block and endless hours spent drafting can be incredibly frustrating.\n\nBut what if you could have a powerful assistant to spark creativity and speed up your workflow? AI writing tools are here to transform your content creation game.\n\nDiscover how AI can help you overcome these challenges and unlock your true content potential. Swipe through to see how!",
+    "hashtags": "#AIwriting #ContentCreation #AITools #WritingTools #DigitalMarketing #SocialMediaMarketing #ContentMarketing #AIforCreators #Productivity #MarketingTools #Copywriting #GenerativeAI #FutureofWork #TechTools #SmallBusiness #Entrepreneurship #Blogging #OnlineContent #CreativeAI #AIRevolution",
+    "image_paths": [
+      "posts/single/1788509456_carousel_slide_1.png",
+      "posts/single/1788509456_carousel_slide_2.png",
+      "posts/single/1788509456_carousel_slide_3.png",
+      "posts/single/1788509456_carousel_slide_4.png",
+      "posts/single/1788509456_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788509456_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788509456_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788509456_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788509456_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788509456_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-04T08:10:56.160994+00:00",
+    "status": "pending"
   }
 ]
