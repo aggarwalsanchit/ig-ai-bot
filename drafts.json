@@ -1003,5 +1003,30 @@
     "content_type": "carousel",
     "created_at": "2026-09-06T08:05:00.180195+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "Code Companion AI",
+    "caption": "Stop wasting your valuable time on tedious debugging!  AI tools are revolutionizing how we write and fix code.  Imagine your code flowing seamlessly without those frustrating roadblocks.\n\nThis AI companion acts like your expert coding partner, spotting errors you might miss and suggesting elegant solutions.  It's designed to make your coding journey smoother and more enjoyable, allowing you to focus on building amazing things. Ready to see the difference?\n\nSwipe through to discover how AI can transform your coding workflow.  We'll show you the problems, the AI solution, and the incredible benefits you'll experience.  Don't miss out on this game-changer!",
+    "hashtags": "#AItools #AICoding #CodingAssistant #DebugAI #SoftwareDevelopment #Programming #TechTools #DeveloperTools #CodeOptimization #AIinTech #FutureofCode #LearnToCode #AIforDevelopers #ProductivityHacks #TechInnovation #AIHelper #CodeNinja #SmartCoding #TechLife #AIRevolution",
+    "image_paths": [
+      "posts/single/1788696798_carousel_slide_1.png",
+      "posts/single/1788696798_carousel_slide_2.png",
+      "posts/single/1788696798_carousel_slide_3.png",
+      "posts/single/1788696798_carousel_slide_4.png",
+      "posts/single/1788696798_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788696798_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788696798_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788696798_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788696798_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1788696798_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-06T12:13:18.481977+00:00",
+    "status": "pending"
   }
 ]
