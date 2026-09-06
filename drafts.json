@@ -1028,5 +1028,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-06T12:13:18.481977+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling overwhelmed by mountains of information? We've all been there \u2013 endless articles, dense reports, and too little time to get to the core.  It's tough to stay on top of everything when the information keeps coming.\n\nBut what if you could instantly distill all that data into digestible summaries? AI tools are here to transform your research process, saving you precious hours and boosting your understanding. Get ready to supercharge your learning and productivity!",
+    "hashtags": "#AItools #AISummarizer #ResearchHelper #ProductivityHacks #StudyTips #InformationOverload #AIforStudents #AIforProfessionals #TechTools #SmartLearning #FutureofWork #ContentCreation #KnowledgeIsPower #EfficiencyBoost",
+    "image_paths": [
+      "posts/reel/1788711805_reel_scene_1.png",
+      "posts/reel/1788711805_reel_scene_2.png",
+      "posts/reel/1788711805_reel_scene_3.png",
+      "posts/reel/1788711805_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788711805_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788711805_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788711805_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788711805_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788711805.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788711805.mp4",
+    "text_overlays": [
+      "Endless Articles \ud83d\udcda",
+      "AI Eats It Up! \ud83e\udd16",
+      "Key Points Revealed! \ud83d\udca1",
+      "Master Info Fast! \u26a1\ufe0f"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-06T16:23:25.357993+00:00",
+    "status": "pending"
   }
 ]
