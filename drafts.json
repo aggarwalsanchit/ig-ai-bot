@@ -1171,5 +1171,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-08T08:18:51.689600+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "Code Genius",
+    "caption": "Tired of chasing bugs? Our AI coding assistant is here to revolutionize your workflow. Imagine writing cleaner code, faster, with fewer headaches. \n\nThis tool acts like your super-powered pair programmer, spotting potential issues before they even become a problem. Spend less time debugging and more time building amazing things.",
+    "hashtags": "#AItools #coding #debugging #developer #programming #softwaredevelopment #AI #artificialintelligence #codinglife #tech #innovation #programmingtips #developerlife #futureofcoding",
+    "image_paths": [
+      "posts/reel/1788872277_reel_scene_1.png",
+      "posts/reel/1788872277_reel_scene_2.png",
+      "posts/reel/1788872277_reel_scene_3.png",
+      "posts/reel/1788872277_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788872277_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788872277_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788872277_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788872277_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788872277.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788872277.mp4",
+    "text_overlays": [
+      "Coding Blocked \ud83d\ude29",
+      "AI Finds Bugs \ud83d\ude80",
+      "Instant Fixes \u2705",
+      "Code Like a Pro \ud83d\ude0e"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-08T12:57:57.973695+00:00",
+    "status": "pending"
   }
 ]
