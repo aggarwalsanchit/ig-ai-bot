@@ -1202,5 +1202,36 @@
     "content_type": "reel",
     "created_at": "2026-09-08T12:57:57.973695+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizers",
+    "caption": "Feeling swamped by information? We've all been there! Juggling research, articles, and endless data can feel impossible. But what if there was a smarter way to absorb it all? \n\nAI-powered summarizers are game-changers. They can condense lengthy texts into concise, easy-to-understand points. Imagine getting the core insights without spending hours reading. \n\nBoost your productivity and stay ahead of the curve. Unlock the power of AI for your research and learning. It's time to work smarter, not harder!",
+    "hashtags": "#AItools #AISummarizer #ResearchAI #ProductivityHacks #LearnFaster #InformationOverload #TechTools #FutureOfWork #AIforStudents #AIforProfessionals #SmartLearning #ContentCreation #DigitalTools #AIRevolution",
+    "image_paths": [
+      "posts/reel/1788888054_reel_scene_1.png",
+      "posts/reel/1788888054_reel_scene_2.png",
+      "posts/reel/1788888054_reel_scene_3.png",
+      "posts/reel/1788888054_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788888054_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788888054_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788888054_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788888054_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788888054.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788888054.mp4",
+    "text_overlays": [
+      "Too much to read?",
+      "AI understands it all.",
+      "Get key takeaways fast.",
+      "Learn more, faster!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-08T17:20:54.172092+00:00",
+    "status": "pending"
   }
 ]
