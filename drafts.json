@@ -1258,5 +1258,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-09T08:20:26.789299+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "AI Design Magic",
+    "caption": "Tired of struggling with design?  Imagine your wildest ideas brought to life in seconds.  AI tools are revolutionizing how we create visuals, making stunning graphics accessible to everyone.\n\nFrom social media posts to presentations, unlock your creative potential and make your brand unforgettable. Say goodbye to design roadblocks and hello to effortless, eye-catching content.",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #Visuals #Creativity #Innovation #DigitalArt #MarketingTools #ContentCreation #DesignInspo #AIArt #TechTools #DesignSoftware #FutureOfDesign #VisualMarketing",
+    "image_paths": [
+      "posts/reel/1788959008_reel_scene_1.png",
+      "posts/reel/1788959008_reel_scene_2.png",
+      "posts/reel/1788959008_reel_scene_3.png",
+      "posts/reel/1788959008_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788959008_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788959008_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788959008_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788959008_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788959008.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788959008.mp4",
+    "text_overlays": [
+      "Dream it. \ud83d\udcad",
+      "AI Creates. \ud83c\udfa8",
+      "WOW Effect. \ud83e\udd29",
+      "Your Brand. \ud83d\udcaf"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-09T13:03:28.880793+00:00",
+    "status": "pending"
   }
 ]
