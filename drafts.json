@@ -1289,5 +1289,36 @@
     "content_type": "reel",
     "created_at": "2026-09-09T13:03:28.880793+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Cruncher",
+    "caption": "Drowning in spreadsheets and manual data entry? We feel you! Those endless hours spent typing, copying, and pasting can be a huge drain on your productivity.",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #Productivity #Efficiency #AI #Tech #Business #WorkSmart #FutureOfWork #DataManagement #AIpower #DigitalTransformation",
+    "image_paths": [
+      "posts/reel/1788974021_reel_scene_1.png",
+      "posts/reel/1788974021_reel_scene_2.png",
+      "posts/reel/1788974021_reel_scene_3.png",
+      "posts/reel/1788974021_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788974021_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788974021_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788974021_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1788974021_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1788974021.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1788974021.mp4",
+    "text_overlays": [
+      "Tired of typing?",
+      "AI does the work!",
+      "Data magic unlocked!",
+      "Get your time back!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-09T17:13:41.637418+00:00",
+    "status": "pending"
   }
 ]
