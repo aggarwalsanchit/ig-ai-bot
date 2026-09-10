@@ -1345,5 +1345,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-10T08:21:41.767420+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Tired of staring at endless lines of code, searching for that one elusive bug? We've all been there! Frustration is a coder's worst enemy. \n\nBut what if you could have a super-powered assistant to zap those bugs before they even start? Introducing the magic of AI-powered coding and debugging tools!\n\nSee how AI can transform your coding workflow from frustrating to fabulous. Get ready to write cleaner, faster, and more efficient code than ever before. Your next big project is waiting!",
+    "hashtags": "#AItools #AICoding #CodingLife #Developer #Programming #Tech #SoftwareDevelopment #BugFixing #AIinTech #CodeNewbie #WebDevelopment #AppDevelopment #FutureOfCode #Productivity #Innovation #MachineLearning",
+    "image_paths": [
+      "posts/reel/1789045229_reel_scene_1.png",
+      "posts/reel/1789045229_reel_scene_2.png",
+      "posts/reel/1789045229_reel_scene_3.png",
+      "posts/reel/1789045229_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789045229_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789045229_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789045229_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789045229_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789045229.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789045229.mp4",
+    "text_overlays": [
+      "Coding roadblocks? \ud83d\udea7",
+      "AI spots the bugs! \ud83d\udd0e",
+      "Instant fixes applied! \u2705",
+      "Launch your app NOW! \ud83d\ude80"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-10T13:00:29.494752+00:00",
+    "status": "pending"
   }
 ]
