@@ -1544,5 +1544,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-12T12:15:40.356079+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizers",
+    "caption": "Tired of endless scrolling and feeling overwhelmed by information?  Imagine getting the gist of any article, report, or document in seconds. AI summarization tools are here to revolutionize how you learn and stay informed.\n\nStop wasting hours sifting through content. These intelligent tools extract the most crucial information, giving you concise summaries so you can focus on what truly matters and make faster, smarter decisions.",
+    "hashtags": "#AItools #AISummarizer #ProductivityHacks #ResearchTools #LearnFaster #InformationOverload #SmartLearning #AITechnology #FutureOfWork #KnowledgeIsPower #DigitalTools #TechForGood #StudyHacks #AIRevolution",
+    "image_paths": [
+      "posts/reel/1789230327_reel_scene_1.png",
+      "posts/reel/1789230327_reel_scene_2.png",
+      "posts/reel/1789230327_reel_scene_3.png",
+      "posts/reel/1789230327_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789230327_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789230327_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789230327_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789230327_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789230327.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789230327.mp4",
+    "text_overlays": [
+      "Endless Articles? \ud83d\udcda",
+      "AI Digest! \ud83d\udca1",
+      "Key Points Fast! \u26a1",
+      "Master Info! \ud83e\udde0"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-12T16:25:27.730478+00:00",
+    "status": "pending"
   }
 ]
