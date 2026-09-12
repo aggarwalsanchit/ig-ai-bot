@@ -1519,5 +1519,30 @@
     "content_type": "carousel",
     "created_at": "2026-09-12T08:05:59.160066+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "Code AI",
+    "caption": "Struggling with endless lines of code and elusive bugs? We've got a game-changer for your development process.\n\nImagine instantly identifying errors, getting smart suggestions for fixes, and understanding complex code logic in seconds. This AI tool is designed to make your coding journey smoother and more efficient than ever before.\n\nReady to boost your productivity and deliver higher quality code? Dive into the future of development with AI assistance.",
+    "hashtags": "#AItools #AICoding #Debugging #Programming #SoftwareDevelopment #Tech #Innovation #Developer #CodeLife #ArtificialIntelligence #Productivity #TechTools #CodingTips #FutureOfCode #LearnToCode #WebDevelopment #AppDevelopment #OpenSource #AIinTech",
+    "image_paths": [
+      "posts/single/1789215340_carousel_slide_1.png",
+      "posts/single/1789215340_carousel_slide_2.png",
+      "posts/single/1789215340_carousel_slide_3.png",
+      "posts/single/1789215340_carousel_slide_4.png",
+      "posts/single/1789215340_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789215340_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789215340_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789215340_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789215340_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789215340_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-12T12:15:40.356079+00:00",
+    "status": "pending"
   }
 ]
