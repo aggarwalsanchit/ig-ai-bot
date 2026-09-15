@@ -1791,5 +1791,36 @@
     "content_type": "reel",
     "created_at": "2026-09-15T13:43:52.092901+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Entry",
+    "caption": "Tired of endless hours spent on data entry and spreadsheets? We get it. That soul-crushing, manual work can drain your energy and lead to costly mistakes.\n\nImagine a world where your data flows seamlessly, your spreadsheets update themselves, and you have more time for the important stuff. AI tools are making this a reality, transforming how we interact with data and freeing us up for innovation and strategy.",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #Productivity #BusinessTips #FutureOfWork #AIforBusiness #Tech #Innovation #Efficiency #WorkSmarter #DigitalTransformation #AIRevolution #SmallBusiness",
+    "image_paths": [
+      "posts/reel/1789494243_reel_scene_1.png",
+      "posts/reel/1789494243_reel_scene_2.png",
+      "posts/reel/1789494243_reel_scene_3.png",
+      "posts/reel/1789494243_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789494243_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789494243_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789494243_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789494243_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789494243.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789494243.mp4",
+    "text_overlays": [
+      "Drowning in Data?",
+      "AI to the Rescue! \ud83d\ude80",
+      "Automate & Save Time!",
+      "Unlock Your Potential! \ud83d\udd11"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-15T17:44:03.866523+00:00",
+    "status": "pending"
   }
 ]
