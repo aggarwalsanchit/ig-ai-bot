@@ -1760,5 +1760,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-15T08:55:23.498410+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Struggling to bring your creative visions to life? Forget endless hours of design. Artificial intelligence is revolutionizing how we create stunning visuals, from concept to final product.\n\nImagine transforming your ideas into breathtaking images, illustrations, or even animations with just a few words. AI design tools empower everyone to be a visual creator, no matter their skill level. Get ready to be amazed!",
+    "hashtags": "#AItools #AIDesign #Midjourney #GenerativeArt #CreativeAI #DigitalArt #VisualContent #ArtTech #Innovation #GraphicDesign #AIcommunity #ContentCreation #DesignInspo #FutureOfArt",
+    "image_paths": [
+      "posts/reel/1789479832_reel_scene_1.png",
+      "posts/reel/1789479832_reel_scene_2.png",
+      "posts/reel/1789479832_reel_scene_3.png",
+      "posts/reel/1789479832_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789479832_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789479832_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789479832_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789479832_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789479832.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789479832.mp4",
+    "text_overlays": [
+      "Dream it.",
+      "Type it.",
+      "See it.",
+      "Wow!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-15T13:43:52.092901+00:00",
+    "status": "pending"
   }
 ]
