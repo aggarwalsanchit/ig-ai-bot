@@ -1847,5 +1847,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-16T08:48:12.797718+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder Buddy",
+    "caption": "Feeling stuck with lines of code? Those pesky bugs can really halt your progress and drain your creative energy.\n\nImagine having a smart assistant that instantly spots errors and suggests solutions. That's the power of AI in coding!",
+    "hashtags": "#AItools #AICoding #Programming #Debug #SoftwareDevelopment #TechTips #FutureOfCode #DeveloperLife #CodersOfInstagram #ArtificialIntelligence #LearnToCode #TechInspo #Innovation #ProductivityHacks",
+    "image_paths": [
+      "posts/reel/1789565816_reel_scene_1.png",
+      "posts/reel/1789565816_reel_scene_2.png",
+      "posts/reel/1789565816_reel_scene_3.png",
+      "posts/reel/1789565816_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789565816_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789565816_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789565816_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789565816_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789565816.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789565816.mp4",
+    "text_overlays": [
+      "Writer's block?",
+      "Bugs everywhere!",
+      "AI assists!",
+      "Perfect code!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-16T13:36:56.752432+00:00",
+    "status": "pending"
   }
 ]
