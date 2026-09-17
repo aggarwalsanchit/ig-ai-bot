@@ -1909,5 +1909,30 @@
     "content_type": "reel",
     "created_at": "2026-09-16T17:41:38.217324+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "Meeting Maestro",
+    "caption": "Are you tired of the endless email chains trying to find a meeting time that works for everyone? It\u2019s a frustrating process that eats up valuable work hours.\n\nImagine if scheduling could be effortless. Our AI tool, Meeting Maestro, takes the pain out of coordination. It intelligently finds the best slots, sends out invitations, and handles RSVPs, freeing you up to focus on what truly matters.\n\nStop letting scheduling steal your productive time. Discover how Meeting Maestro can transform your workflow. Visit the link in our bio to learn more and start scheduling smarter today!",
+    "hashtags": "#AItools #Scheduling #MeetingProductivity #AIassistant #ProductivityHacks #SmartScheduling #TimeManagement #WorkEfficiency #BusinessTools #AIforBusiness #FutureOfWork #MeetingManagement #CalendarManagement #AIAutomation #DigitalTools #TechSavvy #Innovation #WorkflowOptimization #GetMoreDone #AIinAction",
+    "image_paths": [
+      "posts/single/1789635217_carousel_slide_1.png",
+      "posts/single/1789635217_carousel_slide_2.png",
+      "posts/single/1789635217_carousel_slide_3.png",
+      "posts/single/1789635217_carousel_slide_4.png",
+      "posts/single/1789635217_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789635217_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789635217_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789635217_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789635217_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789635217_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-17T08:53:37.561944+00:00",
+    "status": "pending"
   }
 ]
