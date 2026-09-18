@@ -2021,5 +2021,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-18T08:28:27.162323+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Tired of chasing elusive bugs? This AI tool is your secret weapon for lightning-fast debugging.  Stop wasting hours and start building your next big idea with ease!\n\nImagine effortlessly finding and fixing errors, making your coding process smoother and more enjoyable.  Level up your development game and bring your projects to life faster than ever before.",
+    "hashtags": "#AItools #Coding #Programming #Developers #SoftwareDevelopment #BugFixing #AIforCoders #Tech #Innovation #Productivity #CodeLife #FutureOfTech #AI #DevTools #LearnToCode",
+    "image_paths": [
+      "posts/reel/1789736620_reel_scene_1.png",
+      "posts/reel/1789736620_reel_scene_2.png",
+      "posts/reel/1789736620_reel_scene_3.png",
+      "posts/reel/1789736620_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789736620_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789736620_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789736620_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789736620_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789736620.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789736620.mp4",
+    "text_overlays": [
+      "Coding struggles? \ud83d\udcbb",
+      "AI Debugging Magic! \u2728",
+      "Fix errors fast! \u2705",
+      "Build with confidence! \ud83d\udcaa"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-18T13:03:40.303277+00:00",
+    "status": "pending"
   }
 ]
