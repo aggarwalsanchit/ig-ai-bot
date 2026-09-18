@@ -2052,5 +2052,36 @@
     "content_type": "reel",
     "created_at": "2026-09-18T13:03:40.303277+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling overwhelmed by the sheer volume of information out there?  Whether it's articles, research papers, or long reports, it's easy to get lost.  AI tools are here to be your intellectual superhero!\n\nImagine having the core insights of any text delivered to you in seconds.  This is not magic, it's the power of AI summarization.  Save time, boost your productivity, and truly understand what matters.",
+    "hashtags": "#AItools #AISummarizer #ResearchAI #ProductivityHacks #InfoOverload #FutureOfWork #TechTools #SmartLearning #Efficiency #DigitalTools #AIForEveryone #KnowledgeIsPower #StudyHacks #WorkSmarter",
+    "image_paths": [
+      "posts/reel/1789751365_reel_scene_1.png",
+      "posts/reel/1789751365_reel_scene_2.png",
+      "posts/reel/1789751365_reel_scene_3.png",
+      "posts/reel/1789751365_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789751365_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789751365_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789751365_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789751365_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789751365.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789751365.mp4",
+    "text_overlays": [
+      "Endless Scrolling? \ud83d\udcda",
+      "AI reads it for you! \ud83e\udd16",
+      "Get key points! \u2728",
+      "Your brain will thank you! \u2705"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-18T17:09:25.300131+00:00",
+    "status": "pending"
   }
 ]
