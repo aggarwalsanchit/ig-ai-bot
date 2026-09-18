@@ -1996,5 +1996,30 @@
     "content_type": "reel",
     "created_at": "2026-09-17T17:42:16.156059+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer Pro",
+    "caption": "Feeling stuck with your writing? We've all been there. Staring at a blank screen can be the biggest hurdle to creating amazing content.\n\nBut what if you had a secret weapon? This AI tool can help you overcome writer's block, brainstorm ideas, and craft compelling copy in minutes. Imagine producing high-quality content consistently and effortlessly.",
+    "hashtags": "#AItools #ContentCreation #WritingTools #AIwriting #Copywriting #ContentMarketing #DigitalMarketing #MarketingTools #Productivity #Innovation #Tech #ArtificialIntelligence #CreativeWriting #SocialMediaMarketing #BusinessGrowth #ContentStrategy #MarketingTips #AITechnology",
+    "image_paths": [
+      "posts/single/1789720107_carousel_slide_1.png",
+      "posts/single/1789720107_carousel_slide_2.png",
+      "posts/single/1789720107_carousel_slide_3.png",
+      "posts/single/1789720107_carousel_slide_4.png",
+      "posts/single/1789720107_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789720107_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789720107_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789720107_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789720107_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789720107_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-18T08:28:27.162323+00:00",
+    "status": "pending"
   }
 ]
