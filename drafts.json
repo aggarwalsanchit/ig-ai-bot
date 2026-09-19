@@ -2083,5 +2083,30 @@
     "content_type": "reel",
     "created_at": "2026-09-18T17:09:25.300131+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Tired of the never-ending email chains to find a meeting time? AI is here to revolutionize your scheduling.\n\nImagine effortlessly booking meetings without any back-and-forth. AI tools can analyze your calendar, find the best slots, and even send out invites, saving you valuable time and reducing stress.\n\nStart reclaiming your workday and boost your productivity with intelligent scheduling. Explore the AI tools that will transform how you manage your calendar. Find out more via the link in our bio!",
+    "hashtags": "#AItools #ArtificialIntelligence #MeetingScheduler #Productivity #TimeManagement #BusinessTools #WorkSmart #AIforBusiness #Automation #DigitalTools #FutureOfWork #TechTools #SmartOffice #Efficiency #ProfessionalDevelopment #AIinAction #GetOrganized #TaskManagement",
+    "image_paths": [
+      "posts/single/1789805704_carousel_slide_1.png",
+      "posts/single/1789805704_carousel_slide_2.png",
+      "posts/single/1789805704_carousel_slide_3.png",
+      "posts/single/1789805704_carousel_slide_4.png",
+      "posts/single/1789805704_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789805704_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789805704_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789805704_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789805704_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789805704_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-19T08:15:04.534987+00:00",
+    "status": "pending"
   }
 ]
