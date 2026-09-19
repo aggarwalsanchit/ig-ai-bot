@@ -2108,5 +2108,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-19T08:15:04.534987+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Tired of staring at a blank canvas? AI design tools are a game-changer for anyone looking to create visually stunning content without needing to be a pro designer.\n\nImagine generating unique images, logos, and graphics in seconds. These tools are perfect for social media posts, presentations, or just bringing your wildest ideas to life. Dive in and see what you can create!",
+    "hashtags": "#AItools #AIDesign #GenerativeArt #DigitalArt #CreativeAI #DesignInspiration #VisualStorytelling #AIArtCommunity #TechForCreators #ArtGeneration #MidjourneyArt #Dalle2 #StableDiffusion #AIcreativity #ArtTech",
+    "image_paths": [
+      "posts/reel/1789821380_reel_scene_1.png",
+      "posts/reel/1789821380_reel_scene_2.png",
+      "posts/reel/1789821380_reel_scene_3.png",
+      "posts/reel/1789821380_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789821380_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789821380_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789821380_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789821380_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789821380.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789821380.mp4",
+    "text_overlays": [
+      "Unleash Your Vision",
+      "Stunning Art",
+      "Quickly!",
+      "Get Inspired Now!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-19T12:36:20.866928+00:00",
+    "status": "pending"
   }
 ]
