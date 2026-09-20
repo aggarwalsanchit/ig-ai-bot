@@ -2195,5 +2195,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-20T08:47:11.090025+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Feeling stuck with tricky code? AI tools are here to rescue your development process!\n\nFrom writing complex functions to squashing those annoying bugs, AI can significantly speed up your workflow. Get more done and focus on building awesome things.\n\nIt's like having a super-powered coding assistant right by your side!",
+    "hashtags": "#AItools #AICoding #Coding #Programming #Developer #SoftwareDevelopment #Tech #Innovation #BugFixing #CodeHelper #FutureOfTech #AIforDevelopers #Productivity #GetItDone",
+    "image_paths": [
+      "posts/reel/1789909645_reel_scene_1.png",
+      "posts/reel/1789909645_reel_scene_2.png",
+      "posts/reel/1789909645_reel_scene_3.png",
+      "posts/reel/1789909645_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789909645_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789909645_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789909645_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789909645_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789909645.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789909645.mp4",
+    "text_overlays": [
+      "Code Glitches? \ud83d\udc1b",
+      "AI Magic \u2728",
+      "Find Bugs Fast \ud83d\udd0d",
+      "Write Better Code \ud83d\ude80"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-20T13:07:25.845486+00:00",
+    "status": "pending"
   }
 ]
