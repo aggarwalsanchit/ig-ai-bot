@@ -2226,5 +2226,36 @@
     "content_type": "reel",
     "created_at": "2026-09-20T13:07:25.845486+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling overwhelmed by mountains of information?  We've all been there, staring at endless articles and reports.  It's tough to sift through it all to find what truly matters.\n\nBut what if there was a way to instantly get the gist?  AI summarization tools can transform dense text into concise, digestible insights.  Save precious time and finally conquer your research goals!",
+    "hashtags": "#AItools #AISummarizer #ResearchTools #ProductivityHacks #LearnFaster #InformationOverload #AISolutions #StudyHacks #DigitalTools #AIforEveryone #KnowledgeIsPower #FutureTech #SmartLearning #Efficiency",
+    "image_paths": [
+      "posts/reel/1789923344_reel_scene_1.png",
+      "posts/reel/1789923344_reel_scene_2.png",
+      "posts/reel/1789923344_reel_scene_3.png",
+      "posts/reel/1789923344_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789923344_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789923344_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789923344_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1789923344_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1789923344.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1789923344.mp4",
+    "text_overlays": [
+      "Endless articles? \ud83d\udcda",
+      "AI digests it. \ud83e\udde0",
+      "Key points unlocked! \ud83d\udd11",
+      "Master info fast! \u2705"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-20T16:55:44.239707+00:00",
+    "status": "pending"
   }
 ]
