@@ -2257,5 +2257,30 @@
     "content_type": "reel",
     "created_at": "2026-09-20T16:55:44.239707+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Are you drowning in scheduling emails?  Spending more time coordinating meetings than actually having them? It's time to fight back with AI.\n\nAI scheduling tools are a game-changer for busy professionals. They take the pain out of finding a common time, sending invites, and even handling reschedules. Imagine a world where your calendar practically manages itself.\n\nReady to experience the difference?  Stop letting your calendar dictate your day and start getting more done.  Explore the power of AI for your scheduling needs.",
+    "hashtags": "#AItools #ArtificialIntelligence #Productivity #TimeManagement #MeetingScheduler #Automation #WorkSmarter #FutureOfWork #BusinessTools #TechTips #AIforBusiness #SmartCalendar #Efficiency #ProfessionalDevelopment #DigitalTools #WorkflowAutomation #AIRevolution",
+    "image_paths": [
+      "posts/single/1789982094_carousel_slide_1.png",
+      "posts/single/1789982094_carousel_slide_2.png",
+      "posts/single/1789982094_carousel_slide_3.png",
+      "posts/single/1789982094_carousel_slide_4.png",
+      "posts/single/1789982094_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789982094_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789982094_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789982094_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789982094_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1789982094_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-21T09:14:54.925003+00:00",
+    "status": "pending"
   }
 ]
