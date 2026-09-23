@@ -2473,5 +2473,36 @@
     "content_type": "reel",
     "created_at": "2026-09-23T13:45:43.737881+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Wizard",
+    "caption": "Drowning in data entry? Those endless rows and columns can be a total time suck. But what if there was a smarter way?\n\nImagine your spreadsheets filling themselves, perfectly accurate, in a fraction of the time. That's the power of AI data entry tools! Stop wasting hours on repetitive tasks and unlock your productivity potential.",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #Productivity #Business #Tech #Innovation #AI #Efficiency #WorkSmarter #FutureOfWork #DataManagement #ArtificialIntelligence #SmallBusiness #Entrepreneur",
+    "image_paths": [
+      "posts/reel/1790186104_reel_scene_1.png",
+      "posts/reel/1790186104_reel_scene_2.png",
+      "posts/reel/1790186104_reel_scene_3.png",
+      "posts/reel/1790186104_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790186104_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790186104_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790186104_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790186104_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790186104.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790186104.mp4",
+    "text_overlays": [
+      "Tired of spreadsheets? \ud83d\ude2b",
+      "AI enters data FAST! \u26a1\ufe0f",
+      "Accuracy guaranteed. \u2705",
+      "Reclaim your time! \u23f3"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-23T17:55:04.259623+00:00",
+    "status": "pending"
   }
 ]
