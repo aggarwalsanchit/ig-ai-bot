@@ -2417,5 +2417,30 @@
     "content_type": "reel",
     "created_at": "2026-09-22T17:41:52.119314+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Scheduler",
+    "caption": "Stop letting scheduling steal your valuable time.  Juggling multiple calendars and finding that perfect meeting slot can be a frustrating nightmare.  We've all been there, right?\n\nBut what if AI could take that entire burden off your shoulders? Imagine effortlessly finding the ideal time for your team or clients, without the endless email chains.  This isn't a dream; it's the reality with the latest AI scheduling tools.  Get ready to boost your productivity and get back to what truly matters.",
+    "hashtags": "#AItools #AIScheduling #MeetingManagement #ProductivityHacks #TimeManagement #ArtificialIntelligence #SmartCalendar #WorkLifeBalance #Efficiency #BusinessTools #FutureOfWork #AIforBusiness #Automation #DigitalTools #TeamCollaboration #MeetingSolutions #GetOrganized",
+    "image_paths": [
+      "posts/single/1790153301_carousel_slide_1.png",
+      "posts/single/1790153301_carousel_slide_2.png",
+      "posts/single/1790153301_carousel_slide_3.png",
+      "posts/single/1790153301_carousel_slide_4.png",
+      "posts/single/1790153301_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790153301_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790153301_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790153301_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790153301_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790153301_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-23T08:48:21.063904+00:00",
+    "status": "pending"
   }
 ]
