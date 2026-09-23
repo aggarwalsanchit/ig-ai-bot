@@ -2442,5 +2442,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-23T08:48:21.063904+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Visual AI",
+    "caption": "Tired of spending hours on design?  Imagine generating eye-catching visuals with just a few words. AI tools are revolutionizing how we create, making stunning graphics accessible to everyone.  From social media posts to presentations, unlock your creative potential and make your content pop.\n\nDive into a world where your ideas transform into breathtaking visuals in seconds. It's time to ditch the design struggles and embrace the future of creation. Get ready to amaze your audience!",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #VisualContent #CreativeAI #ArtGeneration #DesignInspiration #DigitalArt #AIcreativity #ContentCreation #Visuals #Tech #Innovation #FutureOfDesign #MarketingTools #SocialMediaTips",
+    "image_paths": [
+      "posts/reel/1790171143_reel_scene_1.png",
+      "posts/reel/1790171143_reel_scene_2.png",
+      "posts/reel/1790171143_reel_scene_3.png",
+      "posts/reel/1790171143_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790171143_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790171143_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790171143_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790171143_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790171143.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790171143.mp4",
+    "text_overlays": [
+      "Dream it. Create it.",
+      "Instant amazing art.",
+      "Elevate your feed.",
+      "Design made simple."
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-23T13:45:43.737881+00:00",
+    "status": "pending"
   }
 ]
