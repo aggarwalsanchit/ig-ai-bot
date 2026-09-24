@@ -2529,5 +2529,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-24T08:41:54.144364+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Tired of wrestling with pesky bugs? \ud83d\ude2b Let AI do the heavy lifting! Imagine your code running flawlessly, every single time.  Focus on building amazing things, not chasing down errors.\n\nAI tools are revolutionizing the way we code, making the process faster, more efficient, and dare we say... fun!  Give your coding workflow a major upgrade.",
+    "hashtags": "#AItools #AICoding #CodingLife #DeveloperTools #Programming #TechHacks #FutureOfCode #AIforDevelopers #CodeAssistant #BugFix #SoftwareDevelopment #AIproductivity #TechInnovation #LearnToCode #DevTools #CodingTips",
+    "image_paths": [
+      "posts/reel/1790257183_reel_scene_1.png",
+      "posts/reel/1790257183_reel_scene_2.png",
+      "posts/reel/1790257183_reel_scene_3.png",
+      "posts/reel/1790257183_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790257183_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790257183_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790257183_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790257183_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790257183.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790257183.mp4",
+    "text_overlays": [
+      "Coding chaos?",
+      "Meet your AI helper!",
+      "Bugs vanished!",
+      "Pure coding joy!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-24T13:39:43.379382+00:00",
+    "status": "pending"
   }
 ]
