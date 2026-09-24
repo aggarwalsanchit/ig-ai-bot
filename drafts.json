@@ -2504,5 +2504,30 @@
     "content_type": "reel",
     "created_at": "2026-09-23T17:55:04.259623+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Feeling stuck with content creation? We've all been there. The pressure to constantly produce fresh, engaging material can be overwhelming. But what if you had a brilliant assistant to help you overcome writer's block and speed up your workflow?\n\nAI writing tools are revolutionizing how we create content. From brainstorming ideas to drafting entire articles, these powerful technologies can significantly boost your productivity and creativity. Imagine generating compelling social media captions, blog posts, or even marketing copy in a fraction of the time.\n\nReady to transform your content creation process? Discover how AI can be your ultimate writing partner and unlock your full potential. It's time to write smarter, not harder.",
+    "hashtags": "#AItools #WritingTools #ContentCreation #AIWriting #MarketingTools #SocialMediaMarketing #DigitalMarketing #AIPowered #ProductivityHacks #ContentStrategy #Blogging #Copywriting #TechTools #FutureOfWork #Innovation #ArtificialIntelligence #WriterLife #CreativeTools #SmallBusinessTools #OnlineBusiness",
+    "image_paths": [
+      "posts/single/1790239314_carousel_slide_1.png",
+      "posts/single/1790239314_carousel_slide_2.png",
+      "posts/single/1790239314_carousel_slide_3.png",
+      "posts/single/1790239314_carousel_slide_4.png",
+      "posts/single/1790239314_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790239314_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790239314_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790239314_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790239314_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790239314_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-24T08:41:54.144364+00:00",
+    "status": "pending"
   }
 ]
