@@ -2616,5 +2616,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-25T09:02:33.765985+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "AI Design Magic",
+    "caption": "Tired of design block or slow workflows?  Imagine generating breathtaking visuals in seconds, tailored to your brand.  AI is revolutionizing how we create, making stunning graphics accessible to everyone.\n\nFrom social media posts to marketing materials, unlock your creative potential and make your content shine. Stop stressing, start creating! It's time to elevate your brand's visual identity with the power of AI.",
+    "hashtags": "#AI #AIDesign #GraphicDesign #Visuals #Creativity #DesignTools #AIart #DigitalArt #Marketing #Branding #ContentCreation #Innovation #Tech #FutureOfDesign #DesignInspiration #AItools",
+    "image_paths": [
+      "posts/reel/1790344812_reel_scene_1.png",
+      "posts/reel/1790344812_reel_scene_2.png",
+      "posts/reel/1790344812_reel_scene_3.png",
+      "posts/reel/1790344812_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790344812_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790344812_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790344812_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790344812_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790344812.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790344812.mp4",
+    "text_overlays": [
+      "Boring? No more! \u2728",
+      "AI magic happens. \ud83e\ude84",
+      "Endless design options. \ud83c\udfa8",
+      "Your brand, elevated. \ud83d\ude80"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-25T14:00:12.615190+00:00",
+    "status": "pending"
   }
 ]
