@@ -2703,5 +2703,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-26T08:47:52.562357+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Tired of spending hours hunting down pesky bugs? AI coding assistants are here to revolutionize your workflow! Imagine getting instant suggestions and even automatic fixes for your code.  Spend less time debugging and more time creating your next big project.  This is the future of software development, and it's more accessible than ever.",
+    "hashtags": "#AItools #Coding #Programming #Developers #Tech #SoftwareDevelopment #AIinCoding #BugFixing #FutureOfTech #CodeLife #DeveloperTools #AIforDevs #Productivity #Innovation #ArtificialIntelligence #LearnToCode",
+    "image_paths": [
+      "posts/reel/1790428584_reel_scene_1.png",
+      "posts/reel/1790428584_reel_scene_2.png",
+      "posts/reel/1790428584_reel_scene_3.png",
+      "posts/reel/1790428584_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790428584_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790428584_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790428584_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790428584_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790428584.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790428584.mp4",
+    "text_overlays": [
+      "Code Broken? \ud83d\udc94",
+      "AI to the rescue! \ud83e\udd16",
+      "Bugs Vanish! \u2705",
+      "Build Faster! \ud83d\ude80"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-26T13:16:24.910695+00:00",
+    "status": "pending"
   }
 ]
