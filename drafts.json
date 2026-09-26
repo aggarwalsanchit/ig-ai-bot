@@ -2734,5 +2734,36 @@
     "content_type": "reel",
     "created_at": "2026-09-26T13:16:24.910695+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Research AI",
+    "caption": "Feeling overwhelmed by all the information out there?  It's tough to keep up with research and endless articles.  But what if AI could do the heavy lifting for you?\n\nImagine getting the core insights from complex documents in seconds.  Save precious time, boost your knowledge, and stay ahead of the curve.  This is how you conquer information overload and become a super-feeder of facts!",
+    "hashtags": "#AItools #ResearchAI #AISummary #ProductivityHack #SmartLearning #FutureOfWork #TechTips #AIforStudents #AIforProfessionals #KnowledgeIsPower #Efficiency #InformationOverload #StudyHacks #WorkSmarter",
+    "image_paths": [
+      "posts/reel/1790443267_reel_scene_1.png",
+      "posts/reel/1790443267_reel_scene_2.png",
+      "posts/reel/1790443267_reel_scene_3.png",
+      "posts/reel/1790443267_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790443267_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790443267_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790443267_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790443267_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790443267.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790443267.mp4",
+    "text_overlays": [
+      "Too much to read?",
+      "AI gets it done!",
+      "Key points unlocked! \ud83d\udd11",
+      "Your time back! \u23f3"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-26T17:21:07.727917+00:00",
+    "status": "pending"
   }
 ]
