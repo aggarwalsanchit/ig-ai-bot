@@ -2790,5 +2790,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-27T09:29:09.481238+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney Vibes",
+    "caption": "Feeling stuck on your next design? Don't let creative blocks win!  AI powered tools are here to revolutionize how you bring your ideas to life.\n\nFrom concept to stunning visual, experience a seamless and exciting creative process. Get ready to be amazed by what you can create!",
+    "hashtags": "#AItools #AIDesign #GenerativeArt #Visuals #CreativeAI #ArtTech #DigitalArt #AICommunity #DesignInspiration #FutureOfArt #ArtGenerator #AIArtwork #CreativeTools #DesignHacks",
+    "image_paths": [
+      "posts/reel/1790518204_reel_scene_1.png",
+      "posts/reel/1790518204_reel_scene_2.png",
+      "posts/reel/1790518204_reel_scene_3.png",
+      "posts/reel/1790518204_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790518204_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790518204_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790518204_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790518204_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790518204.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790518204.mp4",
+    "text_overlays": [
+      "Imagine it...",
+      "AI creates it!",
+      "Mind-blowing art",
+      "Your vision, amplified"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-27T14:10:04.473265+00:00",
+    "status": "pending"
   }
 ]
