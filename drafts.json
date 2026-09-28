@@ -2877,5 +2877,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-28T10:06:45.037264+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Tired of wrestling with stubborn code? AI tools are here to revolutionize your development workflow.\n\nFrom instant bug fixes to generating complex code snippets, AI helps you build faster and more efficiently. Focus on innovation, let AI handle the grunt work!",
+    "hashtags": "#AItools #AICoding #CodingAssistant #Programming #Developer #Tech #Innovation #SoftwareDevelopment #AIforDevelopers #Debug #CodeLife #FutureOfTech #Productivity #AI",
+    "image_paths": [
+      "posts/reel/1790614310_reel_scene_1.png",
+      "posts/reel/1790614310_reel_scene_2.png",
+      "posts/reel/1790614310_reel_scene_3.png",
+      "posts/reel/1790614310_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790614310_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790614310_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790614310_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790614310_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790614310.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790614310.mp4",
+    "text_overlays": [
+      "Code Blocked? \ud83e\uddf1",
+      "AI Debugs Bugs \ud83d\udc1b",
+      "Generate Code Instantly \u26a1",
+      "Build Your Dream App \ud83c\udf1f"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-28T16:51:50.447722+00:00",
+    "status": "pending"
   }
 ]
