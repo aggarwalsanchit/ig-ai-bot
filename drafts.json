@@ -2852,5 +2852,30 @@
     "content_type": "reel",
     "created_at": "2026-09-27T17:54:03.531881+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Tired of staring at a blank screen? Content creation just got a whole lot easier.\n\nAI writing tools are revolutionizing how we craft everything from blog posts to social media updates. They can help you overcome writer's block, generate fresh ideas, and even draft entire pieces in a fraction of the time.\n\nReady to unlock your content potential and produce engaging material effortlessly? Explore the power of AI for your writing needs.",
+    "hashtags": "#AItools #AIwriting #ContentCreation #DigitalMarketing #AIforCreators #WritingTools #ContentMarketing #SocialMediaMarketing #AIinBusiness #Productivity #Tech #ArtificialIntelligence #MarketingTips #Copywriting #ContentStrategy #FutureOfWork #Innovation #CreativeAI #AIRevolution #SmartTools",
+    "image_paths": [
+      "posts/single/1790590005_carousel_slide_1.png",
+      "posts/single/1790590005_carousel_slide_2.png",
+      "posts/single/1790590005_carousel_slide_3.png",
+      "posts/single/1790590005_carousel_slide_4.png",
+      "posts/single/1790590005_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790590005_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790590005_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790590005_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790590005_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790590005_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-28T10:06:45.037264+00:00",
+    "status": "pending"
   }
 ]
