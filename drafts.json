@@ -2950,5 +2950,36 @@
     "content_type": "carousel",
     "created_at": "2026-09-29T10:04:42.428182+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney Magic",
+    "caption": "Tired of struggling to create eye-catching visuals for your social media? AI art generators are revolutionizing the design process, making stunning graphics accessible to everyone.\n\nImagine your wildest ideas brought to life in seconds, perfect for grabbing attention and making your content unforgettable. Elevate your brand and captivate your audience like never before.",
+    "hashtags": "#AIart #AIDesign #CreativeAI #Visuals #GraphicDesign #DigitalArt #AItools #Midjourney #ContentCreation #DesignInspiration #SocialMediaMarketing #ArtGenerator #Innovation #FutureOfDesign",
+    "image_paths": [
+      "posts/reel/1790693800_reel_scene_1.png",
+      "posts/reel/1790693800_reel_scene_2.png",
+      "posts/reel/1790693800_reel_scene_3.png",
+      "posts/reel/1790693800_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790693800_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790693800_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790693800_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790693800_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790693800.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790693800.mp4",
+    "text_overlays": [
+      "Bored visuals? \ud83d\ude34",
+      "AI creates dreams! \ud83c\udf0c",
+      "Insta-ready designs! \ud83e\udd29",
+      "Your vision, amplified! \ud83d\udca5"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-09-29T14:56:40.023612+00:00",
+    "status": "pending"
   }
 ]
