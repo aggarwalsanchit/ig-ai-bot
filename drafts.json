@@ -2925,5 +2925,30 @@
     "content_type": "single_image",
     "created_at": "2026-09-28T20:11:34.139628+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Are your days filled with the frustration of trying to find the perfect time for meetings?  Endless email chains and calendar ping-pong can eat up valuable work hours.  It's time to ditch the chaos.\n\nAI-powered scheduling tools are here to revolutionize how you manage your calendar. These intelligent assistants take the heavy lifting out of finding meeting times, sending invites, and even rescheduling when needed. Imagine a world where your calendar stays perfectly organized, allowing you to focus on your most important tasks.  Embrace the future of efficient meetings and boost your productivity with AI.",
+    "hashtags": "#AItools #ArtificialIntelligence #MeetingScheduler #ProductivityHacks #TimeManagement #SmartTools #FutureOfWork #AIforBusiness #WorkSmarter #Automation #TechTools #CalendarManagement #Efficiency #DigitalTools #AIRevolution #MeetingProductivity #BusinessTools #AIassist",
+    "image_paths": [
+      "posts/single/1790676282_carousel_slide_1.png",
+      "posts/single/1790676282_carousel_slide_2.png",
+      "posts/single/1790676282_carousel_slide_3.png",
+      "posts/single/1790676282_carousel_slide_4.png",
+      "posts/single/1790676282_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790676282_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790676282_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790676282_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790676282_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790676282_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-09-29T10:04:42.428182+00:00",
+    "status": "pending"
   }
 ]
