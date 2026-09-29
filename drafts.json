@@ -2981,5 +2981,22 @@
     "content_type": "reel",
     "created_at": "2026-09-29T14:56:40.023612+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "ChatGPT",
+    "caption": "Tired of endless typing into spreadsheets? We get it. It's a huge time suck.\n\nWhat if you could just give your notes to an AI and it built your spreadsheet for you? ChatGPT can do that! Just tell it what information you have and how you want it organized. It's like having a super-fast assistant for your data.\n\nStop wasting time on copy-pasting and start letting AI do the heavy lifting. Your spreadsheets will be ready in no time.",
+    "hashtags": "#AItools #SpreadsheetTips #DataEntry #ChatGPT #ProductivityHacks #WorkSmarter #TimeSaver #AIforBusiness #Automation #ExcelTips #GoogleSheets #OfficeHacks #BusinessTools #ArtificialIntelligence #Efficiency",
+    "image_paths": [
+      "posts/single/1790707669_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790707669_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-09-29T18:47:49.105563+00:00",
+    "status": "pending"
   }
 ]
