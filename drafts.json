@@ -3054,5 +3054,22 @@
     "content_type": "reel",
     "created_at": "2026-09-30T15:02:59.425944+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "ChatPDF",
+    "caption": "Tired of wading through lengthy reports or dense articles?  ChatPDF lets you ask questions directly about your documents.  Just upload a PDF, and ask away!  It's like having a super-smart assistant who's read it all for you.\n\nImagine needing to find a specific detail in a research paper or a contract. Instead of scanning page after page, you can simply ask ChatPDF. Get summaries, key points, or answers to your exact questions in seconds. This is a game-changer for anyone who deals with lots of information.",
+    "hashtags": "#AItools #Research #Summarizing #Productivity #TimeSaver #WorkSmart #Information #Learning #Efficiency #PDF #AIassistant #Knowledge #DeepWork #GetItDone #SmartTools",
+    "image_paths": [
+      "posts/single/1790793081_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1790793081_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-09-30T18:31:21.431028+00:00",
+    "status": "pending"
   }
 ]
