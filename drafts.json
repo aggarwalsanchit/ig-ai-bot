@@ -3096,5 +3096,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-01T10:24:01.515619+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney & DALL-E",
+    "caption": "Tired of spending hours on visuals? AI art generators are changing the game. From concept to stunning image in seconds, these tools are a dream for content creators.\n\nImagine transforming your wildest ideas into breathtaking visuals without touching a paintbrush. This is the future of design, and it's more accessible than ever. Let's explore how AI can elevate your brand and captivate your followers.",
+    "hashtags": "#AIart #AIDesign #GenerativeAI #Visuals #ContentCreation #DigitalArt #AITools #CreativeAI #AICommunity #GraphicDesign #MarketingTools #Innovation #ArtTech #FutureOfDesign #DesignInspiration #AICreativity",
+    "image_paths": [
+      "posts/reel/1790869227_reel_scene_1.png",
+      "posts/reel/1790869227_reel_scene_2.png",
+      "posts/reel/1790869227_reel_scene_3.png",
+      "posts/reel/1790869227_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790869227_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790869227_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790869227_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1790869227_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1790869227.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1790869227.mp4",
+    "text_overlays": [
+      "Dream it up!",
+      "AI makes it real.",
+      "Wow your audience.",
+      "Unleash creativity!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-01T15:40:27.958848+00:00",
+    "status": "pending"
   }
 ]
