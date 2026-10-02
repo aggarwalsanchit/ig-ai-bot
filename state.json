@@ -1,17 +1,17 @@
 {
-  "category_index": 0,
+  "category_index": 1,
   "telegram_offset": 717136457,
   "failed_attempts": 0,
   "last_skip_time": null,
-  "total_generated": 113,
+  "total_generated": 114,
   "total_published": 5,
   "total_skipped": 1,
-  "last_post_time": "2026-10-01T18:59:36.737029",
+  "last_post_time": "2026-10-02T10:00:10.012789",
   "posts_today": {
     "single_image": 12,
-    "carousel": 38,
+    "carousel": 39,
     "reel": 63
   },
   "date": "2026-08-25",
-  "content_type_counter": 113
+  "content_type_counter": 114
 }
