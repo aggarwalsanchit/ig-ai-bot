@@ -3242,5 +3242,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-03T09:23:04.226051+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Struggling to bring your design ideas to life?  AI is here to help you shatter creative blocks and generate incredible visuals.  From concept to stunning reality, these tools make it faster and easier than ever before.\n\nExplore a world of endless possibilities and transform your projects with AI-powered design.  Get ready to be amazed by the power of artificial intelligence in visual creation!",
+    "hashtags": "#AIart #AIDesign #Midjourney #GenerativeArt #DigitalArt #CreativeTools #AIcommunity #DesignInspiration #VisualStorytelling #ArtTech #FutureOfArt #AIcreativity #ArtGenerator #TechInnovation #DigitalCreator #AIforDesign",
+    "image_paths": [
+      "posts/reel/1791034449_reel_scene_1.png",
+      "posts/reel/1791034449_reel_scene_2.png",
+      "posts/reel/1791034449_reel_scene_3.png",
+      "posts/reel/1791034449_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791034449_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791034449_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791034449_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791034449_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791034449.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791034449.mp4",
+    "text_overlays": [
+      "Imagine it.",
+      "AI creates it.",
+      "Mind blown! \ud83e\udd2f",
+      "Visuals redefined."
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-03T13:34:09.932671+00:00",
+    "status": "pending"
   }
 ]
