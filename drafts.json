@@ -3360,5 +3360,36 @@
     "content_type": "reel",
     "created_at": "2026-10-04T14:13:38.817114+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizers",
+    "caption": "Feeling overwhelmed by the sheer volume of information out there? We get it! Research can feel like an endless rabbit hole.\n\nBut what if you could get the core takeaways from any article or document in just a few seconds? AI summarizers are changing the game for students, professionals, and anyone curious about the world.",
+    "hashtags": "#AItools #AISummarizer #ResearchHacks #StudyHacks #ProductivityTools #LearnFaster #InformationOverload #AIforStudents #AIforWork #TechTools #Innovation #DigitalTools #KnowledgeIsPower #FutureTech",
+    "image_paths": [
+      "posts/reel/1791135929_reel_scene_1.png",
+      "posts/reel/1791135929_reel_scene_2.png",
+      "posts/reel/1791135929_reel_scene_3.png",
+      "posts/reel/1791135929_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791135929_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791135929_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791135929_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791135929_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791135929.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791135929.mp4",
+    "text_overlays": [
+      "Too much to read?",
+      "AI digests it!",
+      "Key insights. Instantly.",
+      "Save time. Learn more."
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-04T17:45:29.065465+00:00",
+    "status": "pending"
   }
 ]
