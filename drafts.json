@@ -3416,5 +3416,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-05T10:47:37.413577+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Visual AI",
+    "caption": "Feeling stuck on your next design project? Stop staring at a blank canvas and let AI be your creative muse!\n\nAI-powered design tools can transform your ideas into stunning visuals in a fraction of the time. From unique illustrations to eye-catching social media graphics, the possibilities are limitless. Unleash your creativity and see your projects come to life like never before.",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #Visuals #CreativeAI #DesignInspo #AIArt #DigitalArt #GenerativeArt #ArtTech #DesignTech #Innovation #CreatorEconomy #FutureOfDesign",
+    "image_paths": [
+      "posts/reel/1791220760_reel_scene_1.png",
+      "posts/reel/1791220760_reel_scene_2.png",
+      "posts/reel/1791220760_reel_scene_3.png",
+      "posts/reel/1791220760_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791220760_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791220760_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791220760_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791220760_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791220760.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791220760.mp4",
+    "text_overlays": [
+      "Dream it...",
+      "Generate it!",
+      "Amazing visuals!",
+      "Your vision, AI!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-05T17:19:20.907335+00:00",
+    "status": "pending"
   }
 ]
