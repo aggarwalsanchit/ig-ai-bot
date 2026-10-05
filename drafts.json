@@ -3391,5 +3391,30 @@
     "content_type": "reel",
     "created_at": "2026-10-04T17:45:29.065465+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Tired of the constant battle to schedule meetings?  Endless email chains and calendar Tetris can drain your valuable time and energy.\n\n AI scheduling tools are here to save the day! They intelligently analyze everyone's availability and propose the perfect meeting times, eliminating the hassle. Imagine effortlessly booking your next team sync or client call with just a few clicks.\n\n This means less administrative burden for you and your team, allowing everyone to focus on what truly matters: getting work done.  Boost your productivity and say goodbye to scheduling stress.",
+    "hashtags": "#AItools #AIScheduling #MeetingScheduler #Productivity #TimeManagement #AIforBusiness #SmartTools #FutureOfWork #Automation #WorkSmart #Efficiency #BusinessTools #CalendarAutomation #ProfessionalDevelopment #AIinAction #TechTools #Innovation",
+    "image_paths": [
+      "posts/single/1791197257_carousel_slide_1.png",
+      "posts/single/1791197257_carousel_slide_2.png",
+      "posts/single/1791197257_carousel_slide_3.png",
+      "posts/single/1791197257_carousel_slide_4.png",
+      "posts/single/1791197257_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791197257_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791197257_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791197257_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791197257_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791197257_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-05T10:47:37.413577+00:00",
+    "status": "pending"
   }
 ]
