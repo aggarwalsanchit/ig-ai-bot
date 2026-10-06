@@ -3520,5 +3520,22 @@
     "content_type": "reel",
     "created_at": "2026-10-06T15:21:01.301409+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Perplexity AI",
+    "caption": "Feeling buried in information?  Perplexity AI is a game changer for research. Just paste a link or upload a file and it tells you the main points.\n\nIt's like having a super-smart research assistant that can find answers to your questions within the text.  No more skimming for hours!  Great for students, professionals, or anyone who needs to digest a lot of info quickly.",
+    "hashtags": "#AItools #Productivity #ResearchHacks #Summarization #InformationOverload #StudyTips #WorkSmart #AITips #GetMoreDone #LearningTools #Efficient #TimeSaver #TechForGood #AIforWork #SmartTools #KnowledgeIsPower",
+    "image_paths": [
+      "posts/single/1791313269_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791313269_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-10-06T19:01:09.848569+00:00",
+    "status": "pending"
   }
 ]
