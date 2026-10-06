@@ -3464,5 +3464,30 @@
     "content_type": "single_image",
     "created_at": "2026-10-05T21:17:09.678449+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Struggling to keep up with content demands? AI writing tools are here to revolutionize your process.\n\nThese powerful assistants can help you overcome writer's block, generate fresh ideas, and even draft entire pieces. Imagine producing high-quality content faster and more efficiently than ever before.\n\nReady to boost your productivity and creativity? Explore how AI can be your ultimate content creation partner.",
+    "hashtags": "#AItools #ContentCreation #WritingTools #AIWriting #ContentMarketing #Copywriting #DigitalMarketing #ArtificialIntelligence #CreativeWriting #MarketingTools #AIforBusiness #ContentStrategy #Productivity #Innovation #TechTools #FutureOfWork #BusinessTools #SmallBusiness #MarketingTips #ContentIdeas",
+    "image_paths": [
+      "posts/single/1791283274_carousel_slide_1.png",
+      "posts/single/1791283274_carousel_slide_2.png",
+      "posts/single/1791283274_carousel_slide_3.png",
+      "posts/single/1791283274_carousel_slide_4.png",
+      "posts/single/1791283274_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791283274_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791283274_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791283274_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791283274_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791283274_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-06T10:41:14.119716+00:00",
+    "status": "pending"
   }
 ]
