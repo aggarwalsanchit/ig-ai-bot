@@ -3666,5 +3666,22 @@
     "content_type": "reel",
     "created_at": "2026-10-08T15:46:00.542439+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Perplexity AI",
+    "caption": "Drowning in articles?  Perplexity AI is your lifesaver. Just paste a link or upload a PDF, and it gives you the main points in seconds. No more skimming for hours!  It's like having a super-fast research assistant.  Great for students, writers, or anyone who needs to grasp complex topics quickly.  Focus on what matters, not on reading every single word.",
+    "hashtags": "#AItools #Research #Summarizing #Productivity #TimeSaver #WorkSmarter #InformationOverload #AIforStudents #AIforWriters #DeepLearning #LLMs #KnowledgeGains #PerplexityAI #QuickResearch #LearningHacks #Efficiency",
+    "image_paths": [
+      "posts/single/1791487295_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791487295_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-10-08T19:21:35.348582+00:00",
+    "status": "pending"
   }
 ]
