@@ -3812,5 +3812,36 @@
     "content_type": "reel",
     "created_at": "2026-10-10T14:34:24.187127+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling swamped by endless articles and reports?  Struggling to keep up with the latest research or industry news?\n\nImagine cutting through the noise and getting to the core of any information in seconds.  Our AI summarization tools make it possible, transforming dense text into bite-sized, digestible insights. Spend less time reading and more time understanding and acting on what matters.",
+    "hashtags": "#AItools #AISummarization #Productivity #Research #Learning #Information #AI #Tech #Innovation #FutureOfWork #SmartTools #ContentCreation #Knowledge #Efficiency",
+    "image_paths": [
+      "posts/reel/1791654992_reel_scene_1.png",
+      "posts/reel/1791654992_reel_scene_2.png",
+      "posts/reel/1791654992_reel_scene_3.png",
+      "posts/reel/1791654992_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791654992_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791654992_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791654992_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791654992_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791654992.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791654992.mp4",
+    "text_overlays": [
+      "Endless Articles?",
+      "AI Reads It All",
+      "Key Points Revealed!",
+      "Get Smart, Fast!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-10T17:56:32.561528+00:00",
+    "status": "pending"
   }
 ]
