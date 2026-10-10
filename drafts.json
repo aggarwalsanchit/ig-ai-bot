@@ -3781,5 +3781,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-10T10:05:12.987698+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "Code Buddy",
+    "caption": "Tired of wrestling with pesky bugs? \ud83d\udc1b We get it. The frustration of code that just won't cooperate can be a major roadblock. But what if you had a super-powered assistant to help? \n\nIntroducing Code Buddy, your AI coding companion! This tool is designed to scan your code, pinpoint errors, and even suggest solutions, all in a flash. Say goodbye to hours of debugging and hello to seamless development and faster project completion. \n\nReady to code with more speed and less stress? Give Code Buddy a try and experience the future of coding!",
+    "hashtags": "#AI #Coding #Debugging #DeveloperTools #Programming #SoftwareDevelopment #AIforDevelopers #Tech #CodeAssistant #ProblemSolving #Efficiency #Productivity #FutureOfTech #AIinAction #CodeLife #TechTools",
+    "image_paths": [
+      "posts/reel/1791642864_reel_scene_1.png",
+      "posts/reel/1791642864_reel_scene_2.png",
+      "posts/reel/1791642864_reel_scene_3.png",
+      "posts/reel/1791642864_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791642864_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791642864_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791642864_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791642864_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791642864.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791642864.mp4",
+    "text_overlays": [
+      "Coding nightmares? \ud83d\ude29",
+      "AI is here to help! \u2705",
+      "Find bugs instantly! \ud83d\udca1",
+      "Smooth code, fast! \ud83d\udca8"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-10T14:34:24.187127+00:00",
+    "status": "pending"
   }
 ]
