@@ -3899,5 +3899,36 @@
     "content_type": "reel",
     "created_at": "2026-10-11T14:59:50.375292+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Entry",
+    "caption": "Drowning in spreadsheets? We feel you! Manual data entry can be a soul-crushing time sink, leading to frustrating errors and missed deadlines.\n\nBut what if there was a better way? AI tools are revolutionizing how we handle data. Imagine your spreadsheets populating themselves, accurate and lightning-fast. It's not science fiction anymore!\n\nReclaim your precious time and boost your productivity. Let AI handle the tedious stuff so you can focus on what truly matters. Your future self will thank you! \ud83d\ude09",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #Productivity #AI #Tech #Business #Innovation #FutureOfWork #Efficiency #DigitalTransformation #SmallBusiness #WorkSmarter #AIforBusiness #TechTools",
+    "image_paths": [
+      "posts/reel/1791742668_reel_scene_1.png",
+      "posts/reel/1791742668_reel_scene_2.png",
+      "posts/reel/1791742668_reel_scene_3.png",
+      "posts/reel/1791742668_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791742668_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791742668_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791742668_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791742668_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791742668.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791742668.mp4",
+    "text_overlays": [
+      "Tired of typing? \u2328\ufe0f",
+      "AI magic happens! \u2728",
+      "Say goodbye to errors! \ud83d\udc4b",
+      "More time for YOU! \ud83c\udf89"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-11T18:17:48.648899+00:00",
+    "status": "pending"
   }
 ]
