@@ -3986,5 +3986,22 @@
     "content_type": "reel",
     "created_at": "2026-10-12T18:05:40.353087+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "ChatGPT",
+    "caption": "Tired of sifting through endless articles for key info?  ChatGPT can be your secret weapon. Just paste in your text, or give it a link, and ask it to summarize. It pulls out the main points so you don't have to.  This is perfect for students, researchers, or anyone who needs to digest a lot of information quickly. Get the gist without all the time commitment.  Imagine finishing your reading list in half the time!",
+    "hashtags": "AItools AIforWork ProductivityHacks ResearchTips SummarizationTools ChatGPTTips TimeSaver WorkSmarter KnowledgeHacking InformationOverload LearningTools StudyHacks BusinessTools",
+    "image_paths": [
+      "posts/single/1791841759_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791841759_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-10-12T21:49:19.685948+00:00",
+    "status": "pending"
   }
 ]
