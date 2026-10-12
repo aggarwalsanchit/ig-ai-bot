@@ -3930,5 +3930,30 @@
     "content_type": "reel",
     "created_at": "2026-10-11T18:17:48.648899+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Struggling to keep up with content demands? AI writing tools are a game-changer for creators. \n\nFrom brainstorming fresh ideas to polishing your final drafts, these powerful tools can significantly speed up your workflow. \n\nDiscover how AI can transform your writing process and elevate your content creation game. \n\nSwipe through to learn more!",
+    "hashtags": "#AItools #ContentCreation #WritingTools #ArtificialIntelligence #AIWriter #DigitalMarketing #Blogging #Copywriting #ContentMarketing #CreativeWriting #Productivity #Tech #Innovation #AIforCreators #MarketingTools #SocialMediaContent #WriterLife #AI",
+    "image_paths": [
+      "posts/single/1791803735_carousel_slide_1.png",
+      "posts/single/1791803735_carousel_slide_2.png",
+      "posts/single/1791803735_carousel_slide_3.png",
+      "posts/single/1791803735_carousel_slide_4.png",
+      "posts/single/1791803735_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791803735_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791803735_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791803735_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791803735_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1791803735_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-12T11:15:35.272048+00:00",
+    "status": "pending"
   }
 ]
