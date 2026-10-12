@@ -3955,5 +3955,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-12T11:15:35.272048+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Code Helper",
+    "caption": "Feeling stuck with pesky code bugs?  Don't let errors slow you down!\n\nDiscover how AI can be your ultimate debugging sidekick. Watch your code transform from messy to marvelous in seconds.",
+    "hashtags": "#AItools #Coding #Programming #Debugging #SoftwareDevelopment #Tech #Developers #CodeLife #ArtificialIntelligence #AIinCoding #FutureofCode #TechTips #ProblemSolved #CodeHelper",
+    "image_paths": [
+      "posts/reel/1791828340_reel_scene_1.png",
+      "posts/reel/1791828340_reel_scene_2.png",
+      "posts/reel/1791828340_reel_scene_3.png",
+      "posts/reel/1791828340_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791828340_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791828340_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791828340_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791828340_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791828340.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791828340.mp4",
+    "text_overlays": [
+      "Code errors? \u274c",
+      "AI spots bugs! \ud83d\udc40",
+      "Fix it quick! \u2705",
+      "Happy coding! \ud83d\ude04"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-12T18:05:40.353087+00:00",
+    "status": "pending"
   }
 ]
