@@ -4101,5 +4101,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-14T08:58:22.152547+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Tired of wrestling with pesky bugs?  Spend less time debugging and more time building awesome things!  AI is revolutionizing how we code, making the process faster and more efficient than ever before.\n\nImagine catching errors before they even become problems. That's the power of AI coding assistants.  Boost your productivity and ship your projects with confidence.  It's time to code smarter, not harder!",
+    "hashtags": "#AItools #AICoding #Programming #SoftwareDevelopment #DeveloperLife #CodingTips #TechInnovation #ArtificialIntelligence #CodeHelper #BugFixing #ProductivityHacks #FutureOfCoding #TechTools #AI",
+    "image_paths": [
+      "posts/reel/1791986076_reel_scene_1.png",
+      "posts/reel/1791986076_reel_scene_2.png",
+      "posts/reel/1791986076_reel_scene_3.png",
+      "posts/reel/1791986076_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791986076_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791986076_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791986076_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1791986076_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1791986076.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1791986076.mp4",
+    "text_overlays": [
+      "Coding Goals \ud83d\ude80",
+      "Bug Hunt! \ud83d\udc1b",
+      "AI Detects Errors!",
+      "Fast, Flawless Code \u2705"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-14T13:54:36.850234+00:00",
+    "status": "pending"
   }
 ]
