@@ -4132,5 +4132,36 @@
     "content_type": "reel",
     "created_at": "2026-10-14T13:54:36.850234+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling overwhelmed by endless articles and research papers? Stop spending hours trying to digest every single word.\n\nOur AI tool is your secret weapon for cutting through the information jungle. Get the essence of any text in seconds, allowing you to focus on what truly matters and make smarter, quicker decisions.",
+    "hashtags": "#AItools #AISummarizer #ProductivityHacks #ResearchTools #InformationOverload #StudyHacks #WorkSmarter #TechTools #AIforEveryone #KnowledgeIsPower #ContentCreation #DataAnalysis #DigitalNomad #FutureOfWork",
+    "image_paths": [
+      "posts/reel/1792001235_reel_scene_1.png",
+      "posts/reel/1792001235_reel_scene_2.png",
+      "posts/reel/1792001235_reel_scene_3.png",
+      "posts/reel/1792001235_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792001235_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792001235_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792001235_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792001235_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1792001235.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1792001235.mp4",
+    "text_overlays": [
+      "Drowning in data?",
+      "Get key points FAST!",
+      "AI does the heavy lifting.",
+      "Understand more, faster. \u2705"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-14T18:07:15.315347+00:00",
+    "status": "pending"
   }
 ]
