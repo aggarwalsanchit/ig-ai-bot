@@ -4163,5 +4163,30 @@
     "content_type": "reel",
     "created_at": "2026-10-14T18:07:15.315347+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Are your meetings eating up all your valuable time? Constantly emailing back and forth to find a slot is a major productivity killer. It's time to reclaim your schedule and focus on what truly matters.\n\nAI-powered scheduling tools can completely transform your workflow. Imagine an intelligent assistant that understands your availability, preferences, and even the availability of others, all to find the perfect meeting time automatically. This means less frustration, fewer delays, and more efficient collaboration.\n\nReady to experience seamless scheduling and boost your productivity? Explore the world of AI scheduling tools and say goodbye to calendar chaos forever.",
+    "hashtags": "#AItools #AIScheduling #MeetingScheduler #ProductivityHacks #TimeManagement #ArtificialIntelligence #WorkSmart #BusinessTools #Automation #DigitalTools #FutureOfWork #AIforBusiness #SmartCalendar #MeetingManagement #Efficiency #TechTools #ProductivityBoost #WorkflowAutomation #AIRevolution #DigitalTransformation",
+    "image_paths": [
+      "posts/single/1792053156_carousel_slide_1.png",
+      "posts/single/1792053156_carousel_slide_2.png",
+      "posts/single/1792053156_carousel_slide_3.png",
+      "posts/single/1792053156_carousel_slide_4.png",
+      "posts/single/1792053156_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792053156_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792053156_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792053156_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792053156_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792053156_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-15T08:32:36.175755+00:00",
+    "status": "pending"
   }
 ]
