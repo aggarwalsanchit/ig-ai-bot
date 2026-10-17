@@ -4362,5 +4362,30 @@
     "content_type": "carousel",
     "created_at": "2026-10-17T07:59:59.593253+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Visual AI",
+    "caption": "Tired of spending hours on design? AI is revolutionizing how we create visuals.\n\nImagine generating stunning graphics, logos, and even entire brand kits with just a few prompts. This isn't science fiction anymore. AI tools can help you overcome design blocks and produce professional-quality assets faster than ever before.\n\nReady to see your ideas come to life visually? Dive into the world of AI design and transform your projects.",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #Visuals #CreativeAI #DesignInspiration #AIgenerated #DigitalArt #ArtTech #Innovation #MarketingTools #Branding #ContentCreation #AIrevolution #FutureOfDesign #VisualMarketing #AIPowered",
+    "image_paths": [
+      "posts/single/1792239481_carousel_slide_1.png",
+      "posts/single/1792239481_carousel_slide_2.png",
+      "posts/single/1792239481_carousel_slide_3.png",
+      "posts/single/1792239481_carousel_slide_4.png",
+      "posts/single/1792239481_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792239481_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792239481_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792239481_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792239481_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792239481_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-17T12:18:01.309113+00:00",
+    "status": "pending"
   }
 ]
