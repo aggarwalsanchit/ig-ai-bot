@@ -4337,5 +4337,30 @@
     "content_type": "reel",
     "created_at": "2026-10-16T17:36:00.885792+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Are you drowning in scheduling emails? Constantly battling to find a time that works for everyone? It's a common frustration that eats up valuable work hours.\n\nImagine a world where your meetings schedule themselves. AI tools are revolutionizing how we manage our calendars, eliminating the back-and-forth and freeing you up to do what you do best.\n\nReady to reclaim your time and boost your productivity? Swipe through to see how AI can transform your scheduling game.",
+    "hashtags": "#AItools #Scheduling #MeetingScheduler #Productivity #Automation #ArtificialIntelligence #FutureOfWork #TimeManagement #WorkSmart #BusinessTools #AIforBusiness #DigitalTools #SmartScheduling #Efficiency #MeetingPro #AIRevolution #WorkLifeBalance #TechTools",
+    "image_paths": [
+      "posts/single/1792223999_carousel_slide_1.png",
+      "posts/single/1792223999_carousel_slide_2.png",
+      "posts/single/1792223999_carousel_slide_3.png",
+      "posts/single/1792223999_carousel_slide_4.png",
+      "posts/single/1792223999_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792223999_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792223999_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792223999_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792223999_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792223999_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-17T07:59:59.593253+00:00",
+    "status": "pending"
   }
 ]
