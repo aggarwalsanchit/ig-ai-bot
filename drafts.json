@@ -4443,5 +4443,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-18T08:17:17.338247+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder Bot",
+    "caption": "Tired of endless debugging sessions? \ud83d\ude29 AI tools are here to revolutionize your coding workflow! Imagine having a super-smart assistant that can pinpoint errors in seconds, helping you write cleaner, more efficient code. \n\nStop wasting time on frustrating bugs and start building amazing things. These AI-powered tools can help you understand complex code, generate new snippets, and even suggest optimizations. Level up your coding game!",
+    "hashtags": "#AItools #Coding #Programming #SoftwareDevelopment #AIinCoding #DeveloperTools #Tech #Innovation #AIForgood #FutureofCode #BugFixing #CodeOptimization #LearnToCode #DevLife #Productivity #AITechnology",
+    "image_paths": [
+      "posts/reel/1792327325_reel_scene_1.png",
+      "posts/reel/1792327325_reel_scene_2.png",
+      "posts/reel/1792327325_reel_scene_3.png",
+      "posts/reel/1792327325_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792327325_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792327325_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792327325_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792327325_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1792327325.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1792327325.mp4",
+    "text_overlays": [
+      "Coding Chaos?",
+      "AI Debugs It!",
+      "Speed Up Development!",
+      "Build Better Apps!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-18T12:42:05.812403+00:00",
+    "status": "pending"
   }
 ]
