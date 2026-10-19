@@ -4530,5 +4530,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-19T09:14:17.171933+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney & DALL-E",
+    "caption": "Struggling to bring your ideas to life visually?  AI design tools are changing the game!  Imagine generating unique artwork, social media graphics, or even product mockups with simple text prompts.\n\nThese powerful AI models can transform your words into stunning, high-quality visuals in seconds. Say goodbye to creative blocks and hello to a world of endless design possibilities.  Get ready to elevate your projects like never before!",
+    "hashtags": "#AItools #AIDesign #Midjourney #DALLE #VisualAI #CreativeAI #ArtGenerator #GraphicDesign #AIArt #DigitalArt #ContentCreation #Innovation #FutureOfDesign #TechTools #DesignInspo #VisualStorytelling",
+    "image_paths": [
+      "posts/reel/1792424827_reel_scene_1.png",
+      "posts/reel/1792424827_reel_scene_2.png",
+      "posts/reel/1792424827_reel_scene_3.png",
+      "posts/reel/1792424827_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792424827_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792424827_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792424827_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792424827_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1792424827.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1792424827.mp4",
+    "text_overlays": [
+      "Dream it. \u2728",
+      "Type it. \u270d\ufe0f",
+      "Create it. \ud83c\udfa8",
+      "Wow! \ud83e\udd29"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-19T15:47:07.426682+00:00",
+    "status": "pending"
   }
 ]
