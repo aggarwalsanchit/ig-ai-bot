@@ -4578,5 +4578,30 @@
     "content_type": "single_image",
     "created_at": "2026-10-19T19:25:42.836937+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "Content Spark",
+    "caption": "Tired of battling writer's block and struggling to come up with fresh content ideas? Our AI writing tools are here to revolutionize your content creation process. Imagine never having to face a blank cursor again! These powerful tools can help you brainstorm, outline, and even draft engaging content in a fraction of the time.",
+    "hashtags": "AIwriting #ContentCreation #AItools #WritingTools #DigitalMarketing #Copywriting #ContentMarketing #ArtificialIntelligence #AIforBusiness #Productivity #CreativeWriting #MarketingTools #TechTools #Innovation #SmallBusiness #BloggingTips #SocialMediaMarketing #FutureOfWork #ContentStrategy #AIPowered",
+    "image_paths": [
+      "posts/single/1792486169_carousel_slide_1.png",
+      "posts/single/1792486169_carousel_slide_2.png",
+      "posts/single/1792486169_carousel_slide_3.png",
+      "posts/single/1792486169_carousel_slide_4.png",
+      "posts/single/1792486169_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792486169_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792486169_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792486169_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792486169_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792486169_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-20T08:49:29.933142+00:00",
+    "status": "pending"
   }
 ]
