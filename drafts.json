@@ -4665,5 +4665,30 @@
     "content_type": "reel",
     "created_at": "2026-10-20T18:04:21.758568+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "Meeting Maestro",
+    "caption": "Tired of the endless dance of finding the perfect meeting time?  It feels like a full-time job sometimes, doesn't it?\n\nAI can be your secret weapon to conquer meeting scheduling. Imagine an intelligent assistant that understands everyone's availability and handles all the logistics for you.\n\nStop wasting precious hours on emails and start focusing on what truly matters. Try out an AI scheduling tool and see how much time and sanity you can save.",
+    "hashtags": "#AItools #MeetingScheduler #ProductivityHacks #TimeManagement #ArtificialIntelligence #WorkSmart #Automation #BusinessTools #Efficiency #FutureOfWork #AIinBusiness #SmartScheduling #TeamCollaboration #OfficeLife #ProductivityTools #AIforProductivity #SchedulingMadeEasy #MeetingManagement",
+    "image_paths": [
+      "posts/single/1792572588_carousel_slide_1.png",
+      "posts/single/1792572588_carousel_slide_2.png",
+      "posts/single/1792572588_carousel_slide_3.png",
+      "posts/single/1792572588_carousel_slide_4.png",
+      "posts/single/1792572588_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792572588_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792572588_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792572588_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792572588_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792572588_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-21T08:49:48.635869+00:00",
+    "status": "pending"
   }
 ]
