@@ -4721,5 +4721,36 @@
     "content_type": "reel",
     "created_at": "2026-10-21T13:59:43.132426+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Entry",
+    "caption": "Drowning in spreadsheets and manual data entry? We get it. It's tedious, time-consuming, and frankly, a productivity killer.\n\nBut what if we told you there's a smarter way? AI tools are revolutionizing how we handle data. Imagine reclaiming hours of your week, eliminating errors, and focusing on the insights, not the input.",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #ProductivityHacks #FutureOfWork #BusinessTools #TechTips #AIforBusiness #SmartData #Efficiency #DigitalTransformation #WorkSmarter #Innovation",
+    "image_paths": [
+      "posts/reel/1792606222_reel_scene_1.png",
+      "posts/reel/1792606222_reel_scene_2.png",
+      "posts/reel/1792606222_reel_scene_3.png",
+      "posts/reel/1792606222_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792606222_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792606222_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792606222_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792606222_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1792606222.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1792606222.mp4",
+    "text_overlays": [
+      "Tired of typing?",
+      "AI does the work!",
+      "Instant accuracy \ud83d\ude80",
+      "Unleash your productivity! \u26a1\ufe0f"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-21T18:10:22.063955+00:00",
+    "status": "pending"
   }
 ]
