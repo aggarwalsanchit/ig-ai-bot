@@ -4690,5 +4690,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-21T08:49:48.635869+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Tired of design blocks? \ud83e\udd2f AI tools are revolutionizing how we create visuals, making the impossible possible with just a few words.\n\nImagine generating unique graphics, logos, or even full illustrations in seconds. This reel shows you just a glimpse of that power! Get ready to be amazed.",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #DigitalArt #Midjourney #AIArt #Visuals #CreativeTech #DesignInspo #Innovation #TechForCreators #ArtTech #FutureOfDesign #AICommunity #ContentCreation",
+    "image_paths": [
+      "posts/reel/1792591183_reel_scene_1.png",
+      "posts/reel/1792591183_reel_scene_2.png",
+      "posts/reel/1792591183_reel_scene_3.png",
+      "posts/reel/1792591183_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792591183_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792591183_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792591183_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792591183_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1792591183.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1792591183.mp4",
+    "text_overlays": [
+      "Unleash Creativity!",
+      "From Text to Art \ud83c\udfa8",
+      "Wow Your Audience!",
+      "Design Faster. Smarter."
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-21T13:59:43.132426+00:00",
+    "status": "pending"
   }
 ]
