@@ -4777,5 +4777,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-22T09:03:17.344034+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder",
+    "caption": "Feeling stuck in a coding loop with pesky bugs? We get it! Debugging can be a real time-drain, pulling you away from the creative flow of building amazing things.\n\nThat's where AI tools come in! Imagine having a super-smart assistant that can pinpoint errors in your code in seconds, offering suggestions and even fixing them for you. Spend less time hunting for elusive bugs and more time bringing your innovative ideas to life.",
+    "hashtags": "#AItools #Coding #Programming #Developers #Tech #SoftwareDevelopment #AICoding #Debugging #FutureOfTech #Innovation #AIforDevelopers #CodeLife #Productivity #TechTrends #MachineLearning #ArtificialIntelligence",
+    "image_paths": [
+      "posts/reel/1792679865_reel_scene_1.png",
+      "posts/reel/1792679865_reel_scene_2.png",
+      "posts/reel/1792679865_reel_scene_3.png",
+      "posts/reel/1792679865_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792679865_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792679865_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792679865_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792679865_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1792679865.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1792679865.mp4",
+    "text_overlays": [
+      "Coding Confusing?",
+      "AI Sees Bugs!",
+      "Instant Fixes!",
+      "Build Faster!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-22T14:37:45.980763+00:00",
+    "status": "pending"
   }
 ]
