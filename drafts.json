@@ -4808,5 +4808,36 @@
     "content_type": "reel",
     "created_at": "2026-10-22T14:37:45.980763+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling overwhelmed by lengthy articles, reports, or research papers? AI summarization tools are a game-changer for anyone looking to get to the core of information quickly.\n\nImagine cutting down hours of reading into minutes of key takeaways. These tools don't just shorten text; they intelligently identify the most important points, saving you time and boosting your understanding. Supercharge your learning and productivity today!",
+    "hashtags": "#AItools #AISummarizer #ProductivityHacks #LearnFaster #InformationOverload #ResearchTips #StudyHacks #AIforStudents #BusinessIntelligence #ContentCreation #TechTools #FutureOfLearning #SmartTools #KnowledgeIsPower",
+    "image_paths": [
+      "posts/reel/1792692415_reel_scene_1.png",
+      "posts/reel/1792692415_reel_scene_2.png",
+      "posts/reel/1792692415_reel_scene_3.png",
+      "posts/reel/1792692415_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792692415_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792692415_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792692415_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1792692415_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1792692415.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1792692415.mp4",
+    "text_overlays": [
+      "Endless Scroll?",
+      "AI Reads It All!",
+      "Key Insights Unlocked!",
+      "Your Knowledge Boost!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-22T18:06:55.617975+00:00",
+    "status": "pending"
   }
 ]
