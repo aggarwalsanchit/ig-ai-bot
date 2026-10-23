@@ -4839,5 +4839,30 @@
     "content_type": "reel",
     "created_at": "2026-10-22T18:06:55.617975+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Tired of the endless email ping-pong trying to schedule a simple meeting?  Those days are over.\n\nAI-powered scheduling tools are revolutionizing how we connect. They cut through the chaos, find common availability instantly, and handle all the logistical headaches. Imagine your calendar filling up with productive discussions, not scheduling dramas.\n\nStop wasting precious time on coordination. Embrace the future of efficient meetings.  Explore AI scheduling today and reclaim your workday.",
+    "hashtags": "#AItools #SchedulingAI #MeetingAI #Productivity #Automation #WorkHacks #BusinessTools #FutureOfWork #SmartMeetings #TimeManagement #Efficiency #AIforBusiness #DigitalTools #TechSolutions #ArtificialIntelligence #CalendarManagement #TeamCollaboration #ProductivityHacks",
+    "image_paths": [
+      "posts/single/1792747485_carousel_slide_1.png",
+      "posts/single/1792747485_carousel_slide_2.png",
+      "posts/single/1792747485_carousel_slide_3.png",
+      "posts/single/1792747485_carousel_slide_4.png",
+      "posts/single/1792747485_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792747485_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792747485_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792747485_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792747485_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792747485_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-23T09:24:45.372033+00:00",
+    "status": "pending"
   }
 ]
