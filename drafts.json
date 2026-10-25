@@ -5013,5 +5013,30 @@
     "content_type": "reel",
     "created_at": "2026-10-24T16:47:55.355318+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Are your days filled with the frustrating back-and-forth of scheduling meetings?  It's a common pain point that eats into your valuable time and focus.\n\nAI scheduling tools are here to change that. They intelligently find the perfect meeting slots, taking the hassle out of coordination and freeing you up to do what matters most. Imagine a world where meetings just happen, seamlessly.  Get ready to boost your productivity and conquer your to-do list.",
+    "hashtags": "#AItools #ArtificialIntelligence #Productivity #TimeManagement #MeetingScheduler #AIassistant #WorkSmart #FutureofWork #BusinessTools #Efficiency #Automation #TechTips #DigitalTools #SmartOffice #MeetingHacks #AIforBusiness #ProductivityHacks",
+    "image_paths": [
+      "posts/single/1792917614_carousel_slide_1.png",
+      "posts/single/1792917614_carousel_slide_2.png",
+      "posts/single/1792917614_carousel_slide_3.png",
+      "posts/single/1792917614_carousel_slide_4.png",
+      "posts/single/1792917614_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792917614_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792917614_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792917614_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792917614_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1792917614_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-25T08:40:14.906079+00:00",
+    "status": "pending"
   }
 ]
