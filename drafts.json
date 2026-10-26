@@ -5156,5 +5156,22 @@
     "content_type": "reel",
     "created_at": "2026-10-26T15:20:10.745859+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "ChatGPT",
+    "caption": "Tired of wading through long web pages?  ChatGPT is your new best friend for research.  Just paste the link or text, and ask it to summarize.  It pulls out the key ideas so you get the gist fast.  This frees up your brain for the important stuff.  Imagine getting through your reading list in half the time!  It's perfect for students, researchers, or anyone who needs to learn quickly.",
+    "hashtags": "#AItools #ChatGPT #Summarize #Productivity #ResearchHacks #TimeSaver #LearnFaster #WorkSmarter #AIforGood #InformationOverload #KnowledgeIsPower #Efficiency #StudyTips #BusinessTools #ContentCreation",
+    "image_paths": [
+      "posts/single/1793042961_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793042961_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-10-26T19:29:21.607905+00:00",
+    "status": "pending"
   }
 ]
