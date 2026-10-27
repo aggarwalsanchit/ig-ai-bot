@@ -5173,5 +5173,30 @@
     "content_type": "single_image",
     "created_at": "2026-10-26T19:29:21.607905+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Schedulers",
+    "caption": "Tired of the endless email chain to find a meeting time? We get it. Scheduling can feel like a full-time job on its own, draining your precious work hours.\n\nBut what if AI could take that burden off your shoulders? Imagine reclaiming your calendar and dedicating that time to actual productive work. AI scheduling tools are here to make that a reality.",
+    "hashtags": "#AItools #AIScheduling #MeetingScheduler #ProductivityHacks #TimeManagement #AIforBusiness #FutureofWork #WorkSmarter #VirtualAssistant #MeetingBooker #CalendarManagement #TechTools #BusinessEfficiency #SmartTools #AIinBusiness #Automation",
+    "image_paths": [
+      "posts/single/1793092620_carousel_slide_1.png",
+      "posts/single/1793092620_carousel_slide_2.png",
+      "posts/single/1793092620_carousel_slide_3.png",
+      "posts/single/1793092620_carousel_slide_4.png",
+      "posts/single/1793092620_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793092620_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793092620_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793092620_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793092620_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793092620_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-27T09:17:00.266320+00:00",
+    "status": "pending"
   }
 ]
