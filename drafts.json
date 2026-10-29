@@ -5319,5 +5319,30 @@
     "content_type": "single_image",
     "created_at": "2026-10-28T18:58:53.925461+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "Meeting AI",
+    "caption": "Is scheduling eating up your valuable work hours?  Those endless email chains trying to find a time that works for everyone can be exhausting.  Imagine if that burden was lifted.\n\nOur AI scheduling tools are designed to eliminate this common pain point.  They intelligently find the perfect meeting slots, send out invitations, and even manage any necessary rescheduling, all without your manual intervention. This frees you up to concentrate on what truly matters.\n\nExperience the peace of mind and increased productivity that comes with perfectly organized meetings.  Give it a try and see how much time you can save.",
+    "hashtags": "#AItools #AIScheduling #MeetingScheduler #ProductivityHacks #TimeManagement #FutureOfWork #ArtificialIntelligence #SmartTools #WorkSmarter #Efficiency #BusinessTools #Automation #AIforBusiness #MeetingManagement #GetOrganized #DigitalTools #TechSolutions #ProductivityTools",
+    "image_paths": [
+      "posts/single/1793269228_carousel_slide_1.png",
+      "posts/single/1793269228_carousel_slide_2.png",
+      "posts/single/1793269228_carousel_slide_3.png",
+      "posts/single/1793269228_carousel_slide_4.png",
+      "posts/single/1793269228_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793269228_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793269228_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793269228_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793269228_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793269228_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-29T10:20:28.630248+00:00",
+    "status": "pending"
   }
 ]
