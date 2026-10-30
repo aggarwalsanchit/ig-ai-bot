@@ -5448,5 +5448,22 @@
     "content_type": "reel",
     "created_at": "2026-10-30T15:09:33.733195+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Perplexity AI",
+    "caption": "Tired of drowning in tabs and articles?  We get it.  Research can feel like a full-time job before you even start the real work.\n\nMeet Perplexity AI. It's like a super-smart research assistant.  Just ask it a question, and it gives you a clear answer with links to where it found the info.  It even summarizes long articles for you.  No more endless scrolling or guessing which source is best.\n\nSpend less time digging and more time doing. Perplexity AI helps you get to the point quickly and confidently.  Try it for your next project!",
+    "hashtags": "#AItools #research #summarizing #productivity #workhacks #timemanagement #information #AI #learning #efficiency #knowledge #getworkdone #smarttools #businesshacks #studyhacks #careerdevelopment",
+    "image_paths": [
+      "posts/single/1793385812_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793385812_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-10-30T18:43:32.772131+00:00",
+    "status": "pending"
   }
 ]
