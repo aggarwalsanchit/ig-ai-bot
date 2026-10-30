@@ -5417,5 +5417,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-30T10:22:42.574755+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "AI Coder Buddy",
+    "caption": "Feeling stuck with your code? Drowning in bugs? It's time to level up your coding game with AI!\n\nAI tools can help you write code faster, catch errors before they become nightmares, and even suggest optimizations. Say goodbye to frustrating debugging sessions and hello to seamless development.\n\nReady to experience the future of coding? Let AI be your ultimate coding companion and bring your ideas to life with ease!",
+    "hashtags": "#AItools #AICoding #CodingLife #Developer #Programming #Tech #Innovation #FutureofCode #BugFix #SoftwareDevelopment #LearnToCode #AIforCreators #Productivity #CodeHelper #ArtificialIntelligence #TechTools",
+    "image_paths": [
+      "posts/reel/1793372973_reel_scene_1.png",
+      "posts/reel/1793372973_reel_scene_2.png",
+      "posts/reel/1793372973_reel_scene_3.png",
+      "posts/reel/1793372973_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793372973_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793372973_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793372973_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793372973_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1793372973.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1793372973.mp4",
+    "text_overlays": [
+      "Writer's block?",
+      "Bug hunting \ud83d\udd0d",
+      "AI code assistant",
+      "Perfect code!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-30T15:09:33.733195+00:00",
+    "status": "pending"
   }
 ]
