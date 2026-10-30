@@ -5392,5 +5392,30 @@
     "content_type": "single_image",
     "created_at": "2026-10-29T19:06:23.087768+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Feeling stuck with your content creation? AI tools are here to revolutionize your writing process. Say goodbye to writer's block and hello to a flood of fresh ideas and perfectly crafted text.\n\nWhether you need engaging social media posts, informative blog articles, or persuasive ad copy, AI can assist. Imagine producing professional-level content in a fraction of the time, freeing you up to focus on strategy and growth.\n\nReady to experience the future of content creation? Discover how AI can elevate your brand and streamline your workflow. Click the link in our bio to explore powerful AI writing tools today!",
+    "hashtags": "#AItools #ContentCreation #AIwriting #DigitalMarketing #SocialMediaMarketing #Copywriting #Blogging #ContentMarketing #ArtificialIntelligence #TechTools #MarketingTools #Productivity #CreativeWriting #AIforBusiness #Innovation #FutureOfWork #WritingTips #MarketingStrategy #DigitalContent #AICreativity",
+    "image_paths": [
+      "posts/single/1793355762_carousel_slide_1.png",
+      "posts/single/1793355762_carousel_slide_2.png",
+      "posts/single/1793355762_carousel_slide_3.png",
+      "posts/single/1793355762_carousel_slide_4.png",
+      "posts/single/1793355762_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793355762_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793355762_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793355762_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793355762_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793355762_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-10-30T10:22:42.574755+00:00",
+    "status": "pending"
   }
 ]
