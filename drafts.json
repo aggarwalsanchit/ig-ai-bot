@@ -5490,5 +5490,36 @@
     "content_type": "carousel",
     "created_at": "2026-10-31T09:54:01.418238+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "AI Design Magic",
+    "caption": "Unlock your visual potential with AI!  Say goodbye to design blocks and hello to a world of endless creative possibilities. From social media graphics to website banners, AI tools can whip up stunning visuals in seconds.  Focus on your message, let AI handle the art.\n\nReady to transform your content and captivate your audience?  Explore how AI can revolutionize your design workflow and bring your ideas to life with vibrant, eye-catching graphics.",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #Visuals #CreativeAI #DesignInspo #DigitalArt #ContentCreation #AIforBusiness #MarketingTools #Innovation #FutureOfDesign #AIRevolution #VisualMarketing #BrandBuilding #TechTrends",
+    "image_paths": [
+      "posts/reel/1793457503_reel_scene_1.png",
+      "posts/reel/1793457503_reel_scene_2.png",
+      "posts/reel/1793457503_reel_scene_3.png",
+      "posts/reel/1793457503_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793457503_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793457503_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793457503_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793457503_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1793457503.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1793457503.mp4",
+    "text_overlays": [
+      "Bored of blank pages?",
+      "AI sparks creativity \u2728",
+      "Instant amazing designs!",
+      "Elevate your look! \ud83d\udd25"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-10-31T14:38:23.844258+00:00",
+    "status": "pending"
   }
 ]
