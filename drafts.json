@@ -5608,5 +5608,36 @@
     "content_type": "reel",
     "created_at": "2026-11-01T15:21:38.013628+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Drowning in a sea of information? We get it. Sometimes, the most valuable skill isn't just finding information, but making sense of it quickly.\n\nThis is where AI steps in to be your ultimate research assistant. Imagine getting the core insights from lengthy articles and reports in a fraction of the time. \n\nReclaim your focus and boost your productivity. Let AI do the heavy lifting, so you can focus on what matters most.",
+    "hashtags": "#AItools #AISummarizer #ResearchHelper #ProductivityHacks #FutureOfWork #TechTools #LearningAI #InformationOverload #AIforStudents #AIforProfessionals #SmartTools #DigitalTools #KnowledgeIsPower #AIRevolution",
+    "image_paths": [
+      "posts/reel/1793557747_reel_scene_1.png",
+      "posts/reel/1793557747_reel_scene_2.png",
+      "posts/reel/1793557747_reel_scene_3.png",
+      "posts/reel/1793557747_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793557747_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793557747_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793557747_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793557747_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1793557747.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1793557747.mp4",
+    "text_overlays": [
+      "Research mountains \u26f0\ufe0f",
+      "Articles piling up \ud83d\udcda",
+      "Get the gist fast! \u2728",
+      "Your brain thanks you! \ud83d\ude4f"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-01T18:29:07.962864+00:00",
+    "status": "pending"
   }
 ]
