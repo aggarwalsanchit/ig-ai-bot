@@ -5664,5 +5664,22 @@
     "content_type": "carousel",
     "created_at": "2026-11-02T11:36:09.198212+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Tired of endless image searches?  Stuck with stock photos that don't quite fit?\n\nMidjourney lets you create amazing, custom visuals just by typing what you want.  Think of a scene, a style, a feeling, and watch the AI bring it to life.  It's like having a personal artist on demand for all your projects.",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #Visuals #AIart #Midjourney #CreativeTools #Productivity #WorkSmarter #DesignInspiration #ContentCreation #MarketingTools #BusinessTools #VisualContent #AIforBusiness #DigitalArt",
+    "image_paths": [
+      "posts/single/1793644699_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793644699_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-02T18:38:19.917229+00:00",
+    "status": "pending"
   }
 ]
