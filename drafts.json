@@ -5698,5 +5698,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-02T22:24:44.398600+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Tired of the content creation grind? AI tools are revolutionizing how we write.\n\nFrom overcoming writer's block to generating compelling copy in seconds, these tools can save you immense time and effort. Imagine producing high-quality articles, social media posts, and emails without the usual struggle. This carousel breaks down how AI can transform your content creation process.\n\nReady to supercharge your writing? Discover the power of AI and see your productivity soar. Find out more by following the link in our bio!",
+    "hashtags": "#AItools #ContentCreation #WritingTools #AIwriting #ArtificialIntelligence #Copywriting #ContentMarketing #DigitalMarketing #Productivity #TechTools #FutureOfWork #AIforBusiness #MarketingTools #ContentStrategy #CreativeWriting #BlogWriting #SocialMediaMarketing #TechInnovation #AIwritingassistant #ContentCreator",
+    "image_paths": [
+      "posts/single/1793704519_carousel_slide_1.png",
+      "posts/single/1793704519_carousel_slide_2.png",
+      "posts/single/1793704519_carousel_slide_3.png",
+      "posts/single/1793704519_carousel_slide_4.png",
+      "posts/single/1793704519_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793704519_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793704519_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793704519_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793704519_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793704519_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-03T11:15:19.117604+00:00",
+    "status": "pending"
   }
 ]
