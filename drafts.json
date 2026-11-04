@@ -5796,5 +5796,36 @@
     "content_type": "carousel",
     "created_at": "2026-11-04T11:26:09.074068+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Visual AI",
+    "caption": "Tired of spending hours on graphics? AI is here to revolutionize your design process! Imagine bringing your wildest visual concepts to life in seconds.\n\nFrom social media posts to presentations, AI tools can generate eye-catching images, logos, and more with just a few prompts. Unleash your inner designer and elevate your content game without the hassle.",
+    "hashtags": "#AItools #AIDesign #GraphicDesign #Visuals #CreativeAI #DesignTools #AIart #DigitalArt #ContentCreation #MarketingTools #Innovation #Tech #AIforEveryone #FutureOfDesign",
+    "image_paths": [
+      "posts/reel/1793809640_reel_scene_1.png",
+      "posts/reel/1793809640_reel_scene_2.png",
+      "posts/reel/1793809640_reel_scene_3.png",
+      "posts/reel/1793809640_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793809640_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793809640_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793809640_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1793809640_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1793809640.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1793809640.mp4",
+    "text_overlays": [
+      "Your ideas?",
+      "AI magic!",
+      "Wow factor!",
+      "Instantly amazing."
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-04T16:27:20.203676+00:00",
+    "status": "pending"
   }
 ]
