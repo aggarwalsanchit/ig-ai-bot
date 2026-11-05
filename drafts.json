@@ -5844,5 +5844,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-04T20:30:30.984953+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Feeling overwhelmed by content creation?  Writer's block can be a major hurdle, slowing down your progress and impacting your online presence.\n\nBut what if you could overcome that with the help of smart technology?  AI writing tools are revolutionizing how we create, helping you generate fresh ideas and craft compelling copy effortlessly.\n\nReady to supercharge your content game?  Explore how AI can save you time and boost your results.  See the difference for yourself!",
+    "hashtags": "#AItools #ContentCreation #WritingTools #AIWriting #DigitalMarketing #SocialMediaMarketing #Blogging #Copywriting #MarketingAI #CreativeWriting #Productivity #TechTools #OnlineBusiness #ContentStrategy #AIforBusiness #FutureofWork #Innovation #MarketingTips #AICommunity #DigitalContent",
+    "image_paths": [
+      "posts/single/1793877882_carousel_slide_1.png",
+      "posts/single/1793877882_carousel_slide_2.png",
+      "posts/single/1793877882_carousel_slide_3.png",
+      "posts/single/1793877882_carousel_slide_4.png",
+      "posts/single/1793877882_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793877882_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793877882_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793877882_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793877882_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793877882_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-05T11:24:42.611870+00:00",
+    "status": "pending"
   }
 ]
