@@ -5973,5 +5973,22 @@
     "content_type": "reel",
     "created_at": "2026-11-06T16:34:08.072556+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "Google Sheets AI (Duet AI)",
+    "caption": "Tired of endless data entry? Imagine your spreadsheets organizing themselves. Google Sheets, with its new AI features, can do just that. It helps you understand your data without all the manual work.\n\nSimply ask it questions in plain English. It can even suggest formulas and help you spot trends. Stop wasting time and start seeing insights.",
+    "hashtags": "#AItools #GoogleSheets #Spreadsheets #DataAnalysis #Productivity #Automation #WorkSmarter #SmallBusiness #DataEntry #AIforBusiness #Efficiency #TimeSaver #Officetools #DigitalTools #ExcelAlternative #GoogleWorkspace",
+    "image_paths": [
+      "posts/single/1793995304_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1793995304_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-06T20:01:44.679518+00:00",
+    "status": "pending"
   }
 ]
