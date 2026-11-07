@@ -6046,5 +6046,36 @@
     "content_type": "reel",
     "created_at": "2026-11-07T14:58:54.034905+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling drowned in articles and research papers? Our AI tool is here to rescue your sanity! Get the core insights without the endless scrolling.\n\nTransform your learning and productivity. Spend less time reading and more time understanding and applying. It's like having a personal research assistant at your fingertips.",
+    "hashtags": "#AItools #AISummarizer #ResearchHelper #ProductivityHacks #LearningTools #TechTools #FutureOfLearning #SmartTools #InformationOverload #StudyHacks #AIforStudents #WorkSmart #DigitalTools #AIRevolution #KnowledgeIsPower #EfficiencyBoost",
+    "image_paths": [
+      "posts/reel/1794074981_reel_scene_1.png",
+      "posts/reel/1794074981_reel_scene_2.png",
+      "posts/reel/1794074981_reel_scene_3.png",
+      "posts/reel/1794074981_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794074981_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794074981_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794074981_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794074981_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1794074981.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1794074981.mp4",
+    "text_overlays": [
+      "Endless Articles? \ud83d\udcda",
+      "Instantly Summarized! \ud83e\udd0f",
+      "Key Points Only! \ud83c\udfaf",
+      "Your Brain Thanks You! \ud83d\ude4f"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-07T18:09:41.232158+00:00",
+    "status": "pending"
   }
 ]
