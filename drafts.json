@@ -6015,5 +6015,36 @@
     "content_type": "carousel",
     "created_at": "2026-11-07T10:36:30.937248+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "Code Companion",
+    "caption": "Tired of chasing down elusive bugs? \ud83d\udc1b  Let AI be your debugging superhero!\n\nImagine a coding partner that instantly identifies errors, suggests fixes, and streamlines your workflow. Spend less time frustrated and more time building amazing things.",
+    "hashtags": "#AItools #Coding #Debugging #SoftwareDevelopment #Developer #Programming #Tech #Innovation #CodeLife #AIcoding #ProblemSolver #Efficiency #Productivity #FutureOfTech",
+    "image_paths": [
+      "posts/reel/1794063534_reel_scene_1.png",
+      "posts/reel/1794063534_reel_scene_2.png",
+      "posts/reel/1794063534_reel_scene_3.png",
+      "posts/reel/1794063534_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794063534_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794063534_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794063534_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794063534_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1794063534.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1794063534.mp4",
+    "text_overlays": [
+      "Code errors?",
+      "AI spots bugs!",
+      "Fix it fast!",
+      "Ship with speed! \ud83d\ude80"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-07T14:58:54.034905+00:00",
+    "status": "pending"
   }
 ]
