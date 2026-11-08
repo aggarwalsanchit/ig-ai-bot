@@ -6077,5 +6077,30 @@
     "content_type": "reel",
     "created_at": "2026-11-07T18:09:41.232158+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Scheduler",
+    "caption": "Tired of the endless email chain just to book a meeting? AI is here to revolutionize your scheduling.\n\nImagine reclaiming hours of your week, eliminating calendar conflicts, and never missing an important appointment again. This is the power of AI-powered scheduling tools.\n\nReady to transform your workflow and boost your productivity? Swipe through to see how AI can make your meetings happen smoothly.",
+    "hashtags": "#AItools #AIScheduling #MeetingManagement #ProductivityHacks #TimeManagement #AIforBusiness #WorkSmart #FutureofWork #Automation #Efficiency #TechTools #BusinessTools #SmartMeetings #ArtificialIntelligence #DigitalTools #ProductivityTools #CalendarManagement #AIRevolution",
+    "image_paths": [
+      "posts/single/1794134516_carousel_slide_1.png",
+      "posts/single/1794134516_carousel_slide_2.png",
+      "posts/single/1794134516_carousel_slide_3.png",
+      "posts/single/1794134516_carousel_slide_4.png",
+      "posts/single/1794134516_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794134516_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794134516_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794134516_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794134516_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794134516_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-08T10:41:56.219509+00:00",
+    "status": "pending"
   }
 ]
