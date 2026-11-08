@@ -6133,5 +6133,36 @@
     "content_type": "reel",
     "created_at": "2026-11-08T15:27:31.706754+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Entry",
+    "caption": "Tired of endless data entry and the headache of spreadsheets?  Imagine reclaiming hours of your week and saying goodbye to costly mistakes.\n\nAI tools can transform your data workflow from a chore into a superpower. Watch as tedious tasks become effortless, allowing you to focus on what truly matters: understanding your data and making smarter decisions.",
+    "hashtags": "#AItools #DataEntry #Spreadsheets #Automation #Productivity #BusinessIntelligence #ArtificialIntelligence #DataManagement #TechTips #FutureOfWork #SmartTools #Efficiency #DataAnalysis #AIConsulting",
+    "image_paths": [
+      "posts/reel/1794162363_reel_scene_1.png",
+      "posts/reel/1794162363_reel_scene_2.png",
+      "posts/reel/1794162363_reel_scene_3.png",
+      "posts/reel/1794162363_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794162363_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794162363_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794162363_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794162363_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1794162363.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1794162363.mp4",
+    "text_overlays": [
+      "Manual Entry Pain \ud83d\ude2b",
+      "AI Magic Happens \u2728",
+      "Data Cleaned Fast \ud83d\ude80",
+      "Focus on Insights \ud83d\udca1"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-08T18:26:03.397323+00:00",
+    "status": "pending"
   }
 ]
