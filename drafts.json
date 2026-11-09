@@ -6206,5 +6206,22 @@
     "content_type": "single_image",
     "created_at": "2026-11-09T19:04:19.066246+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "ChatGPT",
+    "caption": "Feeling buried under a mountain of articles? It's tough to keep up with all the information needed for your job.  Spending hours reading can eat into your valuable work time.",
+    "hashtags": "#AItools #ChatGPT #Summarize #Research #Productivity #WorkHacks #TimeSaver #AIforWork #InformationOverload #GetMoreDone #BusinessTips #AIexplained #SmartWork #DigitalTools #Efficiency #LearnFast",
+    "image_paths": [
+      "posts/single/1794265543_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794265543_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-09T23:05:43.207328+00:00",
+    "status": "pending"
   }
 ]
