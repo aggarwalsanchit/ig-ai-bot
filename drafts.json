@@ -6296,5 +6296,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-10T20:32:33.902500+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "Content AI",
+    "caption": "Tired of staring at a blank page? Content creation just got a whole lot easier with AI tools. Imagine generating high-quality blog posts, engaging social media updates, and compelling marketing copy in a fraction of the time.\n\nThese AI assistants can help you overcome writer's block, refine your ideas, and even suggest new angles you hadn't considered. Spend less time struggling and more time publishing content that resonates with your audience.\n\nReady to boost your content output and save valuable time? Discover the power of AI for your writing needs. Swipe through to see how it works!",
+    "hashtags": "#AItools #ContentCreation #WritingAI #AIWriter #ContentMarketing #DigitalMarketing #SocialMediaMarketing #Blogging #Copywriting #MarketingTools #Tech #Innovation #Productivity #AIforBusiness #ArtificialIntelligence #CreativeWriting #ContentStrategy #FutureOfWork #AIrevolution #BusinessTools",
+    "image_paths": [
+      "posts/single/1794396138_carousel_slide_1.png",
+      "posts/single/1794396138_carousel_slide_2.png",
+      "posts/single/1794396138_carousel_slide_3.png",
+      "posts/single/1794396138_carousel_slide_4.png",
+      "posts/single/1794396138_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794396138_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794396138_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794396138_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794396138_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794396138_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-11T11:22:18.788431+00:00",
+    "status": "pending"
   }
 ]
