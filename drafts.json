@@ -6338,5 +6338,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-11T20:17:35.411896+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Research AI",
+    "caption": "Tired of spending endless hours sifting through mountains of information?  Our latest AI tools are here to revolutionize your research process.\n\nImagine instantly grasping the core ideas of any document, from dense academic papers to lengthy news articles.  These AI assistants cut through the noise, delivering concise summaries that save you time and boost your understanding.\n\nReady to become a research superpower? Tap through to discover how AI can transform the way you learn and discover.",
+    "hashtags": "#AItools #ArtificialIntelligence #ResearchTools #Summarization #Productivity #InformationManagement #Learning #KnowledgeIsPower #FutureOfWork #TechGadgets #Innovation #AIforStudents #AIforProfessionals #DataAnalysis #SmartTools #DigitalLearning #Efficiency #MachineLearning",
+    "image_paths": [
+      "posts/single/1794483782_carousel_slide_1.png",
+      "posts/single/1794483782_carousel_slide_2.png",
+      "posts/single/1794483782_carousel_slide_3.png",
+      "posts/single/1794483782_carousel_slide_4.png",
+      "posts/single/1794483782_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794483782_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794483782_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794483782_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794483782_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794483782_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-12T11:43:02.490503+00:00",
+    "status": "pending"
   }
 ]
