@@ -6394,5 +6394,22 @@
     "content_type": "reel",
     "created_at": "2026-11-12T16:56:51.391919+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Remove.bg",
+    "caption": "Tired of struggling with background removal in your photos? It\u2019s a huge time suck, right?\n\nRemove.bg is a game-changer for anyone who needs clean product shots or creative edits. Just upload your image, and boom \u2013 the background is gone in seconds. No complex software needed.\n\nIt\u2019s perfect for e-commerce sellers, social media creators, or anyone who wants to make their visuals pop without the hassle. Seriously, give it a try!",
+    "hashtags": "#AItools #design #graphicdesign #photoediting #AI #visuals #ecommerce #marketing #contentcreation #productivity #automation #quickedit #rembg #designhacks #timesaver #smallbusiness",
+    "image_paths": [
+      "posts/single/1794517186_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794517186_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-12T20:59:46.975837+00:00",
+    "status": "pending"
   }
 ]
