@@ -6363,5 +6363,36 @@
     "content_type": "carousel",
     "created_at": "2026-11-12T11:43:02.490503+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Scheduler",
+    "caption": "Tired of playing calendar Tetris? \ud83d\ude29 Let AI take the wheel for your scheduling nightmares!\n\nImagine a world where your meetings just\u2026 happen. No more endless email chains, no more 'what about Tuesday at 3?' \u2013 just effortless booking.\n\nReclaim your precious time and focus on what truly matters.",
+    "hashtags": "#AItools #MeetingScheduler #ProductivityHacks #AIforBusiness #SmartScheduling #FutureOfWork #TechTools #Automation #Efficiency #TimeSaver #WorkSmart #AIRevolution #MeetingManagement #GetMoreDone",
+    "image_paths": [
+      "posts/reel/1794502611_reel_scene_1.png",
+      "posts/reel/1794502611_reel_scene_2.png",
+      "posts/reel/1794502611_reel_scene_3.png",
+      "posts/reel/1794502611_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794502611_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794502611_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794502611_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794502611_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1794502611.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1794502611.mp4",
+    "text_overlays": [
+      "Calendar hell?",
+      "AI finds times!",
+      "Book meetings fast!",
+      "Your time saved!"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-12T16:56:51.391919+00:00",
+    "status": "pending"
   }
 ]
