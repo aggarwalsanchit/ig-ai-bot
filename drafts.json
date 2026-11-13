@@ -6467,5 +6467,22 @@
     "content_type": "reel",
     "created_at": "2026-11-13T16:37:46.963758+00:00",
     "status": "pending"
+  },
+  {
+    "category": "coding & debugging",
+    "tool_name": "GitHub Copilot",
+    "caption": "Spend less time on boring tasks and more time on the cool stuff.  Get your coding flow back!",
+    "hashtags": "#AI #AICoding #GitHubCopilot #DeveloperTools #Programming #CodingTips #SoftwareDevelopment #Tech #Productivity #AIforDevelopers #CodeAutomation #TimeSaver #DeveloperLife #TechTools #ArtificialIntelligence #FutureOfCode",
+    "image_paths": [
+      "posts/single/1794602123_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794602123_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-13T20:35:23.242673+00:00",
+    "status": "pending"
   }
 ]
