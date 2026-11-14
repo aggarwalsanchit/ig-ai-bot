@@ -6540,5 +6540,22 @@
     "content_type": "reel",
     "created_at": "2026-11-14T15:14:20.997794+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Canva Magic Switch",
+    "caption": "Tired of fiddling with designs? Canva's Magic Switch is a game changer.  It lets you resize your whole project for different platforms with one click.  Need to change the mood? It can even rewrite your design's look and feel.",
+    "hashtags": "#AItools #Canva #GraphicDesign #DesignHacks #Productivity #Marketing #SmallBusiness #ContentCreation #Visuals #AIforBusiness #DesignInspiration #TimeSaver #MagicSwitch #CreativeTools",
+    "image_paths": [
+      "posts/single/1794682070_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794682070_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-14T18:47:50.506455+00:00",
+    "status": "pending"
   }
 ]
