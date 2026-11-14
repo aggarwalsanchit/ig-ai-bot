@@ -6484,5 +6484,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-13T20:35:23.242673+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Research Assistant",
+    "caption": "Feeling overwhelmed by the sheer volume of information out there? We've all been there, spending hours digging through articles, reports, and websites just to find the core takeaways.\n\nThis is where AI truly shines! Imagine instantly getting the essence of any document, freeing up your time for deeper analysis and critical thinking. Let AI handle the heavy lifting so you can focus on what truly matters.\n\nReady to transform your research process? Swipe through to see how AI can become your ultimate information partner and unlock new levels of efficiency and understanding.",
+    "hashtags": "#AItools #AISummarization #ResearchAI #InformationOverload #ProductivityHacks #StudyTips #WorkSmarter #AIforBusiness #FutureofWork #TechTools #DigitalTools #KnowledgeManagement #LearningAI #AIRevolution #DataAnalysis #ContentCreation #DeepLearning #MachineLearning",
+    "image_paths": [
+      "posts/single/1794653329_carousel_slide_1.png",
+      "posts/single/1794653329_carousel_slide_2.png",
+      "posts/single/1794653329_carousel_slide_3.png",
+      "posts/single/1794653329_carousel_slide_4.png",
+      "posts/single/1794653329_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794653329_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794653329_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794653329_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794653329_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794653329_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-14T10:48:49.695147+00:00",
+    "status": "pending"
   }
 ]
