@@ -6672,5 +6672,22 @@
     "content_type": "single_image",
     "created_at": "2026-11-16T18:44:59.975132+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Stuck with boring visuals for your projects? Maybe you're not a pro artist, and that's okay!\n\nMidjourney is a super cool AI that turns your words into stunning pictures. Just tell it what you want, and it makes it happen. It's like having a personal artist on demand.\n\nThis is perfect for social media posts, presentations, or even just making your ideas look great. Stop spending ages searching for stock photos or hiring designers.",
+    "hashtags": "#AIArt #DesignTools #Visuals #ContentCreation #Marketing #GraphicDesign #AI #Midjourney #AIforBusiness #CreativeAI #DigitalArt #SmallBusiness #StartupTools #Productivity",
+    "image_paths": [
+      "posts/single/1794869908_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794869908_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-16T22:58:28.764992+00:00",
+    "status": "pending"
   }
 ]
