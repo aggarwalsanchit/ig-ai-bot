@@ -6655,5 +6655,22 @@
     "content_type": "carousel",
     "created_at": "2026-11-16T11:55:53.093073+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "Clockwise",
+    "caption": "Tired of endless email chains trying to find a meeting time? Clockwise solves this.  It connects to your calendar and finds the perfect slot for your team automatically.\n\nPlus, it intelligently rearranges your focus time so you can actually get work done between meetings. Stop wasting time on scheduling and start being more productive.",
+    "hashtags": "#AItools #Productivity #Scheduling #Meetings #AIforWork #Teamwork #TimeManagement #Calendar #SmartWork #WorkSmarter #Automation #Efficiency #Clockwise #BusinessTools #ProfessionalDevelopment #FutureOfWork",
+    "image_paths": [
+      "posts/single/1794854699_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794854699_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-16T18:44:59.975132+00:00",
+    "status": "pending"
   }
 ]
