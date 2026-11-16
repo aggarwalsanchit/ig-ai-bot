@@ -6630,5 +6630,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-15T19:26:09.218387+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Research AI",
+    "caption": "Feeling overwhelmed by the sheer volume of information online?  Research and summarizing can be a huge time sink, leaving you with more questions than answers.\n\nBut what if there was a smarter way? AI tools are revolutionizing how we consume knowledge. Imagine effortlessly distilling lengthy articles, reports, and even entire books into concise, actionable summaries. This means you can absorb more information, make better decisions, and free up valuable time for what truly matters.\n\nReady to supercharge your research process? We've compiled a list of the best AI tools to help you get started. Swipe through to discover how you can conquer information overload and become a knowledge powerhouse.",
+    "hashtags": "#AItools #ArtificialIntelligence #ResearchTools #AISummarizer #Productivity #InformationOverload #StudyHacks #WorkSmarter #TechTools #KnowledgeManagement #AIforStudents #AIforProfessionals #DigitalTools #FutureOfWork #LearningTools #Efficiency #SmartResearch #DataAnalysis #Innovation",
+    "image_paths": [
+      "posts/single/1794830153_carousel_slide_1.png",
+      "posts/single/1794830153_carousel_slide_2.png",
+      "posts/single/1794830153_carousel_slide_3.png",
+      "posts/single/1794830153_carousel_slide_4.png",
+      "posts/single/1794830153_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794830153_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794830153_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794830153_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794830153_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1794830153_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-16T11:55:53.093073+00:00",
+    "status": "pending"
   }
 ]
