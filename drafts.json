@@ -6714,5 +6714,36 @@
     "content_type": "carousel",
     "created_at": "2026-11-17T12:19:45.460769+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writer",
+    "caption": "Struggling to get your thoughts onto the page? Feeling the pressure to constantly produce fresh, engaging content? You're not alone.\n\nBut what if there was a way to supercharge your writing process? Imagine overcoming writer's block instantly and generating high-quality drafts in seconds. AI tools are here to transform how you create.\n\nStop staring at a blank screen and start creating amazing content. It's time to explore the future of writing and unlock your full creative potential.",
+    "hashtags": "#AIwriting #ContentCreation #AITools #WritingHacks #DigitalMarketing #SocialMediaContent #BloggingTips #CreativeWriting #AIforBusiness #ProductivityHacks #ContentStrategy #MarketingTips #FutureOfWork #AIRevolution",
+    "image_paths": [
+      "posts/reel/1794937455_reel_scene_1.png",
+      "posts/reel/1794937455_reel_scene_2.png",
+      "posts/reel/1794937455_reel_scene_3.png",
+      "posts/reel/1794937455_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794937455_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794937455_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794937455_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1794937455_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1794937455.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1794937455.mp4",
+    "text_overlays": [
+      "Unleash Your Ideas!",
+      "AI Drafts for You",
+      "Polish & Perfect!",
+      "Content King/Queen \ud83d\udc51"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-17T17:44:15.688003+00:00",
+    "status": "pending"
   }
 ]
