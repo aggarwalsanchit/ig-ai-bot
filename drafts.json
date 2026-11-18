@@ -6818,5 +6818,22 @@
     "content_type": "reel",
     "created_at": "2026-11-18T17:36:37.501101+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Midjourney",
+    "caption": "Ever spend too long looking for the right picture?  It's frustrating when you can't find exactly what you need for your project.\n\nNow, tools like Midjourney can help!  You just type what you want, like 'a happy dog wearing glasses', and it creates an image for you in seconds.  It\u2019s amazing for presentations, social media, or just getting your ideas out there visually.",
+    "hashtags": "#AItools #design #visuals #Midjourney #AIart #graphicdesign #contentcreation #marketing #productivity #innovation #creativedesign #aiforgood #businesstips #worksmart #digitalart #designinspiration",
+    "image_paths": [
+      "posts/single/1795037448_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795037448_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-18T21:30:48.875202+00:00",
+    "status": "pending"
   }
 ]
