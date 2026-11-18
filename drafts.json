@@ -6762,5 +6762,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-17T21:52:00.223226+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Research Assistant",
+    "caption": "Feeling overwhelmed by the sheer volume of information out there? It's a common struggle for students, professionals, and anyone trying to stay informed.\n\nBut what if you could get the core insights without reading through pages and pages? AI is revolutionizing how we consume information, making research faster and more efficient than ever before.\n\nSwipe through to see how AI can transform your research process and help you uncover valuable knowledge in a fraction of the time. Discover the future of learning and discovery!",
+    "hashtags": "#AItools #ResearchAI #AISummarization #Productivity #Learning #InformationManagement #AIforStudents #AIforProfessionals #KnowledgeDiscovery #TechInnovation #FutureofWork #SmartTools #DataAnalysis #AIRevolution #Efficiency #AIResources #StudyHacks #WorkSmarter #ArtificialIntelligence #DigitalTools",
+    "image_paths": [
+      "posts/single/1795003604_carousel_slide_1.png",
+      "posts/single/1795003604_carousel_slide_2.png",
+      "posts/single/1795003604_carousel_slide_3.png",
+      "posts/single/1795003604_carousel_slide_4.png",
+      "posts/single/1795003604_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795003604_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795003604_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795003604_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795003604_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795003604_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-18T12:06:44.943909+00:00",
+    "status": "pending"
   }
 ]
