@@ -6860,5 +6860,36 @@
     "content_type": "carousel",
     "created_at": "2026-11-19T12:00:48.457089+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "AI Writing Magic",
+    "caption": "Feeling the content crunch?  Writer's block a constant companion?  Imagine a world where your ideas flow effortlessly, your drafts are ready in minutes, and your audience can't get enough.  AI writing tools are here to make that a reality.\n\nStop staring at a blank page and start creating amazing content.  From catchy social media posts to in-depth articles, let AI be your ultimate creative partner.  Level up your content game today!",
+    "hashtags": "#AItools #ContentCreation #WritingAI #AISolutions #DigitalMarketing #Copywriting #ContentMarketing #SocialMediaTips #Productivity #Innovation #Tech #FutureOfWork #AIwriting #ContentStrategy #CreatorEconomy",
+    "image_paths": [
+      "posts/reel/1795109406_reel_scene_1.png",
+      "posts/reel/1795109406_reel_scene_2.png",
+      "posts/reel/1795109406_reel_scene_3.png",
+      "posts/reel/1795109406_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795109406_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795109406_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795109406_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795109406_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1795109406.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1795109406.mp4",
+    "text_overlays": [
+      "Brainstorm Ideas \ud83d\udca1",
+      "Draft Faster \ud83d\udca8",
+      "Edit Smarter \u2705",
+      "Publish More! \ud83d\ude80"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-19T17:30:06.044624+00:00",
+    "status": "pending"
   }
 ]
