@@ -6964,5 +6964,22 @@
     "content_type": "reel",
     "created_at": "2026-11-20T17:05:11.918760+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Canva Magic Eraser",
+    "caption": "Got a photo that's almost perfect, but there's something weird in the background? Don't worry, you don't need to be a pro editor anymore.\n\nCanva's Magic Eraser is a game-changer. Just paint over the object you want gone, and boom! It disappears like magic. It's super simple to use and makes your photos look so much cleaner.\n\nThis is perfect for product photos, social media posts, or just making your memories look their best. Save yourself time and frustration with this easy AI tool.",
+    "hashtags": "#AItools #Canva #GraphicDesign #PhotoEditing #AIforDesign #ContentCreation #Visuals #Productivity #DesignTips #EasyEditing #MarketingTools #SocialMediaMarketing #AIinBusiness #TimeSaver #DigitalArt #PhotoMagic",
+    "image_paths": [
+      "posts/single/1795209919_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795209919_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-20T21:25:19.127771+00:00",
+    "status": "pending"
   }
 ]
