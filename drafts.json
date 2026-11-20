@@ -6908,5 +6908,30 @@
     "content_type": "single_image",
     "created_at": "2026-11-19T21:43:16.532662+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "Research AI",
+    "caption": "Feeling overwhelmed by the sheer volume of information out there?  It's a common struggle in today's fast-paced world.  But what if you could cut through the noise and get to the core of any topic with ease?\n\nAI tools are revolutionizing how we research and process information. Imagine getting the gist of complex articles or lengthy reports in mere moments. This isn't science fiction; it's the reality of smart technology designed to save you time and mental energy.",
+    "hashtags": "#AI #ArtificialIntelligence #AItools #ResearchTools #Summarization #Productivity #InformationOverload #Learning #StudyHacks #Tech #Innovation #FutureOfWork #KnowledgeIsPower #SmartTools #Efficiency #DataAnalysis #AIforGood #DigitalTools #ResearchHacks #ContentCreation",
+    "image_paths": [
+      "posts/single/1795176156_carousel_slide_1.png",
+      "posts/single/1795176156_carousel_slide_2.png",
+      "posts/single/1795176156_carousel_slide_3.png",
+      "posts/single/1795176156_carousel_slide_4.png",
+      "posts/single/1795176156_carousel_slide_5.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795176156_carousel_slide_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795176156_carousel_slide_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795176156_carousel_slide_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795176156_carousel_slide_4.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795176156_carousel_slide_5.png"
+    ],
+    "is_carousel": true,
+    "is_reel": false,
+    "content_type": "carousel",
+    "created_at": "2026-11-20T12:02:36.277552+00:00",
+    "status": "pending"
   }
 ]
