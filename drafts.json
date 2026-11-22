@@ -7079,5 +7079,36 @@
     "content_type": "carousel",
     "created_at": "2026-11-22T11:52:12.433856+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "AI Scheduler",
+    "caption": "Tired of the endless dance of finding the perfect meeting time?  Those endless email chains trying to sync calendars can be a major time suck.\n\nImagine an AI that effortlessly scans everyone's availability and proposes the ideal slot, all with minimal input. Reclaim your precious hours and focus on the work that truly moves the needle.",
+    "hashtags": "#AItools #Scheduling #Meetings #Productivity #Automation #TimeManagement #AIassistant #BusinessTools #FutureOfWork #WorkSmart #Efficiency #DigitalTools #TechTips #AIforBusiness",
+    "image_paths": [
+      "posts/reel/1795365011_reel_scene_1.png",
+      "posts/reel/1795365011_reel_scene_2.png",
+      "posts/reel/1795365011_reel_scene_3.png",
+      "posts/reel/1795365011_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795365011_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795365011_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795365011_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795365011_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1795365011.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1795365011.mp4",
+    "text_overlays": [
+      "Meeting mayhem?",
+      "AI finds slots",
+      "Booked instantly! \u2705",
+      "Your time back! \ud83c\udf89"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-22T16:30:11.291938+00:00",
+    "status": "pending"
   }
 ]
