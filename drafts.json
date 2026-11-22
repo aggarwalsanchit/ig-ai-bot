@@ -7110,5 +7110,22 @@
     "content_type": "reel",
     "created_at": "2026-11-22T16:30:11.291938+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Canva Magic Eraser",
+    "caption": "Ever take a great photo, but something messy is in the background? Like a trash can or a random person? It's annoying and takes ages to edit out with normal tools.\n\nCanva's Magic Eraser is here to help! Just paint over the things you don't want in your picture, and the AI makes them disappear like magic. It's super simple to use and makes your photos look so much better without much effort.\n\nThis is perfect for social media posts, website images, or just making your personal photos shine. Stop wasting time on tricky edits and let AI do the work!",
+    "hashtags": "#AItools #design #photoediting #Canva #MagicEraser #visuals #graphicdesign #socialmediamarketing #contentcreation #photographyhacks #AIforcreators #designhacks #productivitytools #quickedit #easydesign #removestuff",
+    "image_paths": [
+      "posts/single/1795379161_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795379161_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-22T20:26:01.769701+00:00",
+    "status": "pending"
   }
 ]
