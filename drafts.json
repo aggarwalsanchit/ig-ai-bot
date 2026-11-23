@@ -7158,5 +7158,22 @@
     "content_type": "reel",
     "created_at": "2026-11-23T13:30:55.378469+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "Jasper",
+    "caption": "Meet Jasper. It's an AI writing tool that helps you brainstorm ideas, create outlines, and even write whole sections of your blog posts.  It makes the whole process much smoother and quicker. You'll be publishing more content in less time.",
+    "hashtags": "#AIwriting #ContentCreation #JasperAI #BlogTips #WritingTools #AIforBusiness #MarketingTools #ProductivityHacks #DigitalMarketing #SmallBusinessTips #ContentMarketing #AItools #SaveTime",
+    "image_paths": [
+      "posts/single/1795465553_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795465553_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-23T20:25:53.137470+00:00",
+    "status": "pending"
   }
 ]
