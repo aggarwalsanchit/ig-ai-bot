@@ -7240,5 +7240,22 @@
     "content_type": "single_image",
     "created_at": "2026-11-24T19:36:54.995720+00:00",
     "status": "pending"
+  },
+  {
+    "category": "design & visuals",
+    "tool_name": "Remove.bg",
+    "caption": "Tired of spending ages cutting out backgrounds? It's a pain, right?\n\nRemove.bg uses AI to do it for you in seconds. Just upload your photo, and boom! Clean cut. This is perfect for anyone making product images, social media posts, or just cleaning up personal photos. You get a transparent background, ready to use anywhere.\n\nSeriously, this tool is a game-changer for saving your design time. Try it out!",
+    "hashtags": "AItools design AI backgroundremoval graphicdesign photoediting visualdesign marketing socialmediamarketing productivity timehack designhacks creativetools contentcreation smallbusiness tipsandtricks digitalart",
+    "image_paths": [
+      "posts/single/1795561893_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795561893_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-24T23:11:33.530963+00:00",
+    "status": "pending"
   }
 ]
