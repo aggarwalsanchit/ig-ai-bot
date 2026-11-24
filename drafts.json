@@ -7192,5 +7192,36 @@
     "content_type": "single_image",
     "created_at": "2026-11-24T01:07:30.724542+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Feeling buried under mountains of text and data? We get it. Research can be a black hole for your precious time.\n\nBut what if there was a way to cut through the noise and get to the heart of any information instantly? Meet the AI Summarizer \u2013 your new best friend for efficient learning and knowledge gathering.",
+    "hashtags": "#AItools #AISummarizer #ProductivityHacks #ResearchTips #InformationOverload #StudyHacks #AIforStudents #KnowledgeIsPower #TechTools #FutureofLearning #DeepDive #SmartLearning #AIRevolution #DigitalNomad",
+    "image_paths": [
+      "posts/reel/1795529341_reel_scene_1.png",
+      "posts/reel/1795529341_reel_scene_2.png",
+      "posts/reel/1795529341_reel_scene_3.png",
+      "posts/reel/1795529341_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795529341_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795529341_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795529341_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795529341_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1795529341.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1795529341.mp4",
+    "text_overlays": [
+      "Massive Docs? \ud83d\udcc4",
+      "AI Reads Fast! \u26a1\ufe0f",
+      "Key Points Only! \ud83c\udfaf",
+      "Save Your Time! \u23f3"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-24T14:09:01.947574+00:00",
+    "status": "pending"
   }
 ]
