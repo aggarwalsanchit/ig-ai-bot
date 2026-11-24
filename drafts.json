@@ -7223,5 +7223,22 @@
     "content_type": "reel",
     "created_at": "2026-11-24T14:09:01.947574+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "Calendly",
+    "caption": "Tired of endless emails trying to find a meeting time?  It's a huge time suck for everyone involved. Imagine if people could just see your open slots and pick one themselves. That's where Calendly shines.\n\nThis super simple tool connects to your calendar and shows people when you're free. They pick a time, and boom, the meeting is booked. No more guessing, no more 'what about this time?'. It makes scheduling a breeze for you and your team.",
+    "hashtags": "#AItools #Scheduling #Meetings #Productivity #WorkSmart #TimeSaver #Automation #BusinessTools #GetMoreDone #AIforWork #MeetingHacks #CalendarManagement #EfficientWork #TeamCollaboration #Calendly",
+    "image_paths": [
+      "posts/single/1795549014_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795549014_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-24T19:36:54.995720+00:00",
+    "status": "pending"
   }
 ]
