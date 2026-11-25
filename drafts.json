@@ -7257,5 +7257,36 @@
     "content_type": "single_image",
     "created_at": "2026-11-24T23:11:33.530963+00:00",
     "status": "pending"
+  },
+  {
+    "category": "data entry & spreadsheets",
+    "tool_name": "AI Data Magic",
+    "caption": "Drowning in spreadsheets and data entry? We get it! That tedious work can steal your valuable time and energy, leaving little room for what truly matters.\n\nImagine a world where AI handles the grunt work. From inputting information to organizing complex datasets, AI tools can transform your data management process. Say goodbye to manual errors and hello to efficiency!",
+    "hashtags": "#AI #AIDataEntry #SpreadsheetAutomation #DataAutomation #Productivity #AItools #FutureOfWork #BusinessEfficiency #Tech #Innovation #DigitalTransformation #AutomationNation #SmartTools #AIforBusiness",
+    "image_paths": [
+      "posts/reel/1795612957_reel_scene_1.png",
+      "posts/reel/1795612957_reel_scene_2.png",
+      "posts/reel/1795612957_reel_scene_3.png",
+      "posts/reel/1795612957_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795612957_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795612957_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795612957_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795612957_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1795612957.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1795612957.mp4",
+    "text_overlays": [
+      "Tired of typing? \ud83d\ude29",
+      "AI sorts it fast! \u2705",
+      "Unleash your creativity! \u2728",
+      "Get your time back! \u23f3"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-25T13:22:37.883566+00:00",
+    "status": "pending"
   }
 ]
