@@ -7288,5 +7288,22 @@
     "content_type": "reel",
     "created_at": "2026-11-25T13:22:37.883566+00:00",
     "status": "pending"
+  },
+  {
+    "category": "writing & content creation",
+    "tool_name": "ChatGPT",
+    "caption": "Struggling to break down a complicated subject for your audience? You know, the ones where you stare at a blank page for ages?\n\nChatGPT is your secret weapon. Just tell it what topic you need to explain, and who you're explaining it to. It will write it out super clear and easy to get.\n\nThis saves you tons of thinking time and helps your readers understand things way faster. Perfect for blog posts, emails, or even just learning something new yourself.",
+    "hashtags": "#AItools #writingtips #contentcreation #ChatGPT #AIwriting #easylearning #explainer #simplify #businesstips #marketingtools #productivityhacks #timemanagement #aiinsider #worksmart #contentstrategy #education",
+    "image_paths": [
+      "posts/single/1795632285_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795632285_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-25T18:44:45.575219+00:00",
+    "status": "pending"
   }
 ]
