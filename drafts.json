@@ -7322,5 +7322,36 @@
     "content_type": "single_image",
     "created_at": "2026-11-25T22:39:51.071080+00:00",
     "status": "pending"
+  },
+  {
+    "category": "research & summarizing information",
+    "tool_name": "AI Summarizer",
+    "caption": "Drowning in a sea of information? We've all been there. Endless articles, reports, and research papers can feel overwhelming.\n\nBut what if you could instantly grasp the core ideas? Our favorite AI tools can transform lengthy texts into concise summaries, saving you precious time and mental energy. Focus on what truly matters and make smarter decisions.",
+    "hashtags": "#AItools #AISummary #ResearchAI #ProductivityAI #InformationOverload #AIforStudents #AIDevelopment #FutureTech #SmartTools #LearningAI #ContentCreation #AIExplained #TechTips #DigitalTools #InnovationAI",
+    "image_paths": [
+      "posts/reel/1795698107_reel_scene_1.png",
+      "posts/reel/1795698107_reel_scene_2.png",
+      "posts/reel/1795698107_reel_scene_3.png",
+      "posts/reel/1795698107_reel_scene_4.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795698107_reel_scene_1.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795698107_reel_scene_2.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795698107_reel_scene_3.png",
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/1795698107_reel_scene_4.png"
+    ],
+    "video_path": "posts/reel/reel_1795698107.mp4",
+    "video_url": "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/reel/reel_1795698107.mp4",
+    "text_overlays": [
+      "Endless Articles \ud83d\udcda",
+      "AI Reads Fast \u26a1\ufe0f",
+      "Key Takeaways \ud83d\udca1",
+      "Save Time & Brains \ud83e\udde0"
+    ],
+    "is_carousel": false,
+    "is_reel": true,
+    "content_type": "reel",
+    "created_at": "2026-11-26T13:01:47.343773+00:00",
+    "status": "pending"
   }
 ]
