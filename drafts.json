@@ -7353,5 +7353,22 @@
     "content_type": "reel",
     "created_at": "2026-11-26T13:01:47.343773+00:00",
     "status": "pending"
+  },
+  {
+    "category": "scheduling & meetings",
+    "tool_name": "Calendly",
+    "caption": "Tired of endless email chains trying to find a meeting time?  It's a huge time suck for everyone involved.\n\nCalendly is the answer. You set your available hours, and share a link.  People pick a slot, and it's booked.  No more guessing games, no more conflicts.\n\nFocus on what matters, not on coordinating schedules. Get more done with less hassle.",
+    "hashtags": "AItools Calendly scheduling meetings productivity time_saver work_hacks business_tips automation efficiency get_organized meeting_prep meeting_management schedule_smart",
+    "image_paths": [
+      "posts/single/1795717923_post_image.png"
+    ],
+    "image_urls": [
+      "https://raw.githubusercontent.com/aggarwalsanchit/ig-ai-bot/main/posts/single/1795717923_post_image.png"
+    ],
+    "is_carousel": false,
+    "is_reel": false,
+    "content_type": "single_image",
+    "created_at": "2026-11-26T18:32:03.225740+00:00",
+    "status": "pending"
   }
 ]
